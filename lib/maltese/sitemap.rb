@@ -11,10 +11,13 @@ module Maltese
     end
 
     def initialize(attributes={})
-      @sitemap_bucket = attributes[:sitemap_bucket]|| "sitemaps.datacite.org"
-      @sitemap_url = attributes[:sitemap_url] || "https://search.datacite.org"
+      @sitemap_bucket = attributes[:sitemap_bucket]|| "search.datacite.org"
       @from_date = attributes[:from_date].presence || (Time.now.to_date - 1.day).iso8601
       @until_date = attributes[:until_date].presence || Time.now.to_date.iso8601
+    end
+
+    def sitemap_url
+      "https://#{sitemap_bucket}"
     end
 
     def search_path
@@ -43,7 +46,6 @@ module Maltese
         adapter: s3_adapter,
         sitemaps_host: sitemaps_host,
         sitemaps_path: sitemaps_path,
-        include_index: true,
         finalize: false)
     end
 

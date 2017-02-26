@@ -19,7 +19,7 @@ http_interactions:
       Server:
       - openresty/1.11.2.2
       Date:
-      - Sun, 26 Feb 2017 18:45:08 GMT
+      - Sun, 26 Feb 2017 20:03:06 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Connection:
@@ -34,7 +34,7 @@ http_interactions:
 
 '
     http_version: 
-  recorded_at: Sun, 26 Feb 2017 18:45:08 GMT
+  recorded_at: Sun, 26 Feb 2017 20:03:05 GMT
 - request:
     method: get
     uri: https://search.datacite.org/api?fl=doi,updated&fq=updated:%5B2015-04-07T00:00:00Z%20TO%202015-04-08T23:59:59Z%5D%20AND%20has_metadata:true%20AND%20is_active:true&q=*:*&rows=50000&sort=updated%20asc&start=0&wt=json
@@ -54,7 +54,7 @@ http_interactions:
       Server:
       - openresty/1.11.2.2
       Date:
-      - Sun, 26 Feb 2017 18:45:08 GMT
+      - Sun, 26 Feb 2017 20:03:07 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Connection:
@@ -69,7 +69,7 @@ http_interactions:
 
 '
     http_version: 
-  recorded_at: Sun, 26 Feb 2017 18:45:08 GMT
+  recorded_at: Sun, 26 Feb 2017 20:03:06 GMT
 - request:
     method: get
     uri: https://s3.amazonaws.com/
@@ -80,23 +80,23 @@ http_interactions:
       User-Agent:
       - fog-core/1.37.0
       X-Amz-Date:
-      - 20170226T184509Z
+      - 20170226T200306Z
       X-Amz-Content-Sha256:
       - e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
       Authorization:
       - AWS4-HMAC-SHA256 Credential=<AWS_ACCESS_KEY_ID>/20170226/us-east-1/s3/aws4_request,
-        SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=45c70314bf62cbd0eeab1120172592f23697f8e5bca48856920f844b2e6b5de4
+        SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=ad7e0995671db006ee79b99743050dd53fc0f6f54bf878a66b8bffa27a0db6c5
   response:
     status:
       code: 200
       message: ''
     headers:
       X-Amz-Id-2:
-      - MFonc6wIOSUtLAIuEGmxPX1+mG7YDvD3gTr7Ns0SdvaHjGP0BEpAMcEVED9FXw+8OBMvgzwp4OA=
+      - 0bo/TVmIypFsxA2XG7ASk678RhTT/wDc0wIIPZW4jdcWO6s8W0AHCKxLjOJ6pliICDUb5wGn3CU=
       X-Amz-Request-Id:
-      - 3CD75AD20B44D917
+      - 045125086D97A845
       Date:
-      - Sun, 26 Feb 2017 18:45:10 GMT
+      - Sun, 26 Feb 2017 20:03:09 GMT
       Content-Type:
       - application/xml
       Server:
@@ -105,12 +105,12 @@ http_interactions:
       encoding: UTF-8
       string: |-
         <?xml version="1.0" encoding="UTF-8"?>
-        <ListAllMyBucketsResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Owner><ID>8170cc616e9d1833db4bade0c7af0010f04464343a1004b67a00fbcb41e361de</ID><DisplayName>infrastructure</DisplayName></Owner><Buckets><Bucket><Name>api.datacite.org</Name><CreationDate>2017-02-09T07:05:20.000Z</CreationDate></Bucket><Bucket><Name>api.test.datacite.org</Name><CreationDate>2017-02-09T07:05:21.000Z</CreationDate></Bucket><Bucket><Name>archive.datacite.org</Name><CreationDate>2016-12-26T07:02:24.000Z</CreationDate></Bucket><Bucket><Name>archive.test.datacite.org</Name><CreationDate>2017-01-13T19:04:30.000Z</CreationDate></Bucket><Bucket><Name>assets.datacite.org</Name><CreationDate>2016-04-29T17:51:32.000Z</CreationDate></Bucket><Bucket><Name>assets.test.datacite.org</Name><CreationDate>2017-01-13T18:47:02.000Z</CreationDate></Bucket><Bucket><Name>blog.datacite.org</Name><CreationDate>2015-09-26T08:59:21.000Z</CreationDate></Bucket><Bucket><Name>blog.test.datacite.org</Name><CreationDate>2017-01-13T18:54:23.000Z</CreationDate></Bucket><Bucket><Name>crosscite.org</Name><CreationDate>2016-01-05T22:11:03.000Z</CreationDate></Bucket><Bucket><Name>data.datacite.org</Name><CreationDate>2016-08-29T17:11:58.000Z</CreationDate></Bucket><Bucket><Name>data.test.datacite.org</Name><CreationDate>2017-01-13T20:17:34.000Z</CreationDate></Bucket><Bucket><Name>datacite.org</Name><CreationDate>2016-01-04T21:53:46.000Z</CreationDate></Bucket><Bucket><Name>lagotto.io</Name><CreationDate>2016-01-10T10:12:40.000Z</CreationDate></Bucket><Bucket><Name>ops.datacite.org</Name><CreationDate>2016-06-03T19:38:04.000Z</CreationDate></Bucket><Bucket><Name>papertrail.datacite.org</Name><CreationDate>2016-01-04T23:25:19.000Z</CreationDate></Bucket><Bucket><Name>pidapalooza.org</Name><CreationDate>2016-06-16T07:28:25.000Z</CreationDate></Bucket><Bucket><Name>schema.datacite.org</Name><CreationDate>2015-09-26T08:01:48.000Z</CreationDate></Bucket><Bucket><Name>schema.test.datacite.org</Name><CreationDate>2017-01-10T11:47:55.000Z</CreationDate></Bucket><Bucket><Name>sitemaps.datacite.org</Name><CreationDate>2017-01-12T21:41:18.000Z</CreationDate></Bucket><Bucket><Name><FOG_DIRECTORY></Name><CreationDate>2017-01-27T07:13:20.000Z</CreationDate></Bucket><Bucket><Name>stats.datacite.org</Name><CreationDate>2016-08-29T10:21:19.000Z</CreationDate></Bucket><Bucket><Name>stats.test.datacite.org</Name><CreationDate>2017-01-13T20:17:34.000Z</CreationDate></Bucket><Bucket><Name>test.datacite.org</Name><CreationDate>2017-01-08T21:50:53.000Z</CreationDate></Bucket><Bucket><Name>www.crosscite.org</Name><CreationDate>2017-01-09T10:18:11.000Z</CreationDate></Bucket><Bucket><Name>www.datacite.org</Name><CreationDate>2015-09-26T08:01:48.000Z</CreationDate></Bucket><Bucket><Name>www.test.datacite.org</Name><CreationDate>2017-01-13T19:50:11.000Z</CreationDate></Bucket></Buckets></ListAllMyBucketsResult>
+        <ListAllMyBucketsResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Owner><ID>8170cc616e9d1833db4bade0c7af0010f04464343a1004b67a00fbcb41e361de</ID><DisplayName>infrastructure</DisplayName></Owner><Buckets><Bucket><Name>api.datacite.org</Name><CreationDate>2017-02-09T07:05:20.000Z</CreationDate></Bucket><Bucket><Name>api.test.datacite.org</Name><CreationDate>2017-02-09T07:05:21.000Z</CreationDate></Bucket><Bucket><Name>archive.datacite.org</Name><CreationDate>2016-12-26T07:02:24.000Z</CreationDate></Bucket><Bucket><Name>archive.test.datacite.org</Name><CreationDate>2017-01-13T19:04:30.000Z</CreationDate></Bucket><Bucket><Name>assets.datacite.org</Name><CreationDate>2016-04-29T17:51:32.000Z</CreationDate></Bucket><Bucket><Name>assets.test.datacite.org</Name><CreationDate>2017-01-13T18:47:02.000Z</CreationDate></Bucket><Bucket><Name>blog.datacite.org</Name><CreationDate>2015-09-26T08:59:21.000Z</CreationDate></Bucket><Bucket><Name>blog.test.datacite.org</Name><CreationDate>2017-01-13T18:54:23.000Z</CreationDate></Bucket><Bucket><Name>crosscite.org</Name><CreationDate>2016-01-05T22:11:03.000Z</CreationDate></Bucket><Bucket><Name>data.datacite.org</Name><CreationDate>2016-08-29T17:11:58.000Z</CreationDate></Bucket><Bucket><Name>data.test.datacite.org</Name><CreationDate>2017-01-13T20:17:34.000Z</CreationDate></Bucket><Bucket><Name>datacite.org</Name><CreationDate>2016-01-04T21:53:46.000Z</CreationDate></Bucket><Bucket><Name>lagotto.io</Name><CreationDate>2016-01-10T10:12:40.000Z</CreationDate></Bucket><Bucket><Name>ops.datacite.org</Name><CreationDate>2016-06-03T19:38:04.000Z</CreationDate></Bucket><Bucket><Name>papertrail.datacite.org</Name><CreationDate>2016-01-04T23:25:19.000Z</CreationDate></Bucket><Bucket><Name>pidapalooza.org</Name><CreationDate>2016-06-16T07:28:25.000Z</CreationDate></Bucket><Bucket><Name>schema.datacite.org</Name><CreationDate>2015-09-26T08:01:48.000Z</CreationDate></Bucket><Bucket><Name>schema.test.datacite.org</Name><CreationDate>2017-01-10T11:47:55.000Z</CreationDate></Bucket><Bucket><Name>search.datacite.org</Name><CreationDate>2017-02-26T20:00:32.000Z</CreationDate></Bucket><Bucket><Name>search.test.datacite.org</Name><CreationDate>2017-02-26T20:00:32.000Z</CreationDate></Bucket><Bucket><Name>sitemaps.datacite.org</Name><CreationDate>2017-01-12T21:41:18.000Z</CreationDate></Bucket><Bucket><Name><FOG_DIRECTORY></Name><CreationDate>2017-01-27T07:13:20.000Z</CreationDate></Bucket><Bucket><Name>stats.datacite.org</Name><CreationDate>2016-08-29T10:21:19.000Z</CreationDate></Bucket><Bucket><Name>stats.test.datacite.org</Name><CreationDate>2017-01-13T20:17:34.000Z</CreationDate></Bucket><Bucket><Name>test.datacite.org</Name><CreationDate>2017-01-08T21:50:53.000Z</CreationDate></Bucket><Bucket><Name>www.crosscite.org</Name><CreationDate>2017-01-09T10:18:11.000Z</CreationDate></Bucket><Bucket><Name>www.datacite.org</Name><CreationDate>2015-09-26T08:01:48.000Z</CreationDate></Bucket><Bucket><Name>www.test.datacite.org</Name><CreationDate>2017-01-13T19:50:11.000Z</CreationDate></Bucket></Buckets></ListAllMyBucketsResult>
     http_version: 
-  recorded_at: Sun, 26 Feb 2017 18:45:09 GMT
+  recorded_at: Sun, 26 Feb 2017 20:03:07 GMT
 - request:
     method: put
-    uri: https://s3-eu-west-1.amazonaws.com/sitemaps.datacite.org/sitemaps/sitemap.xml.gz
+    uri: https://s3-eu-west-1.amazonaws.com/search.datacite.org/sitemaps/sitemap.xml.gz
     body:
       encoding: US-ASCII
       string: ''
@@ -122,28 +122,28 @@ http_interactions:
       X-Amz-Acl:
       - public-read
       X-Amz-Date:
-      - 20170226T184510Z
+      - 20170226T200309Z
       X-Amz-Content-Sha256:
       - STREAMING-AWS4-HMAC-SHA256-PAYLOAD
       X-Amz-Decoded-Content-Length:
-      - '29034'
+      - '29036'
       Authorization:
       - AWS4-HMAC-SHA256 Credential=<AWS_ACCESS_KEY_ID>/20170226/eu-west-1/s3/aws4_request,
         SignedHeaders=content-type;host;x-amz-acl;x-amz-content-sha256;x-amz-date;x-amz-decoded-content-length,
-        Signature=8c089fb6db1d03bd044b7dfc0f278d41350c0d36d052c8d61b6fcb61e551fde2
+        Signature=b21e2c6a553ebd01a8ad17fe644c1b6826706a8cb5990938c39049beea1772f2
   response:
     status:
       code: 200
       message: ''
     headers:
       X-Amz-Id-2:
-      - aGBTcNwsqtGsHzRm7DVaTn61iNTt+2p0WlfMHnv1DhvmhQEoaMrPUGqYNE9ErF0wThpLLAqoONA=
+      - wf2cCZ7ys8JujrzczfcQ3tnc/vpltoUnlWSxbLiy12pDu7LTB/zQ0yDE9kwupEIw6E78/kksyag=
       X-Amz-Request-Id:
-      - 64C8AE6EA193E379
+      - 95ED2B0F9E76D5B8
       Date:
-      - Sun, 26 Feb 2017 18:45:11 GMT
+      - Sun, 26 Feb 2017 20:03:09 GMT
       Etag:
-      - '"794a82bba2dc27d78ce882a948b339e0"'
+      - '"6352c92bf48624e40fff48c2b02e0338"'
       Content-Length:
       - '0'
       Server:
@@ -152,5 +152,5 @@ http_interactions:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Sun, 26 Feb 2017 18:45:10 GMT
+  recorded_at: Sun, 26 Feb 2017 20:03:07 GMT
 recorded_with: VCR 3.0.3
