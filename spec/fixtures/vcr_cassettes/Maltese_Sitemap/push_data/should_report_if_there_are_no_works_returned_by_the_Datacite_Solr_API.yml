@@ -1,0 +1,86 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://s3.amazonaws.com/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - fog-core/1.37.0
+      X-Amz-Date:
+      - 20170226T163647Z
+      X-Amz-Content-Sha256:
+      - e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+      Authorization:
+      - AWS4-HMAC-SHA256 Credential=<AWS_ACCESS_KEY_ID>/20170226/us-east-1/s3/aws4_request,
+        SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=a870dd62c29353f528db2bd649e4c885f853a687daecbfe3f6018a8d5e16304a
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      X-Amz-Id-2:
+      - "+M/2XPFQG6EvOmdSScfFqmtVWsk5on5+B/Ht7Y+bLCN7PAOu7OqMNOWpQlKvlMmstRnDSBV7aoM="
+      X-Amz-Request-Id:
+      - CE22FCA4A6FEA599
+      Date:
+      - Sun, 26 Feb 2017 16:36:51 GMT
+      Content-Type:
+      - application/xml
+      Server:
+      - AmazonS3
+    body:
+      encoding: UTF-8
+      string: |-
+        <?xml version="1.0" encoding="UTF-8"?>
+        <ListAllMyBucketsResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Owner><ID>8170cc616e9d1833db4bade0c7af0010f04464343a1004b67a00fbcb41e361de</ID><DisplayName>infrastructure</DisplayName></Owner><Buckets><Bucket><Name>api.datacite.org</Name><CreationDate>2017-02-09T07:05:20.000Z</CreationDate></Bucket><Bucket><Name>api.test.datacite.org</Name><CreationDate>2017-02-09T07:05:21.000Z</CreationDate></Bucket><Bucket><Name>archive.datacite.org</Name><CreationDate>2016-12-26T07:02:24.000Z</CreationDate></Bucket><Bucket><Name>archive.test.datacite.org</Name><CreationDate>2017-01-13T19:04:30.000Z</CreationDate></Bucket><Bucket><Name>assets.datacite.org</Name><CreationDate>2016-04-29T17:51:32.000Z</CreationDate></Bucket><Bucket><Name>assets.test.datacite.org</Name><CreationDate>2017-01-13T18:47:02.000Z</CreationDate></Bucket><Bucket><Name>blog.datacite.org</Name><CreationDate>2015-09-26T08:59:21.000Z</CreationDate></Bucket><Bucket><Name>blog.test.datacite.org</Name><CreationDate>2017-01-13T18:54:23.000Z</CreationDate></Bucket><Bucket><Name>crosscite.org</Name><CreationDate>2016-01-05T22:11:03.000Z</CreationDate></Bucket><Bucket><Name>data.datacite.org</Name><CreationDate>2016-08-29T17:11:58.000Z</CreationDate></Bucket><Bucket><Name>data.test.datacite.org</Name><CreationDate>2017-01-13T20:17:34.000Z</CreationDate></Bucket><Bucket><Name>datacite.org</Name><CreationDate>2016-01-04T21:53:46.000Z</CreationDate></Bucket><Bucket><Name>lagotto.io</Name><CreationDate>2016-01-10T10:12:40.000Z</CreationDate></Bucket><Bucket><Name>ops.datacite.org</Name><CreationDate>2016-06-03T19:38:04.000Z</CreationDate></Bucket><Bucket><Name>papertrail.datacite.org</Name><CreationDate>2016-01-04T23:25:19.000Z</CreationDate></Bucket><Bucket><Name>pidapalooza.org</Name><CreationDate>2016-06-16T07:28:25.000Z</CreationDate></Bucket><Bucket><Name>schema.datacite.org</Name><CreationDate>2015-09-26T08:01:48.000Z</CreationDate></Bucket><Bucket><Name>schema.test.datacite.org</Name><CreationDate>2017-01-10T11:47:55.000Z</CreationDate></Bucket><Bucket><Name>sitemaps.datacite.org</Name><CreationDate>2017-01-12T21:41:18.000Z</CreationDate></Bucket><Bucket><Name><FOG_DIRECTORY></Name><CreationDate>2017-01-27T07:13:20.000Z</CreationDate></Bucket><Bucket><Name>stats.datacite.org</Name><CreationDate>2016-08-29T10:21:19.000Z</CreationDate></Bucket><Bucket><Name>stats.test.datacite.org</Name><CreationDate>2017-01-13T20:17:34.000Z</CreationDate></Bucket><Bucket><Name>test.datacite.org</Name><CreationDate>2017-01-08T21:50:53.000Z</CreationDate></Bucket><Bucket><Name>www.crosscite.org</Name><CreationDate>2017-01-09T10:18:11.000Z</CreationDate></Bucket><Bucket><Name>www.datacite.org</Name><CreationDate>2015-09-26T08:01:48.000Z</CreationDate></Bucket><Bucket><Name>www.test.datacite.org</Name><CreationDate>2017-01-13T19:50:11.000Z</CreationDate></Bucket></Buckets></ListAllMyBucketsResult>
+    http_version: 
+  recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
+- request:
+    method: put
+    uri: https://s3-eu-west-1.amazonaws.com/sitemaps.datacite.org/sitemaps/sitemap.xml.gz
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - fog-core/1.37.0
+      Content-Type:
+      - application/gzip
+      X-Amz-Acl:
+      - public-read
+      X-Amz-Date:
+      - 20170226T163651Z
+      X-Amz-Content-Sha256:
+      - STREAMING-AWS4-HMAC-SHA256-PAYLOAD
+      X-Amz-Decoded-Content-Length:
+      - '329'
+      Authorization:
+      - AWS4-HMAC-SHA256 Credential=<AWS_ACCESS_KEY_ID>/20170226/eu-west-1/s3/aws4_request,
+        SignedHeaders=content-type;host;x-amz-acl;x-amz-content-sha256;x-amz-date;x-amz-decoded-content-length,
+        Signature=b63de16f8fac0b0003e6ae933232ad53711e436c6199b1c4f65d564ee1ea0247
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      X-Amz-Id-2:
+      - CsT9jP4uG+6GjUHkSnIGDeIm/gn2PW/DZZXgQeutpThEnCAfCtZ83Ex/UYkToD31191RPcorEsQ=
+      X-Amz-Request-Id:
+      - 6FB657528EF232AB
+      Date:
+      - Sun, 26 Feb 2017 16:36:51 GMT
+      Etag:
+      - '"c0671f5811543e1366ac05b118673cba"'
+      Content-Length:
+      - '0'
+      Server:
+      - AmazonS3
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
+recorded_with: VCR 3.0.3

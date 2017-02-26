@@ -1,14 +1,5 @@
 module Maltese
-  class Sitemap
-    attr_reader :sitemap_bucket, :sitemap_url, :from_date, :until_date
-
-    def initialize(attributes={})
-      @sitemap_bucket = attributes[:sitemap_bucket]|| "sitemaps.datacite.org"
-      @sitemap_url = attributes[:sitemap_url] || "https://search.datacite.org"
-      @from_date = attributes[:from_date].presence || (Time.now.to_date - 1.day).iso8601
-      @until_date = attributes[:until_date].presence || Time.now.to_date.iso8601
-    end
-
+  module Utils
     # load ENV variables from container environment if json file exists
     # see https://github.com/phusion/baseimage-docker#envvar_dumps
     env_json_file = "/etc/container_environment.json"
@@ -17,50 +8,10 @@ module Maltese
       env_vars.each { |k, v| ENV[k] = v }
     end
 
-    def search_path
-      "#{sitemap_url}/api?"
-    end
-
-    def sitemaps_host
-      "http://#{sitemap_bucket}.s3.amazonaws.com/"
-    end
-
-    def sitemaps_path
-      'sitemaps/'
-    end
-
-    def timeout
-      120
-    end
-
-    def job_batch_size
-      50000
-    end
-
-    def sitemap
-      @sitemap ||= SitemapGenerator::LinkSet.new(
-        default_host: sitemap_url,
-        adapter: s3_adapter,
-        sitemaps_host: sitemaps_host,
-        sitemaps_path: sitemaps_path,
-        finalize: false)
-    end
-
-    def s3_adapter
-      SitemapGenerator::S3Adapter.new(fog_provider: 'AWS',
-                                      aws_access_key_id: ENV['AWS_ACCESS_KEY_ID'],
-                                      aws_secret_access_key: ENV['AWS_SECRET_ACCESS_KEY'],
-                                      fog_directory: sitemap_bucket,
-                                      fog_region: ENV['AWS_REGION'])
-    end
-
-    def fog_storage
-      Fog::Storage.new(provider: 'AWS',
-                       aws_access_key_id: ENV['AWS_ACCESS_KEY_ID'],
-                       aws_secret_access_key: ENV['AWS_SECRET_ACCESS_KEY'])
-    end
-
     def queue_jobs(options={})
+      options[:offset] = options[:offset].to_i || 0
+      options[:rows] = options[:rows].presence || job_batch_size
+
       total = get_total(options)
 
       if total > 0
@@ -80,9 +31,6 @@ module Maltese
     end
 
     def get_query_url(options={})
-      options[:offset] = options[:offset].to_i || 0
-      options[:rows] = options[:rows].presence || job_batch_size
-
       updated = "updated:[#{from_date}T00:00:00Z TO #{until_date}T23:59:59Z]"
       fq = "#{updated} AND has_metadata:true AND is_active:true"
 
@@ -93,7 +41,7 @@ module Maltese
                  fl: "doi,updated",
                  sort: "updated asc",
                  wt: "json" }
-      search_path + URI.encode_www_form(params)
+      url +  URI.encode_www_form(params)
     end
 
     def process_data(options = {})
@@ -132,9 +80,8 @@ module Maltese
       fog_storage.sync_clock
 
       sitemap.finalize!
-      options[:start_time] ||= Time.now
-      sitemap.sitemap_index.stats_summary(:time_taken => Time.now - options[:start_time])
-      sitemap.sitemap.link_count
+      time_taken = Time.now - options[:start_time]
+      sitemap.sitemap_index.stats_summary(:time_taken => time_taken)
     end
   end
 end

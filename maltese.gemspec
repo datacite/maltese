@@ -17,7 +17,6 @@ Gem::Specification.new do |s|
   # Declary dependencies here, rather than in the Gemfile
   s.add_dependency 'maremma', '~> 3.5'
   s.add_dependency 'activesupport', '~> 4.2', '>= 4.2.5'
-  s.add_dependency 'dotenv', '~> 2.1', '>= 2.1.1'
   s.add_dependency 'thor', '~> 0.19'
   s.add_dependency 'sitemap_generator', '~> 5.1'
   s.add_dependency 'fog-aws', '~> 0.7.6'

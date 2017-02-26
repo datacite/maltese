@@ -13,4 +13,4 @@ RUN apt-get update && apt-get upgrade -y -o Dpkg::Options::="--force-confold" &&
 # Install maltese gem
 RUN /sbin/setuser app gem install maltese
 
-CMD maltese sitemap --push_url $VOLPINO_URL --access_token $VOLPINO_TOKEN --from_date $FROM_DATE --until_date $UNTIL_DATE
+CMD maltese sitemap --sitemap_bucket $SITEMAP_BUCKET --sitemap_url $SITEMAP_URL --from_date $FROM_DATE --until_date $UNTIL_DATE
