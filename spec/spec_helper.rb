@@ -1,5 +1,3 @@
-ENV["FOG_DIRECTORY"] = "sitemaps.test.datacite.org"
-
 require 'bundler/setup'
 Bundler.setup
 

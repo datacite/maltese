@@ -6,12 +6,10 @@ describe Maltese::CLI do
     described_class.new
   end
 
-  let(:push_url) { ENV['VOLPINO_URL'] }
-  let(:access_token) { ENV['VOLPINO_TOKEN'] }
   let(:from_date) { "2015-04-07" }
   let(:until_date) { "2015-04-08" }
-  let(:cli_options) { { push_url: push_url,
-                        access_token: access_token,
+  let(:sitemap_bucket) { "search.test.datacite.org" }
+  let(:cli_options) { { sitemap_bucket: sitemap_bucket,
                         from_date: from_date,
                         until_date: until_date } }
 
@@ -28,16 +26,10 @@ describe Maltese::CLI do
     it 'should succeed with no works' do
       from_date = "2005-04-07"
       until_date = "2005-04-08"
-      subject.options = { push_url: push_url,
-                          access_token: access_token,
+      subject.options = { sitemap_bucket: sitemap_bucket,
                           from_date: from_date,
                           until_date: until_date }
       expect { subject.sitemap }.to output("No works found for date range 2005-04-07 - 2005-04-08.\n").to_stdout
     end
-
-    # it 'should fail' do
-    #   subject.options = cli_options.except(:access_token)
-    #   expect { subject.sitemap }.to output(/An error occured: Access token missing.\n/).to_stdout
-    # end
   end
 end
