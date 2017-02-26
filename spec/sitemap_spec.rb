@@ -3,7 +3,7 @@ require 'spec_helper'
 describe Maltese::Sitemap, vcr: true do
   before(:each) { allow(Time).to receive(:now).and_return(Time.mktime(2015, 4, 8)) }
 
-  subject { Maltese::Sitemap.new(sitemap_bucket: "search.test.datacite.org") }
+  subject { Maltese::Sitemap.new }
 
   context "get_query_url" do
     it "default" do

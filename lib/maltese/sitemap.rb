@@ -29,7 +29,7 @@ module Maltese
     end
 
     def sitemaps_path
-      'sitemaps/'
+      ENV['RACK'] == "test" ? 'sitemaps-test' : 'sitemaps/'
     end
 
     def timeout
@@ -120,7 +120,7 @@ module Maltese
       Maremma.get(query_url, options)
     end
 
-    def parse_data(result, options={})
+    def parse_data(result)
       return result.body.fetch("errors") if result.body.fetch("errors", nil).present?
 
       items = result.body.fetch("data", {}).fetch('response', {}).fetch('docs', nil)
