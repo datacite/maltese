@@ -53,6 +53,8 @@ module Maltese
     end
 
     def process_data(options = {})
+      start_time = Time.now
+
       # walk through paginated results
       total_pages = (options[:total].to_f / job_batch_size).ceil
 
@@ -63,7 +65,8 @@ module Maltese
       end
 
       sitemap.finalize!
-
+      end_time = Time.now
+      puts sitemap.sitemap_index.stats_summary(:time_taken => end_time - start_time)
       #return [OpenStruct.new(body: { "data" => [] })] if data.empty?
 
       #push_data(data, options)
@@ -79,7 +82,9 @@ module Maltese
     end
 
     def sitemap
-      @sitemap ||= SitemapGenerator::LinkSet.new(default_host: sitemap_url, finalize: false)
+      @sitemap ||= SitemapGenerator::LinkSet.new(default_host: sitemap_url,
+                                                 time_taken: true,
+                                                 finalize: false)
     end
 
     def url

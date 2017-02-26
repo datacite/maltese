@@ -1,0 +1,26 @@
+language: ruby
+rvm:
+- 2.3.3
+
+addons:
+  code_climate:
+    repo_token: "$CODECLIMATE_REPO_TOKEN"
+
+install:
+- travis_retry bundle install
+
+script:
+- bundle exec rspec
+- bundle exec codeclimate-test-reporter
+
+notifications:
+  email: false
+
+deploy:
+  provider: rubygems
+  api_key:
+    secure: uT9YVkRp1usg+glYDSG7KJkm8CQGI8pZDbHlmbPz6ibbA8DVyjbBtYjGbvODCoRkisC24kSy31gMqBSmIxLG0ICv2tOy/iaoiuVeUk6NFfP4dcVGsDueQXjqd6Fjw6fCBg42sojwAVWzvDP2EVjQnbcZqROasLPmKuC2qrm+f9aSYLXmGyBtpvJ5FsfpW33OvE3qJD3y0AlPMdCihPe03FVzSiLNMmGuYOH97MucuWGbUJN+tSFiBfqIrAGT2TQXFrdiT3HtxEt+vNH0cGoLQAKgTgx4XPAcKEjg/cML5yhY/OcPR0uNgqdjxqS3faaH31r1xZaGGfHTf9dj++123YLNHbI8odyA9eF+jYU/3D8UnmMpsTNGZXCFUS8xVUobDcejhPBNhqGPLruLtbvIaqpVZ2bF9BOY1F0ILp4GERzUUUxws+BB1EJ6zFpNrDl7MHlqrc+gRZWcWlazQ82BmLQsTVHiab3ZerGCP4+kYiNeyEnsa3wmVDDd2iffU05Bse44/W1/BKmlzV0QfYl1iMA8lkCrgqmslFecCf0xA01v4CF2Hv63PxOeNmNvZm4VIkgy9uPBjD91AVdscSzCRuTc149OluBqUoxUToX9rEegheUXhWs6ww6DHtlRQI+OBNauRUCo7Fb2zV+gTNzUCSln0fE+z9aLhduuA8JLAKk=
+  gem: maltese
+  on:
+    tags: true
+    repo: datacite/maltese
