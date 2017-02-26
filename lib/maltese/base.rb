@@ -16,22 +16,23 @@ module Maltese
     end
 
     def get_query_url(options={})
-      from_date = options[:from_date].presence || (Time.now.to_date - 1.day).iso8601
-      until_date = options[:until_date].presence || Time.now.to_date.iso8601
+      updated = "updated:[#{options[:from_date]}T00:00:00Z TO #{options[:until_date]}T23:59:59Z]"
+      fq = "#{updated} AND has_metadata:true AND is_active:true"
 
-      params = { offset: options[:offset],
+      params = { q: "*:*",
+                 fq: fq,
+                 start: options[:offset],
                  rows: options[:rows],
-                 "from-update-date" => from_date,
-                 "until-update-date" => until_date,
-                 sort: "updated",
-                 order: "asc" }
+                 fl: "doi,updated",
+                 sort: "updated asc",
+                 wt: "json" }
       url +  URI.encode_www_form(params)
     end
 
     def get_total(options={})
       query_url = get_query_url(options.merge(rows: 0))
       result = Maremma.get(query_url, options)
-      result.body.fetch("meta", {}).fetch("total", 0)
+      result.body.fetch("data", {}).fetch("response", {}).fetch("numFound", 0)
     end
 
     def queue_jobs(options={})
@@ -83,12 +84,11 @@ module Maltese
 
     def sitemap
       @sitemap ||= SitemapGenerator::LinkSet.new(default_host: sitemap_url,
-                                                 time_taken: true,
                                                  finalize: false)
     end
 
     def url
-      ENV['API_URL'].presence || "https://api.datacite.org/works?"
+      ENV['SOLR_URL'].presence || "https://search.datacite.org/api?"
     end
 
     def sitemap_url
@@ -100,7 +100,7 @@ module Maltese
     end
 
     def job_batch_size
-      1000
+      50000
     end
 
     def unfreeze(hsh)

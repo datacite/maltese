@@ -18,7 +18,7 @@ Requires Ruby 2.2 or later. Then add the following to your `Gemfile` to install 
 latest version:
 
 ```ruby
-gem 'bolognese'
+gem 'maltese'
 ```
 
 Then run `bundle install` to install into your environment.

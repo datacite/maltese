@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.datacite.org/works?from-update-date=2005-04-07&offset=0&order=asc&rows=0&sort=updated&until-update-date=2005-04-08
+    uri: https://search.datacite.org/api?fl=doi,updated&fq=updated:%5B2005-04-07T00:00:00Z%20TO%202005-04-08T23:59:59Z%5D%20AND%20has_metadata:true%20AND%20is_active:true&q=*:*&rows=0&sort=updated%20asc&start=0&wt=json
     body:
       encoding: US-ASCII
       string: ''
@@ -19,85 +19,20 @@ http_interactions:
       Server:
       - openresty/1.11.2.2
       Date:
-      - Sun, 26 Feb 2017 09:22:46 GMT
+      - Sun, 26 Feb 2017 11:17:22 GMT
       Content-Type:
-      - application/vnd.api+json; charset=utf-8
+      - application/json;charset=UTF-8
       Connection:
       - keep-alive
-      Status:
-      - 200 OK
-      Cache-Control:
-      - max-age=0, private, must-revalidate
       Access-Control-Allow-Origin:
       - "*"
-      Vary:
-      - Accept-Encoding
-      Access-Control-Max-Age:
-      - '1728000'
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Request-Id:
-      - eb21dcd8-0288-4c8e-876a-407ac767f4a7
       Access-Control-Allow-Methods:
       - GET, POST, OPTIONS
-      Etag:
-      - W/"53d97b8b76ca1f0e0e9d0d84f8c1fdd2"
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Runtime:
-      - '0.041151'
-      X-Content-Type-Options:
-      - nosniff
-      X-Powered-By:
-      - Phusion Passenger 5.1.2
-      Access-Control-Allow-Headers:
-      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
     body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        eyJkYXRhIjpbXSwibWV0YSI6eyJyZXNvdXJjZS10eXBlcyI6W10sInllYXJz
-        IjpbXSwiZGF0YS1jZW50ZXJzIjpbeyJpZCI6InRpYi5nb29iaSIsInRpdGxl
-        IjoiKFRJQi1pbnRlcm4pIEdyYWZpc2NoZSBFaW56ZWxibMOkdHRlciBkZXIg
-        U2FtbWx1bmcgSGF1cHQgKEdFU0FIKSIsImNvdW50IjowfSx7ImlkIjoiZXRo
-        ei51YmFzb2pzIiwidGl0bGUiOiIwMjcuNyAtIFplaXRzY2hyaWZ0IGbDvHIg
-        QmlibGlvdGhla3NrdWx0dXIiLCJjb3VudCI6MH0seyJpZCI6ImRlbGZ0LmRh
-        dGE0dHUiLCJ0aXRsZSI6IjRUVS5DZW50cmUgZm9yIFJlc2VhcmNoIERhdGEi
-        LCJjb3VudCI6MH0seyJpZCI6ImRrLmFhdSIsInRpdGxlIjoiQWFsYm9yZyBV
-        bml2ZXJzaXR5IExpYnJhcnkiLCJjb3VudCI6MH0seyJpZCI6Im10YWtpay5h
-        YnBhIiwidGl0bGUiOiJBY3RhIEJpb2xvZ2ljYSBQbGFudGFydW0gQWdyaWVu
-        c2lzIiwiY291bnQiOjB9LHsiaWQiOiJtdGFraWsucmVncnVydW0iLCJ0aXRs
-        ZSI6IkFjdGEgUmVnaW9uaXMgUnVydW0iLCJjb3VudCI6MH0seyJpZCI6InRp
-        Yi5hZGFtYSIsInRpdGxlIjoiQURBTUEgV2ViIFMuTC4iLCJjb3VudCI6MH0s
-        eyJpZCI6ImNkbC5hZGFwdGl2ZSIsInRpdGxlIjoiQWRhcHRpdmUgQmlvdGVj
-        aG5vbG9naWVzIiwiY291bnQiOjB9LHsiaWQiOiJnZXNpcy5haHJpIiwidGl0
-        bGUiOiJBZnJpY2EgSGVhbHRoIFJlc2VhcmNoIEluc3RpdHV0ZSIsImNvdW50
-        IjowfSx7ImlkIjoiY3J1aS5hcGhyYyIsInRpdGxlIjoiQWZyaWNhbiBQb3B1
-        bGF0aW9uIGFuZCBIZWFsdGggUmVzZWFyY2ggQ2VudHJlIiwiY291bnQiOjB9
-        LHsiaWQiOiJhbmRzLmNlbnRyZTkyIiwidGl0bGUiOiJBZ3JpY3VsdHVyZSBW
-        aWN0b3JpYSIsImNvdW50IjowfSx7ImlkIjoiZXN0ZG9pLm9qcyIsInRpdGxl
-        IjoiQWpha2lyamFkIChodHRwOi8vb2pzLnV0bGliLmVlKSIsImNvdW50Ijow
-        fSx7ImlkIjoidGliLmFrYmlsZCIsInRpdGxlIjoiQWthZGVtaWUgZGVyIGJp
-        bGRlbmRlbiBLw7xuc3RlIFdpZW4iLCJjb3VudCI6MH0seyJpZCI6InpibWVk
-        LmFwcyIsInRpdGxlIjoiQWt0aW9uc2LDvG5kbmlzIFBhdGllbnRlbnNpY2hl
-        cmhlaXQgZS5WLiIsImNvdW50IjowfSx7ImlkIjoiZ2VzaXMuaGlpZyIsInRp
-        dGxlIjoiQWxleGFuZGVyIHZvbiBIdW1ib2xkdCBJbnN0aXR1dCBmw7xyIElu
-        dGVybmV0IHVuZCBHZXNlbGxzY2hhZnQiLCJjb3VudCI6MH0seyJpZCI6InRp
-        Yi5hd2kiLCJ0aXRsZSI6IkFsZnJlZC1XZWdlbmVyLUluc3RpdHV0IiwiY291
-        bnQiOjB9LHsiaWQiOiJtdGFraWsuYWxrbnllbHYiLCJ0aXRsZSI6IkFsa2Fs
-        bWF6b3R0IE55ZWx2dHVkb23DoW55IiwiY291bnQiOjB9LHsiaWQiOiJtdGFr
-        aWsuYWxrcHNpY2giLCJ0aXRsZSI6IkFsa2FsbWF6b3R0IFBzemljaG9sw7Nn
-        aWEiLCJjb3VudCI6MH0seyJpZCI6Im10YWtpay5hbGxhdCIsInRpdGxlIjoi
-        w4FsbGF0b3J2b3N0dWRvbcOhbnlpIEVneWV0ZW0iLCJjb3VudCI6MH0seyJp
-        ZCI6InB1cmR1ZS5hY3Nlc3MiLCJ0aXRsZSI6IkFsbGlhbmNlIGZvciBDcm9w
-        cywgU29pbHMsIGFuZCBFbnZpcm9ubWVudGFsIFNjaWVuY2UgU29jaWV0aWVz
-        IiwiY291bnQiOjB9LHsiaWQiOiJldGh6LmJvcGFsdCIsInRpdGxlIjoiQUxU
-        IFByb2NlZWRpbmdzIC8gVUIgQmVybiIsImNvdW50IjowfSx7ImlkIjoiZXRo
-        ei51emgtYWwiLCJ0aXRsZSI6ImFsdHJlbGV0dGVyZSIsImNvdW50IjowfSx7
-        ImlkIjoidGliLmFtYSIsInRpdGxlIjoiQU1BIFNlcnZpY2UgR21iSCIsImNv
-        dW50IjowfSx7ImlkIjoiY2RsLmFhcyIsInRpdGxlIjoiQW1lcmljYW4gQXN0
-        cm9ub21pY2FsIFNvY2lldHkiLCJjb3VudCI6MH0seyJpZCI6ImNkbC5hdWwi
-        LCJ0aXRsZSI6IkFtZXJpY2FuIFVuaXZlcnNpdHkgTGlicmFyeSIsImNvdW50
-        IjowfV0sInNjaGVtYS12ZXJzaW9ucyI6W10sInRvdGFsIjowfX0=
+      encoding: UTF-8
+      string: '{"responseHeader":{"status":0,"QTime":0},"response":{"numFound":0,"start":0,"docs":[]}}
+
+'
     http_version: 
-  recorded_at: Sun, 26 Feb 2017 09:22:45 GMT
+  recorded_at: Sun, 26 Feb 2017 11:17:22 GMT
 recorded_with: VCR 3.0.3
