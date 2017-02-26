@@ -19,7 +19,6 @@ module Maltese
 
     desc "sitemap", "generate sitemap for DataCite Search"
     method_option :sitemap_bucket, type: :string, default: ENV['SITEMAP_BUCKET']
-    method_option :sitemap_url, type: :string, default: ENV['SITEMAP_URL']
     method_option :from_date, type: :string, default: (Time.now.to_date - 1.day).iso8601
     method_option :until_date, type: :string, default: Time.now.to_date.iso8601
     def sitemap
