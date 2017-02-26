@@ -24,10 +24,6 @@ module Maltese
       "#{sitemap_url}/api?"
     end
 
-    def sitemaps_host
-      "https://s3.amazonaws.com/#{sitemap_bucket}/"
-    end
-
     def sitemaps_path
       ENV['RACK'] == "test" ? 'sitemaps-test' : 'sitemaps/'
     end
@@ -44,7 +40,6 @@ module Maltese
       @sitemap ||= SitemapGenerator::LinkSet.new(
         default_host: sitemap_url,
         adapter: s3_adapter,
-        sitemaps_host: sitemaps_host,
         sitemaps_path: sitemaps_path,
         finalize: false)
     end

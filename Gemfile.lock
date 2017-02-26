@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    maltese (0.1.7)
+    maltese (0.1.8)
       activesupport (~> 4.2, >= 4.2.5)
       fog-aws (~> 0.7.6)
       maremma (~> 3.5)
