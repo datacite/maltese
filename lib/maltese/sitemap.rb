@@ -1,6 +1,6 @@
 module Maltese
   class Sitemap
-    attr_reader :sitemap_bucket, :sitemap_url, :from_date, :until_date
+    attr_reader :sitemap_bucket, :from_date, :until_date
 
     # load ENV variables from container environment if json file exists
     # see https://github.com/phusion/baseimage-docker#envvar_dumps
