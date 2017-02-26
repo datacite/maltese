@@ -25,7 +25,7 @@ module Maltese
     end
 
     def sitemaps_host
-      "http://#{sitemap_bucket}.s3.amazonaws.com/"
+      "https://s3.amazonaws.com/#{sitemap_bucket}/"
     end
 
     def sitemaps_path
@@ -54,7 +54,8 @@ module Maltese
                                       aws_access_key_id: ENV['AWS_ACCESS_KEY_ID'],
                                       aws_secret_access_key: ENV['AWS_SECRET_ACCESS_KEY'],
                                       fog_directory: sitemap_bucket,
-                                      fog_region: ENV['AWS_REGION'])
+                                      fog_region: ENV['AWS_REGION'],
+                                      path_style: true)
     end
 
     def fog_storage
