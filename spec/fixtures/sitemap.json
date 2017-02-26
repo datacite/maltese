@@ -1,0 +1,1419 @@
+{
+    "data": [{
+        "id": "https://doi.org/10.13140/RG.2.2.10771.89120",
+        "type": "works",
+        "attributes": {
+            "doi": "10.13140/RG.2.2.10771.89120",
+            "url": null,
+            "author": [{
+                "family": "Garis",
+                "given": "Len"
+            }, {
+                "family": "Lehmann",
+                "given": "John"
+            }, {
+                "family": "Tyakoff",
+                "given": "Alex"
+            }],
+            "title": "The Reduction of Parking Restrictions around Fire Hydrants: An Examination of Parking Distances and Setback Regulations",
+            "container-title": "Unpublished",
+            "description": "",
+            "resource-type-subtype": "Technical Report",
+            "data-center-id": "rg.rg",
+            "member-id": "rg",
+            "registration-agency-id": "datacite",
+            "resource-type-id": "text",
+            "work-type-id": "report",
+            "version": null,
+            "license": null,
+            "schema-version": "4",
+            "results": [],
+            "related-identifiers": [],
+            "published": "2017",
+            "deposited": "2017-02-26T01:49:25Z",
+            "updated": "2017-02-26T01:49:25Z",
+            "media": null,
+            "xml": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxyZXNvdXJjZSB4c2k6c2NoZW1hTG9jYXRpb249Imh0dHA6Ly9kYXRhY2l0ZS5vcmcvc2NoZW1hL2tlcm5lbC00IGh0dHA6Ly9zY2hlbWEuZGF0YWNpdGUub3JnL21ldGEva2VybmVsLTQvbWV0YWRhdGEueHNkIiB4bWxucz0iaHR0cDovL2RhdGFjaXRlLm9yZy9zY2hlbWEva2VybmVsLTQiIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiPjxpZGVudGlmaWVyIGlkZW50aWZpZXJUeXBlPSJET0kiPjEwLjEzMTQwL1JHLjIuMi4xMDc3MS44OTEyMDwvaWRlbnRpZmllcj48Y3JlYXRvcnM+PGNyZWF0b3I+PGNyZWF0b3JOYW1lPkxlbiBHYXJpczwvY3JlYXRvck5hbWU+PC9jcmVhdG9yPjxjcmVhdG9yPjxjcmVhdG9yTmFtZT5Kb2huIExlaG1hbm48L2NyZWF0b3JOYW1lPjwvY3JlYXRvcj48Y3JlYXRvcj48Y3JlYXRvck5hbWU+QWxleCBUeWFrb2ZmPC9jcmVhdG9yTmFtZT48L2NyZWF0b3I+PC9jcmVhdG9ycz48dGl0bGVzPjx0aXRsZT5UaGUgUmVkdWN0aW9uIG9mIFBhcmtpbmcgUmVzdHJpY3Rpb25zIGFyb3VuZCBGaXJlIEh5ZHJhbnRzOiBBbiBFeGFtaW5hdGlvbiBvZiBQYXJraW5nIERpc3RhbmNlcyBhbmQgU2V0YmFjayBSZWd1bGF0aW9uczwvdGl0bGU+PC90aXRsZXM+PHB1Ymxpc2hlcj5VbnB1Ymxpc2hlZDwvcHVibGlzaGVyPjxwdWJsaWNhdGlvblllYXI+MjAxNzwvcHVibGljYXRpb25ZZWFyPjxyZXNvdXJjZVR5cGUgcmVzb3VyY2VUeXBlR2VuZXJhbD0iVGV4dCI+VGVjaG5pY2FsIFJlcG9ydDwvcmVzb3VyY2VUeXBlPjxsYW5ndWFnZT5lbjwvbGFuZ3VhZ2U+PC9yZXNvdXJjZT4="
+        },
+        "relationships": {
+            "data-center": {
+                "meta": {}
+            },
+            "member": {
+                "meta": {}
+            },
+            "registration-agency": {
+                "meta": {}
+            },
+            "resource-type": {
+                "meta": {}
+            },
+            "work-type": {
+                "meta": {}
+            }
+        }
+    }, {
+        "id": "https://doi.org/10.13140/RG.2.2.36357.14566",
+        "type": "works",
+        "attributes": {
+            "doi": "10.13140/RG.2.2.36357.14566",
+            "url": null,
+            "author": [{
+                "family": "McGee",
+                "given": "Conor Francis"
+            }],
+            "title": "Investigating the effect of nanoparticles on soil microbial communities and soil functioning",
+            "container-title": "Unpublished",
+            "description": "",
+            "resource-type-subtype": "Presentation",
+            "data-center-id": "rg.rg",
+            "member-id": "rg",
+            "registration-agency-id": "datacite",
+            "resource-type-id": "text",
+            "work-type-id": "report",
+            "version": null,
+            "license": null,
+            "schema-version": "4",
+            "results": [],
+            "related-identifiers": [],
+            "published": "2014",
+            "deposited": "2017-02-26T01:17:58Z",
+            "updated": "2017-02-26T01:17:58Z",
+            "media": null,
+            "xml": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxyZXNvdXJjZSB4c2k6c2NoZW1hTG9jYXRpb249Imh0dHA6Ly9kYXRhY2l0ZS5vcmcvc2NoZW1hL2tlcm5lbC00IGh0dHA6Ly9zY2hlbWEuZGF0YWNpdGUub3JnL21ldGEva2VybmVsLTQvbWV0YWRhdGEueHNkIiB4bWxucz0iaHR0cDovL2RhdGFjaXRlLm9yZy9zY2hlbWEva2VybmVsLTQiIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiPjxpZGVudGlmaWVyIGlkZW50aWZpZXJUeXBlPSJET0kiPjEwLjEzMTQwL1JHLjIuMi4zNjM1Ny4xNDU2NjwvaWRlbnRpZmllcj48Y3JlYXRvcnM+PGNyZWF0b3I+PGNyZWF0b3JOYW1lPkNvbm9yIEZyYW5jaXMgTWNHZWU8L2NyZWF0b3JOYW1lPjwvY3JlYXRvcj48L2NyZWF0b3JzPjx0aXRsZXM+PHRpdGxlPkludmVzdGlnYXRpbmcgdGhlIGVmZmVjdCBvZiBuYW5vcGFydGljbGVzIG9uIHNvaWwgbWljcm9iaWFsIGNvbW11bml0aWVzIGFuZCBzb2lsIGZ1bmN0aW9uaW5nPC90aXRsZT48L3RpdGxlcz48cHVibGlzaGVyPlVucHVibGlzaGVkPC9wdWJsaXNoZXI+PHB1YmxpY2F0aW9uWWVhcj4yMDE0PC9wdWJsaWNhdGlvblllYXI+PHJlc291cmNlVHlwZSByZXNvdXJjZVR5cGVHZW5lcmFsPSJUZXh0Ij5QcmVzZW50YXRpb248L3Jlc291cmNlVHlwZT48L3Jlc291cmNlPg=="
+        },
+        "relationships": {
+            "data-center": {
+                "meta": {}
+            },
+            "member": {
+                "meta": {}
+            },
+            "registration-agency": {
+                "meta": {}
+            },
+            "resource-type": {
+                "meta": {}
+            },
+            "work-type": {
+                "meta": {}
+            }
+        }
+    }, {
+        "id": "https://doi.org/10.13140/RG.2.2.22935.37285",
+        "type": "works",
+        "attributes": {
+            "doi": "10.13140/RG.2.2.22935.37285",
+            "url": null,
+            "author": [{
+                "family": "Ramos-Escamilla",
+                "given": "María"
+            }],
+            "title": "CFM. Consulting and financial management.RNA:Trámite.ISBN: 978-607-00-3278-3, México. Universidad San Francisco Xavier .Bolivia",
+            "container-title": "Unpublished",
+            "description": "",
+            "resource-type-subtype": "Research Proposal",
+            "data-center-id": "rg.rg",
+            "member-id": "rg",
+            "registration-agency-id": "datacite",
+            "resource-type-id": "text",
+            "work-type-id": "report",
+            "version": null,
+            "license": null,
+            "schema-version": "4",
+            "results": [],
+            "related-identifiers": [],
+            "published": "2014",
+            "deposited": "2017-02-26T01:12:53Z",
+            "updated": "2017-02-26T01:12:53Z",
+            "media": null,
+            "xml": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxyZXNvdXJjZSB4c2k6c2NoZW1hTG9jYXRpb249Imh0dHA6Ly9kYXRhY2l0ZS5vcmcvc2NoZW1hL2tlcm5lbC00IGh0dHA6Ly9zY2hlbWEuZGF0YWNpdGUub3JnL21ldGEva2VybmVsLTQvbWV0YWRhdGEueHNkIiB4bWxucz0iaHR0cDovL2RhdGFjaXRlLm9yZy9zY2hlbWEva2VybmVsLTQiIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiPjxpZGVudGlmaWVyIGlkZW50aWZpZXJUeXBlPSJET0kiPjEwLjEzMTQwL1JHLjIuMi4yMjkzNS4zNzI4NTwvaWRlbnRpZmllcj48Y3JlYXRvcnM+PGNyZWF0b3I+PGNyZWF0b3JOYW1lPk1hcsOtYSBSYW1vcy1Fc2NhbWlsbGE8L2NyZWF0b3JOYW1lPjwvY3JlYXRvcj48L2NyZWF0b3JzPjx0aXRsZXM+PHRpdGxlPkNGTS4gQ29uc3VsdGluZyBhbmQgZmluYW5jaWFsIG1hbmFnZW1lbnQuUk5BOlRyw6FtaXRlLklTQk46IDk3OC02MDctMDAtMzI3OC0zLCBNw6l4aWNvLiBVbml2ZXJzaWRhZCBTYW4gRnJhbmNpc2NvIFhhdmllciAuQm9saXZpYTwvdGl0bGU+PC90aXRsZXM+PHB1Ymxpc2hlcj5VbnB1Ymxpc2hlZDwvcHVibGlzaGVyPjxwdWJsaWNhdGlvblllYXI+MjAxNDwvcHVibGljYXRpb25ZZWFyPjxyZXNvdXJjZVR5cGUgcmVzb3VyY2VUeXBlR2VuZXJhbD0iVGV4dCI+UmVzZWFyY2ggUHJvcG9zYWw8L3Jlc291cmNlVHlwZT48L3Jlc291cmNlPg=="
+        },
+        "relationships": {
+            "data-center": {
+                "meta": {}
+            },
+            "member": {
+                "meta": {}
+            },
+            "registration-agency": {
+                "meta": {}
+            },
+            "resource-type": {
+                "meta": {}
+            },
+            "work-type": {
+                "meta": {}
+            }
+        }
+    }, {
+        "id": "https://doi.org/10.13140/RG.2.2.29646.25921",
+        "type": "works",
+        "attributes": {
+            "doi": "10.13140/RG.2.2.29646.25921",
+            "url": null,
+            "author": [{
+                "family": "Ramos-Escamilla",
+                "given": "María"
+            }],
+            "title": "M.R.Escamilla, E.R.Solano. F2.Fractal and Finance. ISBN: 978-607-00-3589-4, Mexico. Universidad San Francisco Xavier.Bolivia",
+            "container-title": "Unpublished",
+            "description": "",
+            "resource-type-subtype": "Research Proposal",
+            "data-center-id": "rg.rg",
+            "member-id": "rg",
+            "registration-agency-id": "datacite",
+            "resource-type-id": "text",
+            "work-type-id": "report",
+            "version": null,
+            "license": null,
+            "schema-version": "4",
+            "results": [],
+            "related-identifiers": [],
+            "published": "2014",
+            "deposited": "2017-02-26T01:11:27Z",
+            "updated": "2017-02-26T01:11:27Z",
+            "media": null,
+            "xml": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxyZXNvdXJjZSB4c2k6c2NoZW1hTG9jYXRpb249Imh0dHA6Ly9kYXRhY2l0ZS5vcmcvc2NoZW1hL2tlcm5lbC00IGh0dHA6Ly9zY2hlbWEuZGF0YWNpdGUub3JnL21ldGEva2VybmVsLTQvbWV0YWRhdGEueHNkIiB4bWxucz0iaHR0cDovL2RhdGFjaXRlLm9yZy9zY2hlbWEva2VybmVsLTQiIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiPjxpZGVudGlmaWVyIGlkZW50aWZpZXJUeXBlPSJET0kiPjEwLjEzMTQwL1JHLjIuMi4yOTY0Ni4yNTkyMTwvaWRlbnRpZmllcj48Y3JlYXRvcnM+PGNyZWF0b3I+PGNyZWF0b3JOYW1lPk1hcsOtYSBSYW1vcy1Fc2NhbWlsbGE8L2NyZWF0b3JOYW1lPjwvY3JlYXRvcj48L2NyZWF0b3JzPjx0aXRsZXM+PHRpdGxlPk0uUi5Fc2NhbWlsbGEsIEUuUi5Tb2xhbm8uIEYyLkZyYWN0YWwgYW5kIEZpbmFuY2UuIElTQk46IDk3OC02MDctMDAtMzU4OS00LCBNZXhpY28uIFVuaXZlcnNpZGFkIFNhbiBGcmFuY2lzY28gWGF2aWVyLkJvbGl2aWE8L3RpdGxlPjwvdGl0bGVzPjxwdWJsaXNoZXI+VW5wdWJsaXNoZWQ8L3B1Ymxpc2hlcj48cHVibGljYXRpb25ZZWFyPjIwMTQ8L3B1YmxpY2F0aW9uWWVhcj48cmVzb3VyY2VUeXBlIHJlc291cmNlVHlwZUdlbmVyYWw9IlRleHQiPlJlc2VhcmNoIFByb3Bvc2FsPC9yZXNvdXJjZVR5cGU+PC9yZXNvdXJjZT4="
+        },
+        "relationships": {
+            "data-center": {
+                "meta": {}
+            },
+            "member": {
+                "meta": {}
+            },
+            "registration-agency": {
+                "meta": {}
+            },
+            "resource-type": {
+                "meta": {}
+            },
+            "work-type": {
+                "meta": {}
+            }
+        }
+    }, {
+        "id": "https://doi.org/10.13140/RG.2.2.16224.48649",
+        "type": "works",
+        "attributes": {
+            "doi": "10.13140/RG.2.2.16224.48649",
+            "url": null,
+            "author": [{
+                "family": "Richards",
+                "given": "Howard Curtis"
+            }],
+            "title": "On the Intransitive Objects of the Social Sciences",
+            "container-title": "Unpublished",
+            "description": "",
+            "resource-type-subtype": "Working Paper",
+            "data-center-id": "rg.rg",
+            "member-id": "rg",
+            "registration-agency-id": "datacite",
+            "resource-type-id": "text",
+            "work-type-id": "report",
+            "version": null,
+            "license": null,
+            "schema-version": "4",
+            "results": [],
+            "related-identifiers": [],
+            "published": "2017",
+            "deposited": "2017-02-26T01:06:57Z",
+            "updated": "2017-02-26T01:06:57Z",
+            "media": null,
+            "xml": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxyZXNvdXJjZSB4c2k6c2NoZW1hTG9jYXRpb249Imh0dHA6Ly9kYXRhY2l0ZS5vcmcvc2NoZW1hL2tlcm5lbC00IGh0dHA6Ly9zY2hlbWEuZGF0YWNpdGUub3JnL21ldGEva2VybmVsLTQvbWV0YWRhdGEueHNkIiB4bWxucz0iaHR0cDovL2RhdGFjaXRlLm9yZy9zY2hlbWEva2VybmVsLTQiIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiPjxpZGVudGlmaWVyIGlkZW50aWZpZXJUeXBlPSJET0kiPjEwLjEzMTQwL1JHLjIuMi4xNjIyNC40ODY0OTwvaWRlbnRpZmllcj48Y3JlYXRvcnM+PGNyZWF0b3I+PGNyZWF0b3JOYW1lPkhvd2FyZCBDdXJ0aXMgUmljaGFyZHM8L2NyZWF0b3JOYW1lPjwvY3JlYXRvcj48L2NyZWF0b3JzPjx0aXRsZXM+PHRpdGxlPk9uIHRoZSBJbnRyYW5zaXRpdmUgT2JqZWN0cyBvZiB0aGUgU29jaWFsIFNjaWVuY2VzPC90aXRsZT48L3RpdGxlcz48cHVibGlzaGVyPlVucHVibGlzaGVkPC9wdWJsaXNoZXI+PHB1YmxpY2F0aW9uWWVhcj4yMDE3PC9wdWJsaWNhdGlvblllYXI+PHJlc291cmNlVHlwZSByZXNvdXJjZVR5cGVHZW5lcmFsPSJUZXh0Ij5Xb3JraW5nIFBhcGVyPC9yZXNvdXJjZVR5cGU+PC9yZXNvdXJjZT4="
+        },
+        "relationships": {
+            "data-center": {
+                "meta": {}
+            },
+            "member": {
+                "meta": {}
+            },
+            "registration-agency": {
+                "meta": {}
+            },
+            "resource-type": {
+                "meta": {}
+            },
+            "work-type": {
+                "meta": {}
+            }
+        }
+    }, {
+        "id": "https://doi.org/10.15468/DL.K6PSUE",
+        "type": "works",
+        "attributes": {
+            "doi": "10.15468/DL.K6PSUE",
+            "url": null,
+            "author": [{
+                "literal": "Occdownload Gbif.Org"
+            }],
+            "title": "GBIF Occurrence Download",
+            "container-title": "The Global Biodiversity Information Facility",
+            "description": "A dataset containing 8 species occurrences available in GBIF matching the query: DatasetKey: (Table 1) Proportion of Toxoplasma gondii seropositive arctic foxes (Alopex lagopus) by age group and geographic area. The dataset includes 8 records from 1 constituent datasets: \n 8 records from (Table 1) Proportion of Toxoplasma gondii seropositive arctic foxes (Alopex lagopus) by age group and geographic area. Data from some individual datasets included in this download may be licensed under less restrictive terms.",
+            "resource-type-subtype": null,
+            "data-center-id": "dk.gbif",
+            "member-id": "dk",
+            "registration-agency-id": "datacite",
+            "resource-type-id": "dataset",
+            "work-type-id": "dataset",
+            "version": null,
+            "license": "https://creativecommons.org/licenses/by/4.0/",
+            "schema-version": "3",
+            "results": [],
+            "related-identifiers": [],
+            "published": "2017",
+            "deposited": "2017-02-26T01:06:06Z",
+            "updated": "2017-02-26T01:06:06Z",
+            "media": null,
+            "xml": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/Pgo8cmVzb3VyY2UgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtMyBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC0zL21ldGFkYXRhLnhzZCIgeG1sbnM9Imh0dHA6Ly9kYXRhY2l0ZS5vcmcvc2NoZW1hL2tlcm5lbC0zIiB4bWxuczp4c2k9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hLWluc3RhbmNlIj4KICAgIDxpZGVudGlmaWVyIGlkZW50aWZpZXJUeXBlPSJET0kiPjEwLjE1NDY4L2RsLms2cHN1ZTwvaWRlbnRpZmllcj4KICAgIDxjcmVhdG9ycz4KICAgICAgICA8Y3JlYXRvcj4KICAgICAgICAgICAgPGNyZWF0b3JOYW1lPm9jY2Rvd25sb2FkIGdiaWYub3JnPC9jcmVhdG9yTmFtZT4KICAgICAgICA8L2NyZWF0b3I+CiAgICA8L2NyZWF0b3JzPgogICAgPHRpdGxlcz4KICAgICAgICA8dGl0bGU+R0JJRiBPY2N1cnJlbmNlIERvd25sb2FkPC90aXRsZT4KICAgIDwvdGl0bGVzPgogICAgPHB1Ymxpc2hlcj5UaGUgR2xvYmFsIEJpb2RpdmVyc2l0eSBJbmZvcm1hdGlvbiBGYWNpbGl0eTwvcHVibGlzaGVyPgogICAgPHB1YmxpY2F0aW9uWWVhcj4yMDE3PC9wdWJsaWNhdGlvblllYXI+CiAgICA8c3ViamVjdHM+CiAgICAgICAgPHN1YmplY3QgeG1sOmxhbmc9ImVuZyI+R0JJRjwvc3ViamVjdD4KICAgICAgICA8c3ViamVjdCB4bWw6bGFuZz0iZW5nIj5iaW9kaXZlcnNpdHk8L3N1YmplY3Q+CiAgICAgICAgPHN1YmplY3QgeG1sOmxhbmc9ImVuZyI+c3BlY2llcyBvY2N1cnJlbmNlczwvc3ViamVjdD4KICAgIDwvc3ViamVjdHM+CiAgICA8ZGF0ZXM+CiAgICAgICAgPGRhdGUgZGF0ZVR5cGU9IkNyZWF0ZWQiPjIwMTctMDItMjY8L2RhdGU+CiAgICAgICAgPGRhdGUgZGF0ZVR5cGU9IlVwZGF0ZWQiPjIwMTctMDItMjY8L2RhdGU+CiAgICA8L2RhdGVzPgogICAgPHJlc291cmNlVHlwZSByZXNvdXJjZVR5cGVHZW5lcmFsPSJEYXRhc2V0Ii8+CiAgICA8YWx0ZXJuYXRlSWRlbnRpZmllcnM+CiAgICAgICAgPGFsdGVybmF0ZUlkZW50aWZpZXIgYWx0ZXJuYXRlSWRlbnRpZmllclR5cGU9IkdCSUYiPjAwNjQ0MDMtMTYwOTEwMTUwODUyMDkxPC9hbHRlcm5hdGVJZGVudGlmaWVyPgogICAgPC9hbHRlcm5hdGVJZGVudGlmaWVycz4KICAgIDxyZWxhdGVkSWRlbnRpZmllcnM+CiAgICAgICAgPHJlbGF0ZWRJZGVudGlmaWVyIHJlbGF0ZWRJZGVudGlmaWVyVHlwZT0iRE9JIiByZWxhdGlvblR5cGU9IlJlZmVyZW5jZXMiPjEwLjE1OTQvcGFuZ2FlYS44MTgzMjI8L3JlbGF0ZWRJZGVudGlmaWVyPgogICAgPC9yZWxhdGVkSWRlbnRpZmllcnM+CiAgICA8c2l6ZXM+CiAgICAgICAgPHNpemU+MTA5NDc8L3NpemU+CiAgICA8L3NpemVzPgogICAgPGZvcm1hdHM+CiAgICAgICAgPGZvcm1hdD5EYXJ3aW4gQ29yZSBBcmNoaXZlPC9mb3JtYXQ+CiAgICA8L2Zvcm1hdHM+CiAgICA8cmlnaHRzTGlzdD4KICAgICAgICA8cmlnaHRzIHJpZ2h0c1VSST0iaHR0cDovL2NyZWF0aXZlY29tbW9ucy5vcmcvbGljZW5zZXMvYnkvNC4wL2xlZ2FsY29kZSI+Q3JlYXRpdmUgQ29tbW9ucyBBdHRyaWJ1dGlvbiAoQ0MtQlkpIDQuMDwvcmlnaHRzPgogICAgPC9yaWdodHNMaXN0PgogICAgPGRlc2NyaXB0aW9ucz4KICAgICAgICA8ZGVzY3JpcHRpb24gZGVzY3JpcHRpb25UeXBlPSJBYnN0cmFjdCIgeG1sOmxhbmc9ImVuZyI+QSBkYXRhc2V0IGNvbnRhaW5pbmcgOCBzcGVjaWVzIG9jY3VycmVuY2VzIGF2YWlsYWJsZSBpbiBHQklGIG1hdGNoaW5nIHRoZSBxdWVyeTogRGF0YXNldEtleTogKFRhYmxlIDEpIFByb3BvcnRpb24gb2YgVG94b3BsYXNtYSBnb25kaWkgc2Vyb3Bvc2l0aXZlIGFyY3RpYyBmb3hlcyAoQWxvcGV4IGxhZ29wdXMpIGJ5IGFnZSBncm91cCBhbmQgZ2VvZ3JhcGhpYyBhcmVhLiBUaGUgZGF0YXNldCBpbmNsdWRlcyA4IHJlY29yZHMgZnJvbSAxIGNvbnN0aXR1ZW50IGRhdGFzZXRzOiAKIDggcmVjb3JkcyBmcm9tIChUYWJsZSAxKSBQcm9wb3J0aW9uIG9mIFRveG9wbGFzbWEgZ29uZGlpIHNlcm9wb3NpdGl2ZSBhcmN0aWMgZm94ZXMgKEFsb3BleCBsYWdvcHVzKSBieSBhZ2UgZ3JvdXAgYW5kIGdlb2dyYXBoaWMgYXJlYS4gRGF0YSBmcm9tIHNvbWUgaW5kaXZpZHVhbCBkYXRhc2V0cyBpbmNsdWRlZCBpbiB0aGlzIGRvd25sb2FkIG1heSBiZSBsaWNlbnNlZCB1bmRlciBsZXNzIHJlc3RyaWN0aXZlIHRlcm1zLjwvZGVzY3JpcHRpb24+CiAgICA8L2Rlc2NyaXB0aW9ucz4KPC9yZXNvdXJjZT4K"
+        },
+        "relationships": {
+            "data-center": {
+                "meta": {}
+            },
+            "member": {
+                "meta": {}
+            },
+            "registration-agency": {
+                "meta": {}
+            },
+            "resource-type": {
+                "meta": {}
+            },
+            "work-type": {
+                "meta": {}
+            }
+        }
+    }, {
+        "id": "https://doi.org/10.5281/ZENODO.322601",
+        "type": "works",
+        "attributes": {
+            "doi": "10.5281/ZENODO.322601",
+            "url": null,
+            "author": [{
+                "family": "Marrett",
+                "given": "Randall"
+            }],
+            "title": "Marrett/Correlationcount: Corrcount",
+            "container-title": "Zenodo",
+            "description": "software for Fourier and correlation analysis",
+            "resource-type-subtype": null,
+            "data-center-id": "cern.zenodo",
+            "member-id": "cern",
+            "registration-agency-id": "datacite",
+            "resource-type-id": "software",
+            "work-type-id": "computer-program",
+            "version": null,
+            "license": null,
+            "schema-version": "3",
+            "results": [],
+            "related-identifiers": [],
+            "published": "2017",
+            "deposited": "2017-02-26T00:59:09Z",
+            "updated": "2017-02-26T00:59:09Z",
+            "media": null,
+            "xml": "PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0ndXRmLTgnPz4KPHJlc291cmNlIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhtbG5zPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtMyIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtMyBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC0zL21ldGFkYXRhLnhzZCI+CiAgPGlkZW50aWZpZXIgaWRlbnRpZmllclR5cGU9IkRPSSI+MTAuNTI4MS96ZW5vZG8uMzIyNjAxPC9pZGVudGlmaWVyPgogIDxjcmVhdG9ycz4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWU+UmFuZGFsbCBNYXJyZXR0PC9jcmVhdG9yTmFtZT4KICAgICAgPGFmZmlsaWF0aW9uPlVuaXZlcnNpdHkgb2YgVGV4YXMgYXQgQXVzdGluPC9hZmZpbGlhdGlvbj4KICAgIDwvY3JlYXRvcj4KICA8L2NyZWF0b3JzPgogIDx0aXRsZXM+CiAgICA8dGl0bGU+TWFycmV0dC9Db3JyZWxhdGlvbmNvdW50OiBDb3JyY291bnQ8L3RpdGxlPgogIDwvdGl0bGVzPgogIDxwdWJsaXNoZXI+WmVub2RvPC9wdWJsaXNoZXI+CiAgPHB1YmxpY2F0aW9uWWVhcj4yMDE3PC9wdWJsaWNhdGlvblllYXI+CiAgPGRhdGVzPgogICAgPGRhdGUgZGF0ZVR5cGU9Iklzc3VlZCI+MjAxNy0wMi0yNjwvZGF0ZT4KICA8L2RhdGVzPgogIDxyZXNvdXJjZVR5cGUgcmVzb3VyY2VUeXBlR2VuZXJhbD0iU29mdHdhcmUiLz4KICA8cmVsYXRlZElkZW50aWZpZXJzPgogICAgPHJlbGF0ZWRJZGVudGlmaWVyIHJlbGF0ZWRJZGVudGlmaWVyVHlwZT0iVVJMIiByZWxhdGlvblR5cGU9IklzU3VwcGxlbWVudFRvIj5odHRwczovL2dpdGh1Yi5jb20vbWFycmV0dC9Db3JyZWxhdGlvbkNvdW50L3RyZWUvMS4yPC9yZWxhdGVkSWRlbnRpZmllcj4KICA8L3JlbGF0ZWRJZGVudGlmaWVycz4KICA8cmlnaHRzTGlzdD4KICAgIDxyaWdodHMgcmlnaHRzVVJJPSJpbmZvOmV1LXJlcG8vc2VtYW50aWNzL29wZW5BY2Nlc3MiPk9wZW4gQWNjZXNzPC9yaWdodHM+CiAgPC9yaWdodHNMaXN0PgogIDxkZXNjcmlwdGlvbnM+CiAgICA8ZGVzY3JpcHRpb24gZGVzY3JpcHRpb25UeXBlPSJBYnN0cmFjdCI+Jmx0O3AmZ3Q7c29mdHdhcmUgZm9yIEZvdXJpZXIgYW5kIGNvcnJlbGF0aW9uIGFuYWx5c2lzJmx0Oy9wJmd0OzwvZGVzY3JpcHRpb24+CiAgPC9kZXNjcmlwdGlvbnM+CjwvcmVzb3VyY2U+Cg=="
+        },
+        "relationships": {
+            "data-center": {
+                "meta": {}
+            },
+            "member": {
+                "meta": {}
+            },
+            "registration-agency": {
+                "meta": {}
+            },
+            "resource-type": {
+                "meta": {}
+            },
+            "work-type": {
+                "meta": {}
+            }
+        }
+    }, {
+        "id": "https://doi.org/10.5281/ZENODO.322600",
+        "type": "works",
+        "attributes": {
+            "doi": "10.5281/ZENODO.322600",
+            "url": null,
+            "author": [{
+                "family": "Mourão",
+                "given": "Sandie"
+            }],
+            "title": "Response To The The Lost Thing: Notes From A Secondary Classroom",
+            "container-title": "Zenodo",
+            "description": "Article 5 – Response to the The Lost Thing\n\n \n\n ",
+            "resource-type-subtype": "Journal article",
+            "data-center-id": "cern.zenodo",
+            "member-id": "cern",
+            "registration-agency-id": "datacite",
+            "resource-type-id": "text",
+            "work-type-id": "report",
+            "version": null,
+            "license": null,
+            "schema-version": "3",
+            "results": [],
+            "related-identifiers": [],
+            "published": "2013",
+            "deposited": "2017-02-26T00:58:47Z",
+            "updated": "2017-02-26T00:58:47Z",
+            "media": null,
+            "xml": "PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0ndXRmLTgnPz4KPHJlc291cmNlIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhtbG5zPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtMyIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtMyBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC0zL21ldGFkYXRhLnhzZCI+CiAgPGlkZW50aWZpZXIgaWRlbnRpZmllclR5cGU9IkRPSSI+MTAuNTI4MS96ZW5vZG8uMzIyNjAwPC9pZGVudGlmaWVyPgogIDxjcmVhdG9ycz4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWU+TW91csOjbywgU2FuZGllPC9jcmVhdG9yTmFtZT4KICAgICAgPGFmZmlsaWF0aW9uPmluZGVwZW5kZW50IHNjaG9sYXI8L2FmZmlsaWF0aW9uPgogICAgPC9jcmVhdG9yPgogIDwvY3JlYXRvcnM+CiAgPHRpdGxlcz4KICAgIDx0aXRsZT5SZXNwb25zZSBUbyBUaGUgVGhlIExvc3QgVGhpbmc6IE5vdGVzIEZyb20gQSBTZWNvbmRhcnkgQ2xhc3Nyb29tPC90aXRsZT4KICA8L3RpdGxlcz4KICA8cHVibGlzaGVyPlplbm9kbzwvcHVibGlzaGVyPgogIDxwdWJsaWNhdGlvblllYXI+MjAxMzwvcHVibGljYXRpb25ZZWFyPgogIDxzdWJqZWN0cz4KICAgIDxzdWJqZWN0PnBpY3R1cmVib29rczwvc3ViamVjdD4KICAgIDxzdWJqZWN0PmZpbG08L3N1YmplY3Q+CiAgICA8c3ViamVjdD5UaGUgTG9zdCBUaGluZzwvc3ViamVjdD4KICAgIDxzdWJqZWN0PlNoYXVuIFRhbjwvc3ViamVjdD4KICAgIDxzdWJqZWN0Pm9sZGVyIGxlYXJuZXJzPC9zdWJqZWN0PgogICAgPHN1YmplY3Q+cmVzcG9uc2U8L3N1YmplY3Q+CiAgICA8c3ViamVjdD5pbnRlcnByZXRhdGlvbnM8L3N1YmplY3Q+CiAgICA8c3ViamVjdD5pbnRlcnRoaW5raW5nPC9zdWJqZWN0PgogIDwvc3ViamVjdHM+CiAgPGRhdGVzPgogICAgPGRhdGUgZGF0ZVR5cGU9Iklzc3VlZCI+MjAxMy0wNS0xNTwvZGF0ZT4KICA8L2RhdGVzPgogIDxyZXNvdXJjZVR5cGUgcmVzb3VyY2VUeXBlR2VuZXJhbD0iVGV4dCI+Sm91cm5hbCBhcnRpY2xlPC9yZXNvdXJjZVR5cGU+CiAgPHJpZ2h0c0xpc3Q+CiAgICA8cmlnaHRzIHJpZ2h0c1VSST0iaW5mbzpldS1yZXBvL3NlbWFudGljcy9vcGVuQWNjZXNzIj5PcGVuIEFjY2VzczwvcmlnaHRzPgogIDwvcmlnaHRzTGlzdD4KICA8ZGVzY3JpcHRpb25zPgogICAgPGRlc2NyaXB0aW9uIGRlc2NyaXB0aW9uVHlwZT0iQWJzdHJhY3QiPiZsdDtwJmd0O0FydGljbGUgNSDigJMgUmVzcG9uc2UgdG8gdGhlIFRoZSBMb3N0IFRoaW5nJmx0Oy9wJmd0OwoKJmx0O3AmZ3Q7wqAmbHQ7L3AmZ3Q7CgombHQ7cCZndDvCoCZsdDsvcCZndDs8L2Rlc2NyaXB0aW9uPgogIDwvZGVzY3JpcHRpb25zPgo8L3Jlc291cmNlPgo="
+        },
+        "relationships": {
+            "data-center": {
+                "meta": {}
+            },
+            "member": {
+                "meta": {}
+            },
+            "registration-agency": {
+                "meta": {}
+            },
+            "resource-type": {
+                "meta": {}
+            },
+            "work-type": {
+                "meta": {}
+            }
+        }
+    }, {
+        "id": "https://doi.org/10.13140/RG.2.2.19579.92969",
+        "type": "works",
+        "attributes": {
+            "doi": "10.13140/RG.2.2.19579.92969",
+            "url": null,
+            "author": [{
+                "family": "McGee",
+                "given": "Conor Francis"
+            }],
+            "title": "Investigating the Disease Suppressive Properties of Composted Organic Materials",
+            "container-title": "Unpublished",
+            "description": "",
+            "resource-type-subtype": "Poster",
+            "data-center-id": "rg.rg",
+            "member-id": "rg",
+            "registration-agency-id": "datacite",
+            "resource-type-id": "text",
+            "work-type-id": "report",
+            "version": null,
+            "license": null,
+            "schema-version": "4",
+            "results": [],
+            "related-identifiers": [],
+            "published": "2009",
+            "deposited": "2017-02-26T00:58:10Z",
+            "updated": "2017-02-26T00:58:10Z",
+            "media": null,
+            "xml": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxyZXNvdXJjZSB4c2k6c2NoZW1hTG9jYXRpb249Imh0dHA6Ly9kYXRhY2l0ZS5vcmcvc2NoZW1hL2tlcm5lbC00IGh0dHA6Ly9zY2hlbWEuZGF0YWNpdGUub3JnL21ldGEva2VybmVsLTQvbWV0YWRhdGEueHNkIiB4bWxucz0iaHR0cDovL2RhdGFjaXRlLm9yZy9zY2hlbWEva2VybmVsLTQiIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiPjxpZGVudGlmaWVyIGlkZW50aWZpZXJUeXBlPSJET0kiPjEwLjEzMTQwL1JHLjIuMi4xOTU3OS45Mjk2OTwvaWRlbnRpZmllcj48Y3JlYXRvcnM+PGNyZWF0b3I+PGNyZWF0b3JOYW1lPkNvbm9yIEZyYW5jaXMgTWNHZWU8L2NyZWF0b3JOYW1lPjwvY3JlYXRvcj48L2NyZWF0b3JzPjx0aXRsZXM+PHRpdGxlPkludmVzdGlnYXRpbmcgdGhlIERpc2Vhc2UgU3VwcHJlc3NpdmUgUHJvcGVydGllcyBvZiBDb21wb3N0ZWQgT3JnYW5pYyBNYXRlcmlhbHM8L3RpdGxlPjwvdGl0bGVzPjxwdWJsaXNoZXI+VW5wdWJsaXNoZWQ8L3B1Ymxpc2hlcj48cHVibGljYXRpb25ZZWFyPjIwMDk8L3B1YmxpY2F0aW9uWWVhcj48cmVzb3VyY2VUeXBlIHJlc291cmNlVHlwZUdlbmVyYWw9IlRleHQiPlBvc3RlcjwvcmVzb3VyY2VUeXBlPjwvcmVzb3VyY2U+"
+        },
+        "relationships": {
+            "data-center": {
+                "meta": {}
+            },
+            "member": {
+                "meta": {}
+            },
+            "registration-agency": {
+                "meta": {}
+            },
+            "resource-type": {
+                "meta": {}
+            },
+            "work-type": {
+                "meta": {}
+            }
+        }
+    }, {
+        "id": "https://doi.org/10.13140/RG.2.2.26290.81602",
+        "type": "works",
+        "attributes": {
+            "doi": "10.13140/RG.2.2.26290.81602",
+            "url": null,
+            "author": [{
+                "family": "Cornell",
+                "given": "Dewey"
+            }, {
+                "family": "Huang",
+                "given": "Francis"
+            }, {
+                "family": "Konold",
+                "given": "Timothy"
+            }, {
+                "family": "Malone",
+                "given": "Marisa"
+            }, {
+                "family": "Datta",
+                "given": "Pooja"
+            }, {
+                "family": "Stohlman",
+                "given": "Shelby"
+            }, {
+                "family": "Burnette",
+                "given": "Anna Grace"
+            }, {
+                "family": "Meyer",
+                "given": "Patrick"
+            }],
+            "title": "Development of a Standard Model for School Climate and Safety Assessment: Final Report",
+            "container-title": "University of Virginia",
+            "description": "",
+            "resource-type-subtype": "Technical Report",
+            "data-center-id": "rg.rg",
+            "member-id": "rg",
+            "registration-agency-id": "datacite",
+            "resource-type-id": "text",
+            "work-type-id": "report",
+            "version": null,
+            "license": null,
+            "schema-version": "4",
+            "results": [],
+            "related-identifiers": [],
+            "published": "2017",
+            "deposited": "2017-02-26T00:56:40Z",
+            "updated": "2017-02-26T00:56:40Z",
+            "media": null,
+            "xml": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxyZXNvdXJjZSB4c2k6c2NoZW1hTG9jYXRpb249Imh0dHA6Ly9kYXRhY2l0ZS5vcmcvc2NoZW1hL2tlcm5lbC00IGh0dHA6Ly9zY2hlbWEuZGF0YWNpdGUub3JnL21ldGEva2VybmVsLTQvbWV0YWRhdGEueHNkIiB4bWxucz0iaHR0cDovL2RhdGFjaXRlLm9yZy9zY2hlbWEva2VybmVsLTQiIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiPjxpZGVudGlmaWVyIGlkZW50aWZpZXJUeXBlPSJET0kiPjEwLjEzMTQwL1JHLjIuMi4yNjI5MC44MTYwMjwvaWRlbnRpZmllcj48Y3JlYXRvcnM+PGNyZWF0b3I+PGNyZWF0b3JOYW1lPkRld2V5IENvcm5lbGw8L2NyZWF0b3JOYW1lPjwvY3JlYXRvcj48Y3JlYXRvcj48Y3JlYXRvck5hbWU+RnJhbmNpcyBIdWFuZzwvY3JlYXRvck5hbWU+PC9jcmVhdG9yPjxjcmVhdG9yPjxjcmVhdG9yTmFtZT5UaW1vdGh5IEtvbm9sZDwvY3JlYXRvck5hbWU+PC9jcmVhdG9yPjxjcmVhdG9yPjxjcmVhdG9yTmFtZT5NYXJpc2EgTWFsb25lPC9jcmVhdG9yTmFtZT48L2NyZWF0b3I+PGNyZWF0b3I+PGNyZWF0b3JOYW1lPlBvb2phIERhdHRhPC9jcmVhdG9yTmFtZT48L2NyZWF0b3I+PGNyZWF0b3I+PGNyZWF0b3JOYW1lPlNoZWxieSBTdG9obG1hbjwvY3JlYXRvck5hbWU+PC9jcmVhdG9yPjxjcmVhdG9yPjxjcmVhdG9yTmFtZT5Bbm5hIEdyYWNlIEJ1cm5ldHRlPC9jcmVhdG9yTmFtZT48L2NyZWF0b3I+PGNyZWF0b3I+PGNyZWF0b3JOYW1lPlBhdHJpY2sgTWV5ZXI8L2NyZWF0b3JOYW1lPjwvY3JlYXRvcj48L2NyZWF0b3JzPjx0aXRsZXM+PHRpdGxlPkRldmVsb3BtZW50IG9mIGEgU3RhbmRhcmQgTW9kZWwgZm9yIFNjaG9vbCBDbGltYXRlIGFuZCBTYWZldHkgQXNzZXNzbWVudDogRmluYWwgUmVwb3J0PC90aXRsZT48L3RpdGxlcz48cHVibGlzaGVyPlVuaXZlcnNpdHkgb2YgVmlyZ2luaWE8L3B1Ymxpc2hlcj48cHVibGljYXRpb25ZZWFyPjIwMTc8L3B1YmxpY2F0aW9uWWVhcj48cmVzb3VyY2VUeXBlIHJlc291cmNlVHlwZUdlbmVyYWw9IlRleHQiPlRlY2huaWNhbCBSZXBvcnQ8L3Jlc291cmNlVHlwZT48bGFuZ3VhZ2U+ZW48L2xhbmd1YWdlPjwvcmVzb3VyY2U+"
+        },
+        "relationships": {
+            "data-center": {
+                "meta": {}
+            },
+            "member": {
+                "meta": {}
+            },
+            "registration-agency": {
+                "meta": {}
+            },
+            "resource-type": {
+                "meta": {}
+            },
+            "work-type": {
+                "meta": {}
+            }
+        }
+    }, {
+        "id": "https://doi.org/10.6084/M9.FIGSHARE.4696273.V1",
+        "type": "works",
+        "attributes": {
+            "doi": "10.6084/M9.FIGSHARE.4696273.V1",
+            "url": null,
+            "author": [{
+                "family": "Reasor",
+                "given": "Eric"
+            }],
+            "title": "Trinexapac-ethyl Rate Response R Script",
+            "container-title": "Figshare",
+            "description": "The R script is from an experiments regarding the response of bermudagrass off-types and cultivars to increasing rates of trinexapac-ethyl.  The response variable is clipping weight expressed as mg per square cm.  The experiment was a completely randomized design with grass sample and trinexapac-ethyl rate in a factorial treatment arrangement.  Time after treatment was included in the analysis as a repeated measure.  There are also three replications per treatment and two experimental replicates that were combined to create an additive blocking factor in the analysis.  A linear mixed model was fit onto the data and then an analysis of variance was performed on each factor in the model.  Post-hob pairwise comparisons were performed on significant factors to determine differences among treatments.",
+            "resource-type-subtype": "Code",
+            "data-center-id": "figshare.ars",
+            "member-id": "figshare",
+            "registration-agency-id": "datacite",
+            "resource-type-id": "software",
+            "work-type-id": "computer-program",
+            "version": null,
+            "license": "https://opensource.org/licenses/MIT",
+            "schema-version": "3",
+            "results": [],
+            "related-identifiers": [],
+            "published": "2017",
+            "deposited": "2017-02-26T00:54:46Z",
+            "updated": "2017-02-26T00:54:47Z",
+            "media": null,
+            "xml": "PHJlc291cmNlIHhtbG5zPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtMyIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtMyBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC0zL21ldGFkYXRhLnhzZCI+PGlkZW50aWZpZXIgaWRlbnRpZmllclR5cGU9IkRPSSI+MTAuNjA4NC9tOS5maWdzaGFyZS40Njk2MjczLnYxPC9pZGVudGlmaWVyPjxjcmVhdG9ycz48Y3JlYXRvcj48Y3JlYXRvck5hbWU+RXJpYyBSZWFzb3I8L2NyZWF0b3JOYW1lPjwvY3JlYXRvcj48L2NyZWF0b3JzPjx0aXRsZXM+PHRpdGxlPlRyaW5leGFwYWMtZXRoeWwgUmF0ZSBSZXNwb25zZSBSIFNjcmlwdDwvdGl0bGU+PC90aXRsZXM+PGRlc2NyaXB0aW9ucz48ZGVzY3JpcHRpb24gZGVzY3JpcHRpb25UeXBlPSJBYnN0cmFjdCI+VGhlIFIgc2NyaXB0IGlzIGZyb20gYW4gZXhwZXJpbWVudHMgcmVnYXJkaW5nIHRoZSByZXNwb25zZSBvZiBiZXJtdWRhZ3Jhc3Mgb2ZmLXR5cGVzIGFuZCBjdWx0aXZhcnMgdG8gaW5jcmVhc2luZyByYXRlcyBvZiB0cmluZXhhcGFjLWV0aHlsLiDCoFRoZSByZXNwb25zZSB2YXJpYWJsZSBpcyBjbGlwcGluZyB3ZWlnaHQgZXhwcmVzc2VkIGFzIG1nIHBlciBzcXVhcmUgY20uIMKgVGhlIGV4cGVyaW1lbnQgd2FzIGEgY29tcGxldGVseSByYW5kb21pemVkIGRlc2lnbiB3aXRoIGdyYXNzIHNhbXBsZSBhbmQgdHJpbmV4YXBhYy1ldGh5bCByYXRlIGluIGEgZmFjdG9yaWFsIHRyZWF0bWVudCBhcnJhbmdlbWVudC4gwqBUaW1lIGFmdGVyIHRyZWF0bWVudCB3YXMgaW5jbHVkZWQgaW4gdGhlIGFuYWx5c2lzIGFzIGEgcmVwZWF0ZWQgbWVhc3VyZS4gwqBUaGVyZSBhcmUgYWxzbyB0aHJlZSByZXBsaWNhdGlvbnMgcGVyIHRyZWF0bWVudCBhbmQgdHdvIGV4cGVyaW1lbnRhbCByZXBsaWNhdGVzIHRoYXQgd2VyZSBjb21iaW5lZCB0byBjcmVhdGUgYW4gYWRkaXRpdmUgYmxvY2tpbmcgZmFjdG9yIGluIHRoZSBhbmFseXNpcy4gwqBBIGxpbmVhciBtaXhlZCBtb2RlbCB3YXMgZml0IG9udG8gdGhlIGRhdGEgYW5kIHRoZW4gYW4gYW5hbHlzaXMgb2YgdmFyaWFuY2Ugd2FzIHBlcmZvcm1lZCBvbiBlYWNoIGZhY3RvciBpbiB0aGUgbW9kZWwuIMKgUG9zdC1ob2IgcGFpcndpc2UgY29tcGFyaXNvbnMgd2VyZSBwZXJmb3JtZWQgb24gc2lnbmlmaWNhbnQgZmFjdG9ycyB0byBkZXRlcm1pbmUgZGlmZmVyZW5jZXMgYW1vbmcgdHJlYXRtZW50cy48L2Rlc2NyaXB0aW9uPjwvZGVzY3JpcHRpb25zPjxzdWJqZWN0cz48c3ViamVjdD5QbGFudCBCaW9sb2d5PC9zdWJqZWN0PjxzdWJqZWN0IHNjaGVtZVVSST0iaHR0cDovL3d3dy5hYnMuZ292LmF1L2F1c3N0YXRzL2Fic0AubnNmLzAvNkJCNDI3QUI5Njk2QzIyNUNBMjU3NDE4MDAwNDQ2M0UiIHN1YmplY3RTY2hlbWU9IkZPUiI+NjA3MDUgUGxhbnQgUGh5c2lvbG9neTwvc3ViamVjdD48c3ViamVjdCBzY2hlbWVVUkk9Imh0dHA6Ly93d3cuYWJzLmdvdi5hdS9hdXNzdGF0cy9hYnNALm5zZi8wLzZCQjQyN0FCOTY5NkMyMjVDQTI1NzQxODAwMDQ0NjNFIiBzdWJqZWN0U2NoZW1lPSJGT1IiPjEwNDAxIEFwcGxpZWQgU3RhdGlzdGljczwvc3ViamVjdD48L3N1YmplY3RzPjxwdWJsaXNoZXI+Rmlnc2hhcmU8L3B1Ymxpc2hlcj48cHVibGljYXRpb25ZZWFyPjIwMTc8L3B1YmxpY2F0aW9uWWVhcj48ZGF0ZXM+PGRhdGUgZGF0ZVR5cGU9IkNyZWF0ZWQiPjIwMTctMDItMjY8L2RhdGU+PGRhdGUgZGF0ZVR5cGU9IlVwZGF0ZWQiPjIwMTctMDItMjY8L2RhdGU+PC9kYXRlcz48cmVzb3VyY2VUeXBlIHJlc291cmNlVHlwZUdlbmVyYWw9IlNvZnR3YXJlIj5Db2RlPC9yZXNvdXJjZVR5cGU+PHNpemVzPjxzaXplPjI5MDAgQnl0ZXM8L3NpemU+PC9zaXplcz48cmVsYXRlZElkZW50aWZpZXJzPjxyZWxhdGVkSWRlbnRpZmllciByZWxhdGVkSWRlbnRpZmllclR5cGU9IkRPSSIgcmVsYXRpb25UeXBlPSJJc0lkZW50aWNhbFRvIj4xMC42MDg0L205LmZpZ3NoYXJlLjQ2OTYyNzM8L3JlbGF0ZWRJZGVudGlmaWVyPjwvcmVsYXRlZElkZW50aWZpZXJzPjxyaWdodHNMaXN0PjxyaWdodHMgcmlnaHRzVVJJPSJodHRwczovL29wZW5zb3VyY2Uub3JnL2xpY2Vuc2VzL01JVCI+TUlUPC9yaWdodHM+PC9yaWdodHNMaXN0PjwvcmVzb3VyY2U+"
+        },
+        "relationships": {
+            "data-center": {
+                "meta": {}
+            },
+            "member": {
+                "meta": {}
+            },
+            "registration-agency": {
+                "meta": {}
+            },
+            "resource-type": {
+                "meta": {}
+            },
+            "work-type": {
+                "meta": {}
+            }
+        }
+    }, {
+        "id": "https://doi.org/10.6084/M9.FIGSHARE.4696273",
+        "type": "works",
+        "attributes": {
+            "doi": "10.6084/M9.FIGSHARE.4696273",
+            "url": null,
+            "author": [{
+                "family": "Reasor",
+                "given": "Eric"
+            }],
+            "title": "Trinexapac-ethyl Rate Response R Script",
+            "container-title": "Figshare",
+            "description": "The R script is from an experiments regarding the response of bermudagrass off-types and cultivars to increasing rates of trinexapac-ethyl.  The response variable is clipping weight expressed as mg per square cm.  The experiment was a completely randomized design with grass sample and trinexapac-ethyl rate in a factorial treatment arrangement.  Time after treatment was included in the analysis as a repeated measure.  There are also three replications per treatment and two experimental replicates that were combined to create an additive blocking factor in the analysis.  A linear mixed model was fit onto the data and then an analysis of variance was performed on each factor in the model.  Post-hob pairwise comparisons were performed on significant factors to determine differences among treatments.",
+            "resource-type-subtype": "Code",
+            "data-center-id": "figshare.ars",
+            "member-id": "figshare",
+            "registration-agency-id": "datacite",
+            "resource-type-id": "software",
+            "work-type-id": "computer-program",
+            "version": null,
+            "license": "https://opensource.org/licenses/MIT",
+            "schema-version": "3",
+            "results": [],
+            "related-identifiers": [],
+            "published": "2017",
+            "deposited": "2017-02-26T00:54:46Z",
+            "updated": "2017-02-26T00:54:47Z",
+            "media": null,
+            "xml": "PHJlc291cmNlIHhtbG5zPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtMyIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtMyBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC0zL21ldGFkYXRhLnhzZCI+PGlkZW50aWZpZXIgaWRlbnRpZmllclR5cGU9IkRPSSI+MTAuNjA4NC9tOS5maWdzaGFyZS40Njk2MjczPC9pZGVudGlmaWVyPjxjcmVhdG9ycz48Y3JlYXRvcj48Y3JlYXRvck5hbWU+RXJpYyBSZWFzb3I8L2NyZWF0b3JOYW1lPjwvY3JlYXRvcj48L2NyZWF0b3JzPjx0aXRsZXM+PHRpdGxlPlRyaW5leGFwYWMtZXRoeWwgUmF0ZSBSZXNwb25zZSBSIFNjcmlwdDwvdGl0bGU+PC90aXRsZXM+PGRlc2NyaXB0aW9ucz48ZGVzY3JpcHRpb24gZGVzY3JpcHRpb25UeXBlPSJBYnN0cmFjdCI+VGhlIFIgc2NyaXB0IGlzIGZyb20gYW4gZXhwZXJpbWVudHMgcmVnYXJkaW5nIHRoZSByZXNwb25zZSBvZiBiZXJtdWRhZ3Jhc3Mgb2ZmLXR5cGVzIGFuZCBjdWx0aXZhcnMgdG8gaW5jcmVhc2luZyByYXRlcyBvZiB0cmluZXhhcGFjLWV0aHlsLiDCoFRoZSByZXNwb25zZSB2YXJpYWJsZSBpcyBjbGlwcGluZyB3ZWlnaHQgZXhwcmVzc2VkIGFzIG1nIHBlciBzcXVhcmUgY20uIMKgVGhlIGV4cGVyaW1lbnQgd2FzIGEgY29tcGxldGVseSByYW5kb21pemVkIGRlc2lnbiB3aXRoIGdyYXNzIHNhbXBsZSBhbmQgdHJpbmV4YXBhYy1ldGh5bCByYXRlIGluIGEgZmFjdG9yaWFsIHRyZWF0bWVudCBhcnJhbmdlbWVudC4gwqBUaW1lIGFmdGVyIHRyZWF0bWVudCB3YXMgaW5jbHVkZWQgaW4gdGhlIGFuYWx5c2lzIGFzIGEgcmVwZWF0ZWQgbWVhc3VyZS4gwqBUaGVyZSBhcmUgYWxzbyB0aHJlZSByZXBsaWNhdGlvbnMgcGVyIHRyZWF0bWVudCBhbmQgdHdvIGV4cGVyaW1lbnRhbCByZXBsaWNhdGVzIHRoYXQgd2VyZSBjb21iaW5lZCB0byBjcmVhdGUgYW4gYWRkaXRpdmUgYmxvY2tpbmcgZmFjdG9yIGluIHRoZSBhbmFseXNpcy4gwqBBIGxpbmVhciBtaXhlZCBtb2RlbCB3YXMgZml0IG9udG8gdGhlIGRhdGEgYW5kIHRoZW4gYW4gYW5hbHlzaXMgb2YgdmFyaWFuY2Ugd2FzIHBlcmZvcm1lZCBvbiBlYWNoIGZhY3RvciBpbiB0aGUgbW9kZWwuIMKgUG9zdC1ob2IgcGFpcndpc2UgY29tcGFyaXNvbnMgd2VyZSBwZXJmb3JtZWQgb24gc2lnbmlmaWNhbnQgZmFjdG9ycyB0byBkZXRlcm1pbmUgZGlmZmVyZW5jZXMgYW1vbmcgdHJlYXRtZW50cy48L2Rlc2NyaXB0aW9uPjwvZGVzY3JpcHRpb25zPjxzdWJqZWN0cz48c3ViamVjdD5QbGFudCBCaW9sb2d5PC9zdWJqZWN0PjxzdWJqZWN0IHNjaGVtZVVSST0iaHR0cDovL3d3dy5hYnMuZ292LmF1L2F1c3N0YXRzL2Fic0AubnNmLzAvNkJCNDI3QUI5Njk2QzIyNUNBMjU3NDE4MDAwNDQ2M0UiIHN1YmplY3RTY2hlbWU9IkZPUiI+NjA3MDUgUGxhbnQgUGh5c2lvbG9neTwvc3ViamVjdD48c3ViamVjdCBzY2hlbWVVUkk9Imh0dHA6Ly93d3cuYWJzLmdvdi5hdS9hdXNzdGF0cy9hYnNALm5zZi8wLzZCQjQyN0FCOTY5NkMyMjVDQTI1NzQxODAwMDQ0NjNFIiBzdWJqZWN0U2NoZW1lPSJGT1IiPjEwNDAxIEFwcGxpZWQgU3RhdGlzdGljczwvc3ViamVjdD48L3N1YmplY3RzPjxwdWJsaXNoZXI+Rmlnc2hhcmU8L3B1Ymxpc2hlcj48cHVibGljYXRpb25ZZWFyPjIwMTc8L3B1YmxpY2F0aW9uWWVhcj48ZGF0ZXM+PGRhdGUgZGF0ZVR5cGU9IkNyZWF0ZWQiPjIwMTctMDItMjU8L2RhdGU+PGRhdGUgZGF0ZVR5cGU9IlVwZGF0ZWQiPjIwMTctMDItMjY8L2RhdGU+PC9kYXRlcz48cmVzb3VyY2VUeXBlIHJlc291cmNlVHlwZUdlbmVyYWw9IlNvZnR3YXJlIj5Db2RlPC9yZXNvdXJjZVR5cGU+PHNpemVzPjxzaXplPjI5MDAgQnl0ZXM8L3NpemU+PC9zaXplcz48cmlnaHRzTGlzdD48cmlnaHRzIHJpZ2h0c1VSST0iaHR0cHM6Ly9vcGVuc291cmNlLm9yZy9saWNlbnNlcy9NSVQiPk1JVDwvcmlnaHRzPjwvcmlnaHRzTGlzdD48L3Jlc291cmNlPg=="
+        },
+        "relationships": {
+            "data-center": {
+                "meta": {}
+            },
+            "member": {
+                "meta": {}
+            },
+            "registration-agency": {
+                "meta": {}
+            },
+            "resource-type": {
+                "meta": {}
+            },
+            "work-type": {
+                "meta": {}
+            }
+        }
+    }, {
+        "id": "https://doi.org/10.6084/M9.FIGSHARE.4696270",
+        "type": "works",
+        "attributes": {
+            "doi": "10.6084/M9.FIGSHARE.4696270",
+            "url": null,
+            "author": [{
+                "family": "Reasor",
+                "given": "Eric"
+            }],
+            "title": "Nitrogen Rate Response R Script",
+            "container-title": "Figshare",
+            "description": "The R script is from an experiments regarding the response of bermudagrass off-types and cultivars to increasing rates of nitrogen fertilizer.  The response variable is clipping weight expressed as mg per square cm.  The experiment was a completely randomized design with grass sample and nitrogen rate in a factorial treatment arrangement.  Time after treatment was included in the analysis as a repeated measure.  There are also three replications per treatment and two experimental replicates that were combined to create an additive blocking factor in the analysis.  A linear mixed model was fit onto the data and then an analysis of variance was performed on each factor in the model.  Post-hob pairwise comparisons were performed on significant factors to determine differences among treatments.",
+            "resource-type-subtype": "Code",
+            "data-center-id": "figshare.ars",
+            "member-id": "figshare",
+            "registration-agency-id": "datacite",
+            "resource-type-id": "software",
+            "work-type-id": "computer-program",
+            "version": null,
+            "license": "https://opensource.org/licenses/MIT",
+            "schema-version": "3",
+            "results": [],
+            "related-identifiers": [],
+            "published": "2017",
+            "deposited": "2017-02-26T00:54:34Z",
+            "updated": "2017-02-26T00:54:35Z",
+            "media": null,
+            "xml": "PHJlc291cmNlIHhtbG5zPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtMyIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtMyBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC0zL21ldGFkYXRhLnhzZCI+PGlkZW50aWZpZXIgaWRlbnRpZmllclR5cGU9IkRPSSI+MTAuNjA4NC9tOS5maWdzaGFyZS40Njk2MjcwPC9pZGVudGlmaWVyPjxjcmVhdG9ycz48Y3JlYXRvcj48Y3JlYXRvck5hbWU+RXJpYyBSZWFzb3I8L2NyZWF0b3JOYW1lPjwvY3JlYXRvcj48L2NyZWF0b3JzPjx0aXRsZXM+PHRpdGxlPk5pdHJvZ2VuIFJhdGUgUmVzcG9uc2UgUiBTY3JpcHQ8L3RpdGxlPjwvdGl0bGVzPjxkZXNjcmlwdGlvbnM+PGRlc2NyaXB0aW9uIGRlc2NyaXB0aW9uVHlwZT0iQWJzdHJhY3QiPlRoZSBSIHNjcmlwdCBpcyBmcm9tIGFuIGV4cGVyaW1lbnRzIHJlZ2FyZGluZyB0aGUgcmVzcG9uc2Ugb2YgYmVybXVkYWdyYXNzIG9mZi10eXBlcyBhbmQgY3VsdGl2YXJzIHRvIGluY3JlYXNpbmcgcmF0ZXMgb2Ygbml0cm9nZW4gZmVydGlsaXplci4gwqBUaGUgcmVzcG9uc2UgdmFyaWFibGUgaXMgY2xpcHBpbmcgd2VpZ2h0IGV4cHJlc3NlZCBhcyBtZyBwZXIgc3F1YXJlIGNtLiDCoFRoZSBleHBlcmltZW50IHdhcyBhIGNvbXBsZXRlbHkgcmFuZG9taXplZCBkZXNpZ24gd2l0aCBncmFzcyBzYW1wbGUgYW5kIG5pdHJvZ2VuIHJhdGUgaW4gYSBmYWN0b3JpYWwgdHJlYXRtZW50IGFycmFuZ2VtZW50LiDCoFRpbWUgYWZ0ZXIgdHJlYXRtZW50IHdhcyBpbmNsdWRlZCBpbiB0aGUgYW5hbHlzaXMgYXMgYSByZXBlYXRlZCBtZWFzdXJlLiDCoFRoZXJlIGFyZSBhbHNvIHRocmVlIHJlcGxpY2F0aW9ucyBwZXIgdHJlYXRtZW50IGFuZCB0d28gZXhwZXJpbWVudGFsIHJlcGxpY2F0ZXMgdGhhdCB3ZXJlIGNvbWJpbmVkIHRvIGNyZWF0ZSBhbiBhZGRpdGl2ZSBibG9ja2luZyBmYWN0b3IgaW4gdGhlIGFuYWx5c2lzLiDCoEEgbGluZWFyIG1peGVkIG1vZGVsIHdhcyBmaXQgb250byB0aGUgZGF0YSBhbmQgdGhlbiBhbiBhbmFseXNpcyBvZiB2YXJpYW5jZSB3YXMgcGVyZm9ybWVkIG9uIGVhY2ggZmFjdG9yIGluIHRoZSBtb2RlbC4gwqBQb3N0LWhvYiBwYWlyd2lzZSBjb21wYXJpc29ucyB3ZXJlIHBlcmZvcm1lZCBvbiBzaWduaWZpY2FudCBmYWN0b3JzIHRvIGRldGVybWluZSBkaWZmZXJlbmNlcyBhbW9uZyB0cmVhdG1lbnRzLjwvZGVzY3JpcHRpb24+PC9kZXNjcmlwdGlvbnM+PHN1YmplY3RzPjxzdWJqZWN0IHNjaGVtZVVSST0iaHR0cDovL3d3dy5hYnMuZ292LmF1L2F1c3N0YXRzL2Fic0AubnNmLzAvNkJCNDI3QUI5Njk2QzIyNUNBMjU3NDE4MDAwNDQ2M0UiIHN1YmplY3RTY2hlbWU9IkZPUiI+NjA3MDUgUGxhbnQgUGh5c2lvbG9neTwvc3ViamVjdD48c3ViamVjdD5QbGFudCBCaW9sb2d5PC9zdWJqZWN0PjxzdWJqZWN0IHNjaGVtZVVSST0iaHR0cDovL3d3dy5hYnMuZ292LmF1L2F1c3N0YXRzL2Fic0AubnNmLzAvNkJCNDI3QUI5Njk2QzIyNUNBMjU3NDE4MDAwNDQ2M0UiIHN1YmplY3RTY2hlbWU9IkZPUiI+MTA0MDEgQXBwbGllZCBTdGF0aXN0aWNzPC9zdWJqZWN0Pjwvc3ViamVjdHM+PHB1Ymxpc2hlcj5GaWdzaGFyZTwvcHVibGlzaGVyPjxwdWJsaWNhdGlvblllYXI+MjAxNzwvcHVibGljYXRpb25ZZWFyPjxkYXRlcz48ZGF0ZSBkYXRlVHlwZT0iQ3JlYXRlZCI+MjAxNy0wMi0yNTwvZGF0ZT48ZGF0ZSBkYXRlVHlwZT0iVXBkYXRlZCI+MjAxNy0wMi0yNjwvZGF0ZT48L2RhdGVzPjxyZXNvdXJjZVR5cGUgcmVzb3VyY2VUeXBlR2VuZXJhbD0iU29mdHdhcmUiPkNvZGU8L3Jlc291cmNlVHlwZT48c2l6ZXM+PHNpemU+MjQ0MiBCeXRlczwvc2l6ZT48L3NpemVzPjxyaWdodHNMaXN0PjxyaWdodHMgcmlnaHRzVVJJPSJodHRwczovL29wZW5zb3VyY2Uub3JnL2xpY2Vuc2VzL01JVCI+TUlUPC9yaWdodHM+PC9yaWdodHNMaXN0PjwvcmVzb3VyY2U+"
+        },
+        "relationships": {
+            "data-center": {
+                "meta": {}
+            },
+            "member": {
+                "meta": {}
+            },
+            "registration-agency": {
+                "meta": {}
+            },
+            "resource-type": {
+                "meta": {}
+            },
+            "work-type": {
+                "meta": {}
+            }
+        }
+    }, {
+        "id": "https://doi.org/10.6084/M9.FIGSHARE.4696270.V1",
+        "type": "works",
+        "attributes": {
+            "doi": "10.6084/M9.FIGSHARE.4696270.V1",
+            "url": null,
+            "author": [{
+                "family": "Reasor",
+                "given": "Eric"
+            }],
+            "title": "Nitrogen Rate Response R Script",
+            "container-title": "Figshare",
+            "description": "The R script is from an experiments regarding the response of bermudagrass off-types and cultivars to increasing rates of nitrogen fertilizer.  The response variable is clipping weight expressed as mg per square cm.  The experiment was a completely randomized design with grass sample and nitrogen rate in a factorial treatment arrangement.  Time after treatment was included in the analysis as a repeated measure.  There are also three replications per treatment and two experimental replicates that were combined to create an additive blocking factor in the analysis.  A linear mixed model was fit onto the data and then an analysis of variance was performed on each factor in the model.  Post-hob pairwise comparisons were performed on significant factors to determine differences among treatments.",
+            "resource-type-subtype": "Code",
+            "data-center-id": "figshare.ars",
+            "member-id": "figshare",
+            "registration-agency-id": "datacite",
+            "resource-type-id": "software",
+            "work-type-id": "computer-program",
+            "version": null,
+            "license": "https://opensource.org/licenses/MIT",
+            "schema-version": "3",
+            "results": [],
+            "related-identifiers": [],
+            "published": "2017",
+            "deposited": "2017-02-26T00:54:34Z",
+            "updated": "2017-02-26T00:54:35Z",
+            "media": null,
+            "xml": "PHJlc291cmNlIHhtbG5zPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtMyIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtMyBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC0zL21ldGFkYXRhLnhzZCI+PGlkZW50aWZpZXIgaWRlbnRpZmllclR5cGU9IkRPSSI+MTAuNjA4NC9tOS5maWdzaGFyZS40Njk2MjcwLnYxPC9pZGVudGlmaWVyPjxjcmVhdG9ycz48Y3JlYXRvcj48Y3JlYXRvck5hbWU+RXJpYyBSZWFzb3I8L2NyZWF0b3JOYW1lPjwvY3JlYXRvcj48L2NyZWF0b3JzPjx0aXRsZXM+PHRpdGxlPk5pdHJvZ2VuIFJhdGUgUmVzcG9uc2UgUiBTY3JpcHQ8L3RpdGxlPjwvdGl0bGVzPjxkZXNjcmlwdGlvbnM+PGRlc2NyaXB0aW9uIGRlc2NyaXB0aW9uVHlwZT0iQWJzdHJhY3QiPlRoZSBSIHNjcmlwdCBpcyBmcm9tIGFuIGV4cGVyaW1lbnRzIHJlZ2FyZGluZyB0aGUgcmVzcG9uc2Ugb2YgYmVybXVkYWdyYXNzIG9mZi10eXBlcyBhbmQgY3VsdGl2YXJzIHRvIGluY3JlYXNpbmcgcmF0ZXMgb2Ygbml0cm9nZW4gZmVydGlsaXplci4gwqBUaGUgcmVzcG9uc2UgdmFyaWFibGUgaXMgY2xpcHBpbmcgd2VpZ2h0IGV4cHJlc3NlZCBhcyBtZyBwZXIgc3F1YXJlIGNtLiDCoFRoZSBleHBlcmltZW50IHdhcyBhIGNvbXBsZXRlbHkgcmFuZG9taXplZCBkZXNpZ24gd2l0aCBncmFzcyBzYW1wbGUgYW5kIG5pdHJvZ2VuIHJhdGUgaW4gYSBmYWN0b3JpYWwgdHJlYXRtZW50IGFycmFuZ2VtZW50LiDCoFRpbWUgYWZ0ZXIgdHJlYXRtZW50IHdhcyBpbmNsdWRlZCBpbiB0aGUgYW5hbHlzaXMgYXMgYSByZXBlYXRlZCBtZWFzdXJlLiDCoFRoZXJlIGFyZSBhbHNvIHRocmVlIHJlcGxpY2F0aW9ucyBwZXIgdHJlYXRtZW50IGFuZCB0d28gZXhwZXJpbWVudGFsIHJlcGxpY2F0ZXMgdGhhdCB3ZXJlIGNvbWJpbmVkIHRvIGNyZWF0ZSBhbiBhZGRpdGl2ZSBibG9ja2luZyBmYWN0b3IgaW4gdGhlIGFuYWx5c2lzLiDCoEEgbGluZWFyIG1peGVkIG1vZGVsIHdhcyBmaXQgb250byB0aGUgZGF0YSBhbmQgdGhlbiBhbiBhbmFseXNpcyBvZiB2YXJpYW5jZSB3YXMgcGVyZm9ybWVkIG9uIGVhY2ggZmFjdG9yIGluIHRoZSBtb2RlbC4gwqBQb3N0LWhvYiBwYWlyd2lzZSBjb21wYXJpc29ucyB3ZXJlIHBlcmZvcm1lZCBvbiBzaWduaWZpY2FudCBmYWN0b3JzIHRvIGRldGVybWluZSBkaWZmZXJlbmNlcyBhbW9uZyB0cmVhdG1lbnRzLjwvZGVzY3JpcHRpb24+PC9kZXNjcmlwdGlvbnM+PHN1YmplY3RzPjxzdWJqZWN0IHNjaGVtZVVSST0iaHR0cDovL3d3dy5hYnMuZ292LmF1L2F1c3N0YXRzL2Fic0AubnNmLzAvNkJCNDI3QUI5Njk2QzIyNUNBMjU3NDE4MDAwNDQ2M0UiIHN1YmplY3RTY2hlbWU9IkZPUiI+NjA3MDUgUGxhbnQgUGh5c2lvbG9neTwvc3ViamVjdD48c3ViamVjdD5QbGFudCBCaW9sb2d5PC9zdWJqZWN0PjxzdWJqZWN0IHNjaGVtZVVSST0iaHR0cDovL3d3dy5hYnMuZ292LmF1L2F1c3N0YXRzL2Fic0AubnNmLzAvNkJCNDI3QUI5Njk2QzIyNUNBMjU3NDE4MDAwNDQ2M0UiIHN1YmplY3RTY2hlbWU9IkZPUiI+MTA0MDEgQXBwbGllZCBTdGF0aXN0aWNzPC9zdWJqZWN0Pjwvc3ViamVjdHM+PHB1Ymxpc2hlcj5GaWdzaGFyZTwvcHVibGlzaGVyPjxwdWJsaWNhdGlvblllYXI+MjAxNzwvcHVibGljYXRpb25ZZWFyPjxkYXRlcz48ZGF0ZSBkYXRlVHlwZT0iQ3JlYXRlZCI+MjAxNy0wMi0yNjwvZGF0ZT48ZGF0ZSBkYXRlVHlwZT0iVXBkYXRlZCI+MjAxNy0wMi0yNjwvZGF0ZT48L2RhdGVzPjxyZXNvdXJjZVR5cGUgcmVzb3VyY2VUeXBlR2VuZXJhbD0iU29mdHdhcmUiPkNvZGU8L3Jlc291cmNlVHlwZT48c2l6ZXM+PHNpemU+MjQ0MiBCeXRlczwvc2l6ZT48L3NpemVzPjxyZWxhdGVkSWRlbnRpZmllcnM+PHJlbGF0ZWRJZGVudGlmaWVyIHJlbGF0ZWRJZGVudGlmaWVyVHlwZT0iRE9JIiByZWxhdGlvblR5cGU9IklzSWRlbnRpY2FsVG8iPjEwLjYwODQvbTkuZmlnc2hhcmUuNDY5NjI3MDwvcmVsYXRlZElkZW50aWZpZXI+PC9yZWxhdGVkSWRlbnRpZmllcnM+PHJpZ2h0c0xpc3Q+PHJpZ2h0cyByaWdodHNVUkk9Imh0dHBzOi8vb3BlbnNvdXJjZS5vcmcvbGljZW5zZXMvTUlUIj5NSVQ8L3JpZ2h0cz48L3JpZ2h0c0xpc3Q+PC9yZXNvdXJjZT4="
+        },
+        "relationships": {
+            "data-center": {
+                "meta": {}
+            },
+            "member": {
+                "meta": {}
+            },
+            "registration-agency": {
+                "meta": {}
+            },
+            "resource-type": {
+                "meta": {}
+            },
+            "work-type": {
+                "meta": {}
+            }
+        }
+    }, {
+        "id": "https://doi.org/10.5281/ZENODO.322599",
+        "type": "works",
+        "attributes": {
+            "doi": "10.5281/ZENODO.322599",
+            "url": null,
+            "author": [{
+                "family": "Bedamatta",
+                "given": "Urmishree"
+            }],
+            "title": "Playing With Nonsense: Toward Language Bridging In A Multilingual Classroom",
+            "container-title": "Zenodo",
+            "description": "Article 4 – Toward Language Bridging in a Multilingual Classroom",
+            "resource-type-subtype": "Journal article",
+            "data-center-id": "cern.zenodo",
+            "member-id": "cern",
+            "registration-agency-id": "datacite",
+            "resource-type-id": "text",
+            "work-type-id": "report",
+            "version": null,
+            "license": null,
+            "schema-version": "3",
+            "results": [],
+            "related-identifiers": [],
+            "published": "2013",
+            "deposited": "2017-02-26T00:54:31Z",
+            "updated": "2017-02-26T00:54:31Z",
+            "media": null,
+            "xml": "PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0ndXRmLTgnPz4KPHJlc291cmNlIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhtbG5zPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtMyIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtMyBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC0zL21ldGFkYXRhLnhzZCI+CiAgPGlkZW50aWZpZXIgaWRlbnRpZmllclR5cGU9IkRPSSI+MTAuNTI4MS96ZW5vZG8uMzIyNTk5PC9pZGVudGlmaWVyPgogIDxjcmVhdG9ycz4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWU+QmVkYW1hdHRhLCBVcm1pc2hyZWU8L2NyZWF0b3JOYW1lPgogICAgICA8YWZmaWxpYXRpb24+UmF2ZW5zaGF3IFVuaXZlcnNpdHk8L2FmZmlsaWF0aW9uPgogICAgPC9jcmVhdG9yPgogIDwvY3JlYXRvcnM+CiAgPHRpdGxlcz4KICAgIDx0aXRsZT5QbGF5aW5nIFdpdGggTm9uc2Vuc2U6IFRvd2FyZCBMYW5ndWFnZSBCcmlkZ2luZyBJbiBBIE11bHRpbGluZ3VhbCBDbGFzc3Jvb208L3RpdGxlPgogIDwvdGl0bGVzPgogIDxwdWJsaXNoZXI+WmVub2RvPC9wdWJsaXNoZXI+CiAgPHB1YmxpY2F0aW9uWWVhcj4yMDEzPC9wdWJsaWNhdGlvblllYXI+CiAgPHN1YmplY3RzPgogICAgPHN1YmplY3Q+bXVsdGlsaW5ndWFsIGVkdWNhdGlvbjwvc3ViamVjdD4KICAgIDxzdWJqZWN0Pmxhbmd1YWdlIGJyaWRnaW5nPC9zdWJqZWN0PgogICAgPHN1YmplY3Q+bGFuZ3VhZ2UgYXdhcmVuZXNzPC9zdWJqZWN0PgogICAgPHN1YmplY3Q+bGFuZ3VhZ2UgcGxheTwvc3ViamVjdD4KICAgIDxzdWJqZWN0Pm5vbnNlbnNlIHRleHRzPC9zdWJqZWN0PgogIDwvc3ViamVjdHM+CiAgPGRhdGVzPgogICAgPGRhdGUgZGF0ZVR5cGU9Iklzc3VlZCI+MjAxMy0wNS0xNTwvZGF0ZT4KICA8L2RhdGVzPgogIDxyZXNvdXJjZVR5cGUgcmVzb3VyY2VUeXBlR2VuZXJhbD0iVGV4dCI+Sm91cm5hbCBhcnRpY2xlPC9yZXNvdXJjZVR5cGU+CiAgPHJpZ2h0c0xpc3Q+CiAgICA8cmlnaHRzIHJpZ2h0c1VSST0iaW5mbzpldS1yZXBvL3NlbWFudGljcy9vcGVuQWNjZXNzIj5PcGVuIEFjY2VzczwvcmlnaHRzPgogIDwvcmlnaHRzTGlzdD4KICA8ZGVzY3JpcHRpb25zPgogICAgPGRlc2NyaXB0aW9uIGRlc2NyaXB0aW9uVHlwZT0iQWJzdHJhY3QiPiZsdDtwJmd0O0FydGljbGUgNCDigJMgVG93YXJkIExhbmd1YWdlIEJyaWRnaW5nIGluIGEgTXVsdGlsaW5ndWFsIENsYXNzcm9vbSZsdDsvcCZndDs8L2Rlc2NyaXB0aW9uPgogIDwvZGVzY3JpcHRpb25zPgo8L3Jlc291cmNlPgo="
+        },
+        "relationships": {
+            "data-center": {
+                "meta": {}
+            },
+            "member": {
+                "meta": {}
+            },
+            "registration-agency": {
+                "meta": {}
+            },
+            "resource-type": {
+                "meta": {}
+            },
+            "work-type": {
+                "meta": {}
+            }
+        }
+    }, {
+        "id": "https://doi.org/10.6084/M9.FIGSHARE.4696267.V1",
+        "type": "works",
+        "attributes": {
+            "doi": "10.6084/M9.FIGSHARE.4696267.V1",
+            "url": null,
+            "author": [{
+                "family": "Reasor",
+                "given": "Eric"
+            }],
+            "title": "Trinexapac-ethyl Rate Response Data",
+            "container-title": "Figshare",
+            "description": "The data presented is from an experiment evaluating the response of bermudagrass off-types and cultivars to increasing rates of the plant growth regulator, trinexapac-ethyl.  Rates included 0, 1.6, 3.3, 6.6, 13.1, 26.3, 52.6, or 105.2 g active ingredient per hectare.  Grass samples included three, morphologically distinct off-type grasses and bermudagrass cultivars Champion, MiniVerde, and TifEagle.  The response variable is clipping weight expressed as mg per square cm.  The experiment was a completely randomized design with grass sample and trinexapac-ethyl rate in a factorial treatment arrangement.  Clippings were harvested 7, 14, 21, and 28 days after treatment and was included in the analysis as a repeated measure.",
+            "resource-type-subtype": "Dataset",
+            "data-center-id": "figshare.ars",
+            "member-id": "figshare",
+            "registration-agency-id": "datacite",
+            "resource-type-id": "dataset",
+            "work-type-id": "dataset",
+            "version": null,
+            "license": "https://creativecommons.org/licenses/by/4.0/",
+            "schema-version": "3",
+            "results": [],
+            "related-identifiers": [],
+            "published": "2017",
+            "deposited": "2017-02-26T00:54:23Z",
+            "updated": "2017-02-26T00:54:24Z",
+            "media": null,
+            "xml": "PHJlc291cmNlIHhtbG5zPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtMyIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtMyBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC0zL21ldGFkYXRhLnhzZCI+PGlkZW50aWZpZXIgaWRlbnRpZmllclR5cGU9IkRPSSI+MTAuNjA4NC9tOS5maWdzaGFyZS40Njk2MjY3LnYxPC9pZGVudGlmaWVyPjxjcmVhdG9ycz48Y3JlYXRvcj48Y3JlYXRvck5hbWU+RXJpYyBSZWFzb3I8L2NyZWF0b3JOYW1lPjwvY3JlYXRvcj48L2NyZWF0b3JzPjx0aXRsZXM+PHRpdGxlPlRyaW5leGFwYWMtZXRoeWwgUmF0ZSBSZXNwb25zZSBEYXRhPC90aXRsZT48L3RpdGxlcz48ZGVzY3JpcHRpb25zPjxkZXNjcmlwdGlvbiBkZXNjcmlwdGlvblR5cGU9IkFic3RyYWN0Ij5UaGUgZGF0YSBwcmVzZW50ZWQgaXMgZnJvbSBhbiBleHBlcmltZW50IGV2YWx1YXRpbmcgdGhlIHJlc3BvbnNlIG9mIGJlcm11ZGFncmFzcyBvZmYtdHlwZXMgYW5kIGN1bHRpdmFycyB0byBpbmNyZWFzaW5nIHJhdGVzIG9mIHRoZSBwbGFudCBncm93dGggcmVndWxhdG9yLCB0cmluZXhhcGFjLWV0aHlsLiDCoFJhdGVzIGluY2x1ZGVkIDAsIDEuNiwgMy4zLCA2LjYsIDEzLjEsIDI2LjMsIDUyLjYsIG9yIDEwNS4yIGcgYWN0aXZlIGluZ3JlZGllbnQgcGVyIGhlY3RhcmUuIMKgR3Jhc3Mgc2FtcGxlcyBpbmNsdWRlZCB0aHJlZSwgbW9ycGhvbG9naWNhbGx5IGRpc3RpbmN0IG9mZi10eXBlIGdyYXNzZXMgYW5kIGJlcm11ZGFncmFzcyBjdWx0aXZhcnMgQ2hhbXBpb24sIE1pbmlWZXJkZSwgYW5kIFRpZkVhZ2xlLiDCoFRoZSByZXNwb25zZSB2YXJpYWJsZSBpcyBjbGlwcGluZyB3ZWlnaHQgZXhwcmVzc2VkIGFzIG1nIHBlciBzcXVhcmUgY20uIMKgVGhlIGV4cGVyaW1lbnQgd2FzIGEgY29tcGxldGVseSByYW5kb21pemVkIGRlc2lnbiB3aXRoIGdyYXNzIHNhbXBsZSBhbmQgdHJpbmV4YXBhYy1ldGh5bCByYXRlIGluIGEgZmFjdG9yaWFsIHRyZWF0bWVudCBhcnJhbmdlbWVudC4gwqBDbGlwcGluZ3Mgd2VyZSBoYXJ2ZXN0ZWQgNywgMTQsIDIxLCBhbmQgMjggZGF5cyBhZnRlciB0cmVhdG1lbnQgYW5kIHdhcyBpbmNsdWRlZCBpbiB0aGUgYW5hbHlzaXMgYXMgYSByZXBlYXRlZCBtZWFzdXJlLjwvZGVzY3JpcHRpb24+PC9kZXNjcmlwdGlvbnM+PHN1YmplY3RzPjxzdWJqZWN0PlBsYW50IEJpb2xvZ3k8L3N1YmplY3Q+PHN1YmplY3Qgc2NoZW1lVVJJPSJodHRwOi8vd3d3LmFicy5nb3YuYXUvYXVzc3RhdHMvYWJzQC5uc2YvMC82QkI0MjdBQjk2OTZDMjI1Q0EyNTc0MTgwMDA0NDYzRSIgc3ViamVjdFNjaGVtZT0iRk9SIj42MDcwNSBQbGFudCBQaHlzaW9sb2d5PC9zdWJqZWN0Pjwvc3ViamVjdHM+PHB1Ymxpc2hlcj5GaWdzaGFyZTwvcHVibGlzaGVyPjxwdWJsaWNhdGlvblllYXI+MjAxNzwvcHVibGljYXRpb25ZZWFyPjxkYXRlcz48ZGF0ZSBkYXRlVHlwZT0iQ3JlYXRlZCI+MjAxNy0wMi0yNjwvZGF0ZT48ZGF0ZSBkYXRlVHlwZT0iVXBkYXRlZCI+MjAxNy0wMi0yNjwvZGF0ZT48L2RhdGVzPjxyZXNvdXJjZVR5cGUgcmVzb3VyY2VUeXBlR2VuZXJhbD0iRGF0YXNldCI+RGF0YXNldDwvcmVzb3VyY2VUeXBlPjxzaXplcz48c2l6ZT4yMDYzMSBCeXRlczwvc2l6ZT48L3NpemVzPjxyZWxhdGVkSWRlbnRpZmllcnM+PHJlbGF0ZWRJZGVudGlmaWVyIHJlbGF0ZWRJZGVudGlmaWVyVHlwZT0iRE9JIiByZWxhdGlvblR5cGU9IklzSWRlbnRpY2FsVG8iPjEwLjYwODQvbTkuZmlnc2hhcmUuNDY5NjI2NzwvcmVsYXRlZElkZW50aWZpZXI+PC9yZWxhdGVkSWRlbnRpZmllcnM+PHJpZ2h0c0xpc3Q+PHJpZ2h0cyByaWdodHNVUkk9Imh0dHBzOi8vY3JlYXRpdmVjb21tb25zLm9yZy9saWNlbnNlcy9ieS80LjAvIj5DQyBCWTwvcmlnaHRzPjwvcmlnaHRzTGlzdD48L3Jlc291cmNlPg=="
+        },
+        "relationships": {
+            "data-center": {
+                "meta": {}
+            },
+            "member": {
+                "meta": {}
+            },
+            "registration-agency": {
+                "meta": {}
+            },
+            "resource-type": {
+                "meta": {}
+            },
+            "work-type": {
+                "meta": {}
+            }
+        }
+    }, {
+        "id": "https://doi.org/10.6084/M9.FIGSHARE.4696267",
+        "type": "works",
+        "attributes": {
+            "doi": "10.6084/M9.FIGSHARE.4696267",
+            "url": null,
+            "author": [{
+                "family": "Reasor",
+                "given": "Eric"
+            }],
+            "title": "Trinexapac-ethyl Rate Response Data",
+            "container-title": "Figshare",
+            "description": "The data presented is from an experiment evaluating the response of bermudagrass off-types and cultivars to increasing rates of the plant growth regulator, trinexapac-ethyl.  Rates included 0, 1.6, 3.3, 6.6, 13.1, 26.3, 52.6, or 105.2 g active ingredient per hectare.  Grass samples included three, morphologically distinct off-type grasses and bermudagrass cultivars Champion, MiniVerde, and TifEagle.  The response variable is clipping weight expressed as mg per square cm.  The experiment was a completely randomized design with grass sample and trinexapac-ethyl rate in a factorial treatment arrangement.  Clippings were harvested 7, 14, 21, and 28 days after treatment and was included in the analysis as a repeated measure.",
+            "resource-type-subtype": "Dataset",
+            "data-center-id": "figshare.ars",
+            "member-id": "figshare",
+            "registration-agency-id": "datacite",
+            "resource-type-id": "dataset",
+            "work-type-id": "dataset",
+            "version": null,
+            "license": "https://creativecommons.org/licenses/by/4.0/",
+            "schema-version": "3",
+            "results": [],
+            "related-identifiers": [],
+            "published": "2017",
+            "deposited": "2017-02-26T00:54:23Z",
+            "updated": "2017-02-26T00:54:25Z",
+            "media": null,
+            "xml": "PHJlc291cmNlIHhtbG5zPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtMyIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtMyBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC0zL21ldGFkYXRhLnhzZCI+PGlkZW50aWZpZXIgaWRlbnRpZmllclR5cGU9IkRPSSI+MTAuNjA4NC9tOS5maWdzaGFyZS40Njk2MjY3PC9pZGVudGlmaWVyPjxjcmVhdG9ycz48Y3JlYXRvcj48Y3JlYXRvck5hbWU+RXJpYyBSZWFzb3I8L2NyZWF0b3JOYW1lPjwvY3JlYXRvcj48L2NyZWF0b3JzPjx0aXRsZXM+PHRpdGxlPlRyaW5leGFwYWMtZXRoeWwgUmF0ZSBSZXNwb25zZSBEYXRhPC90aXRsZT48L3RpdGxlcz48ZGVzY3JpcHRpb25zPjxkZXNjcmlwdGlvbiBkZXNjcmlwdGlvblR5cGU9IkFic3RyYWN0Ij5UaGUgZGF0YSBwcmVzZW50ZWQgaXMgZnJvbSBhbiBleHBlcmltZW50IGV2YWx1YXRpbmcgdGhlIHJlc3BvbnNlIG9mIGJlcm11ZGFncmFzcyBvZmYtdHlwZXMgYW5kIGN1bHRpdmFycyB0byBpbmNyZWFzaW5nIHJhdGVzIG9mIHRoZSBwbGFudCBncm93dGggcmVndWxhdG9yLCB0cmluZXhhcGFjLWV0aHlsLiDCoFJhdGVzIGluY2x1ZGVkIDAsIDEuNiwgMy4zLCA2LjYsIDEzLjEsIDI2LjMsIDUyLjYsIG9yIDEwNS4yIGcgYWN0aXZlIGluZ3JlZGllbnQgcGVyIGhlY3RhcmUuIMKgR3Jhc3Mgc2FtcGxlcyBpbmNsdWRlZCB0aHJlZSwgbW9ycGhvbG9naWNhbGx5IGRpc3RpbmN0IG9mZi10eXBlIGdyYXNzZXMgYW5kIGJlcm11ZGFncmFzcyBjdWx0aXZhcnMgQ2hhbXBpb24sIE1pbmlWZXJkZSwgYW5kIFRpZkVhZ2xlLiDCoFRoZSByZXNwb25zZSB2YXJpYWJsZSBpcyBjbGlwcGluZyB3ZWlnaHQgZXhwcmVzc2VkIGFzIG1nIHBlciBzcXVhcmUgY20uIMKgVGhlIGV4cGVyaW1lbnQgd2FzIGEgY29tcGxldGVseSByYW5kb21pemVkIGRlc2lnbiB3aXRoIGdyYXNzIHNhbXBsZSBhbmQgdHJpbmV4YXBhYy1ldGh5bCByYXRlIGluIGEgZmFjdG9yaWFsIHRyZWF0bWVudCBhcnJhbmdlbWVudC4gwqBDbGlwcGluZ3Mgd2VyZSBoYXJ2ZXN0ZWQgNywgMTQsIDIxLCBhbmQgMjggZGF5cyBhZnRlciB0cmVhdG1lbnQgYW5kIHdhcyBpbmNsdWRlZCBpbiB0aGUgYW5hbHlzaXMgYXMgYSByZXBlYXRlZCBtZWFzdXJlLjwvZGVzY3JpcHRpb24+PC9kZXNjcmlwdGlvbnM+PHN1YmplY3RzPjxzdWJqZWN0PlBsYW50IEJpb2xvZ3k8L3N1YmplY3Q+PHN1YmplY3Qgc2NoZW1lVVJJPSJodHRwOi8vd3d3LmFicy5nb3YuYXUvYXVzc3RhdHMvYWJzQC5uc2YvMC82QkI0MjdBQjk2OTZDMjI1Q0EyNTc0MTgwMDA0NDYzRSIgc3ViamVjdFNjaGVtZT0iRk9SIj42MDcwNSBQbGFudCBQaHlzaW9sb2d5PC9zdWJqZWN0Pjwvc3ViamVjdHM+PHB1Ymxpc2hlcj5GaWdzaGFyZTwvcHVibGlzaGVyPjxwdWJsaWNhdGlvblllYXI+MjAxNzwvcHVibGljYXRpb25ZZWFyPjxkYXRlcz48ZGF0ZSBkYXRlVHlwZT0iQ3JlYXRlZCI+MjAxNy0wMi0yNTwvZGF0ZT48ZGF0ZSBkYXRlVHlwZT0iVXBkYXRlZCI+MjAxNy0wMi0yNjwvZGF0ZT48L2RhdGVzPjxyZXNvdXJjZVR5cGUgcmVzb3VyY2VUeXBlR2VuZXJhbD0iRGF0YXNldCI+RGF0YXNldDwvcmVzb3VyY2VUeXBlPjxzaXplcz48c2l6ZT4yMDYzMSBCeXRlczwvc2l6ZT48L3NpemVzPjxyaWdodHNMaXN0PjxyaWdodHMgcmlnaHRzVVJJPSJodHRwczovL2NyZWF0aXZlY29tbW9ucy5vcmcvbGljZW5zZXMvYnkvNC4wLyI+Q0MgQlk8L3JpZ2h0cz48L3JpZ2h0c0xpc3Q+PC9yZXNvdXJjZT4="
+        },
+        "relationships": {
+            "data-center": {
+                "meta": {}
+            },
+            "member": {
+                "meta": {}
+            },
+            "registration-agency": {
+                "meta": {}
+            },
+            "resource-type": {
+                "meta": {}
+            },
+            "work-type": {
+                "meta": {}
+            }
+        }
+    }, {
+        "id": "https://doi.org/10.6084/M9.FIGSHARE.4696264.V1",
+        "type": "works",
+        "attributes": {
+            "doi": "10.6084/M9.FIGSHARE.4696264.V1",
+            "url": null,
+            "author": [{
+                "family": "Reasor",
+                "given": "Eric"
+            }],
+            "title": "Nitrogen Rate Response Data",
+            "container-title": "Figshare",
+            "description": "The data presented is from an experiment evaluating the response of bermudagrass off-types and cultivars to increasing rates of nitrogen fertilizer.  Rates included 0, 6, 12, 18, 24, or 48 kg nitrogen per hectare per week for four consecutive weeks.  Grass samples included three, morphologically distinct off-type grasses and bermudagrass cultivars Champion, MiniVerde, and TifEagle.  The response variable is clipping weight expressed as mg per square cm.  The experiment was a completely randomized design with grass sample and nitrogen rate in a factorial treatment arrangement.  Clippings were harvested 7, 14, 21, and 28 days after treatment and was included in the analysis as a repeated measure.",
+            "resource-type-subtype": "Dataset",
+            "data-center-id": "figshare.ars",
+            "member-id": "figshare",
+            "registration-agency-id": "datacite",
+            "resource-type-id": "dataset",
+            "work-type-id": "dataset",
+            "version": null,
+            "license": "https://creativecommons.org/licenses/by/4.0/",
+            "schema-version": "3",
+            "results": [],
+            "related-identifiers": [],
+            "published": "2017",
+            "deposited": "2017-02-26T00:52:07Z",
+            "updated": "2017-02-26T00:52:08Z",
+            "media": null,
+            "xml": "PHJlc291cmNlIHhtbG5zPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtMyIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtMyBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC0zL21ldGFkYXRhLnhzZCI+PGlkZW50aWZpZXIgaWRlbnRpZmllclR5cGU9IkRPSSI+MTAuNjA4NC9tOS5maWdzaGFyZS40Njk2MjY0LnYxPC9pZGVudGlmaWVyPjxjcmVhdG9ycz48Y3JlYXRvcj48Y3JlYXRvck5hbWU+RXJpYyBSZWFzb3I8L2NyZWF0b3JOYW1lPjwvY3JlYXRvcj48L2NyZWF0b3JzPjx0aXRsZXM+PHRpdGxlPk5pdHJvZ2VuIFJhdGUgUmVzcG9uc2UgRGF0YTwvdGl0bGU+PC90aXRsZXM+PGRlc2NyaXB0aW9ucz48ZGVzY3JpcHRpb24gZGVzY3JpcHRpb25UeXBlPSJBYnN0cmFjdCI+VGhlIGRhdGEgcHJlc2VudGVkIGlzIGZyb20gYW4gZXhwZXJpbWVudCBldmFsdWF0aW5nIHRoZSByZXNwb25zZSBvZiBiZXJtdWRhZ3Jhc3Mgb2ZmLXR5cGVzIGFuZCBjdWx0aXZhcnMgdG8gaW5jcmVhc2luZyByYXRlcyBvZiBuaXRyb2dlbiBmZXJ0aWxpemVyLiDCoFJhdGVzIGluY2x1ZGVkIDAsIDYsIDEyLCAxOCwgMjQsIG9yIDQ4IGtnIG5pdHJvZ2VuIHBlciBoZWN0YXJlIHBlciB3ZWVrIGZvciBmb3VyIGNvbnNlY3V0aXZlIHdlZWtzLiDCoEdyYXNzIHNhbXBsZXMgaW5jbHVkZWQgdGhyZWUsIG1vcnBob2xvZ2ljYWxseSBkaXN0aW5jdCBvZmYtdHlwZSBncmFzc2VzIGFuZCBiZXJtdWRhZ3Jhc3MgY3VsdGl2YXJzIENoYW1waW9uLCBNaW5pVmVyZGUsIGFuZCBUaWZFYWdsZS4gwqBUaGUgcmVzcG9uc2UgdmFyaWFibGUgaXMgY2xpcHBpbmcgd2VpZ2h0IGV4cHJlc3NlZCBhcyBtZyBwZXIgc3F1YXJlIGNtLiDCoFRoZSBleHBlcmltZW50IHdhcyBhIGNvbXBsZXRlbHkgcmFuZG9taXplZCBkZXNpZ24gd2l0aCBncmFzcyBzYW1wbGUgYW5kIG5pdHJvZ2VuIHJhdGUgaW4gYSBmYWN0b3JpYWwgdHJlYXRtZW50IGFycmFuZ2VtZW50LiDCoENsaXBwaW5ncyB3ZXJlIGhhcnZlc3RlZCA3LCAxNCwgMjEsIGFuZCAyOCBkYXlzIGFmdGVyIHRyZWF0bWVudCBhbmQgd2FzIGluY2x1ZGVkIGluIHRoZSBhbmFseXNpcyBhcyBhIHJlcGVhdGVkIG1lYXN1cmUuPC9kZXNjcmlwdGlvbj48L2Rlc2NyaXB0aW9ucz48c3ViamVjdHM+PHN1YmplY3Q+UGxhbnQgQmlvbG9neTwvc3ViamVjdD48c3ViamVjdCBzY2hlbWVVUkk9Imh0dHA6Ly93d3cuYWJzLmdvdi5hdS9hdXNzdGF0cy9hYnNALm5zZi8wLzZCQjQyN0FCOTY5NkMyMjVDQTI1NzQxODAwMDQ0NjNFIiBzdWJqZWN0U2NoZW1lPSJGT1IiPjYwNzA1IFBsYW50IFBoeXNpb2xvZ3k8L3N1YmplY3Q+PHN1YmplY3Qgc2NoZW1lVVJJPSJodHRwOi8vd3d3LmFicy5nb3YuYXUvYXVzc3RhdHMvYWJzQC5uc2YvMC82QkI0MjdBQjk2OTZDMjI1Q0EyNTc0MTgwMDA0NDYzRSIgc3ViamVjdFNjaGVtZT0iRk9SIj42MDcwMyBQbGFudCBEZXZlbG9wbWVudGFsIGFuZCBSZXByb2R1Y3RpdmUgQmlvbG9neTwvc3ViamVjdD48L3N1YmplY3RzPjxwdWJsaXNoZXI+Rmlnc2hhcmU8L3B1Ymxpc2hlcj48cHVibGljYXRpb25ZZWFyPjIwMTc8L3B1YmxpY2F0aW9uWWVhcj48ZGF0ZXM+PGRhdGUgZGF0ZVR5cGU9IkNyZWF0ZWQiPjIwMTctMDItMjY8L2RhdGU+PGRhdGUgZGF0ZVR5cGU9IlVwZGF0ZWQiPjIwMTctMDItMjY8L2RhdGU+PC9kYXRlcz48cmVzb3VyY2VUeXBlIHJlc291cmNlVHlwZUdlbmVyYWw9IkRhdGFzZXQiPkRhdGFzZXQ8L3Jlc291cmNlVHlwZT48c2l6ZXM+PHNpemU+MTQwMTEgQnl0ZXM8L3NpemU+PC9zaXplcz48cmVsYXRlZElkZW50aWZpZXJzPjxyZWxhdGVkSWRlbnRpZmllciByZWxhdGVkSWRlbnRpZmllclR5cGU9IkRPSSIgcmVsYXRpb25UeXBlPSJJc0lkZW50aWNhbFRvIj4xMC42MDg0L205LmZpZ3NoYXJlLjQ2OTYyNjQ8L3JlbGF0ZWRJZGVudGlmaWVyPjwvcmVsYXRlZElkZW50aWZpZXJzPjxyaWdodHNMaXN0PjxyaWdodHMgcmlnaHRzVVJJPSJodHRwczovL2NyZWF0aXZlY29tbW9ucy5vcmcvbGljZW5zZXMvYnkvNC4wLyI+Q0MgQlk8L3JpZ2h0cz48L3JpZ2h0c0xpc3Q+PC9yZXNvdXJjZT4="
+        },
+        "relationships": {
+            "data-center": {
+                "meta": {}
+            },
+            "member": {
+                "meta": {}
+            },
+            "registration-agency": {
+                "meta": {}
+            },
+            "resource-type": {
+                "meta": {}
+            },
+            "work-type": {
+                "meta": {}
+            }
+        }
+    }, {
+        "id": "https://doi.org/10.6084/M9.FIGSHARE.4696264",
+        "type": "works",
+        "attributes": {
+            "doi": "10.6084/M9.FIGSHARE.4696264",
+            "url": null,
+            "author": [{
+                "family": "Reasor",
+                "given": "Eric"
+            }],
+            "title": "Nitrogen Rate Response Data",
+            "container-title": "Figshare",
+            "description": "The data presented is from an experiment evaluating the response of bermudagrass off-types and cultivars to increasing rates of nitrogen fertilizer.  Rates included 0, 6, 12, 18, 24, or 48 kg nitrogen per hectare per week for four consecutive weeks.  Grass samples included three, morphologically distinct off-type grasses and bermudagrass cultivars Champion, MiniVerde, and TifEagle.  The response variable is clipping weight expressed as mg per square cm.  The experiment was a completely randomized design with grass sample and nitrogen rate in a factorial treatment arrangement.  Clippings were harvested 7, 14, 21, and 28 days after treatment and was included in the analysis as a repeated measure.",
+            "resource-type-subtype": "Dataset",
+            "data-center-id": "figshare.ars",
+            "member-id": "figshare",
+            "registration-agency-id": "datacite",
+            "resource-type-id": "dataset",
+            "work-type-id": "dataset",
+            "version": null,
+            "license": "https://creativecommons.org/licenses/by/4.0/",
+            "schema-version": "3",
+            "results": [],
+            "related-identifiers": [],
+            "published": "2017",
+            "deposited": "2017-02-26T00:52:07Z",
+            "updated": "2017-02-26T00:52:08Z",
+            "media": null,
+            "xml": "PHJlc291cmNlIHhtbG5zPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtMyIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtMyBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC0zL21ldGFkYXRhLnhzZCI+PGlkZW50aWZpZXIgaWRlbnRpZmllclR5cGU9IkRPSSI+MTAuNjA4NC9tOS5maWdzaGFyZS40Njk2MjY0PC9pZGVudGlmaWVyPjxjcmVhdG9ycz48Y3JlYXRvcj48Y3JlYXRvck5hbWU+RXJpYyBSZWFzb3I8L2NyZWF0b3JOYW1lPjwvY3JlYXRvcj48L2NyZWF0b3JzPjx0aXRsZXM+PHRpdGxlPk5pdHJvZ2VuIFJhdGUgUmVzcG9uc2UgRGF0YTwvdGl0bGU+PC90aXRsZXM+PGRlc2NyaXB0aW9ucz48ZGVzY3JpcHRpb24gZGVzY3JpcHRpb25UeXBlPSJBYnN0cmFjdCI+VGhlIGRhdGEgcHJlc2VudGVkIGlzIGZyb20gYW4gZXhwZXJpbWVudCBldmFsdWF0aW5nIHRoZSByZXNwb25zZSBvZiBiZXJtdWRhZ3Jhc3Mgb2ZmLXR5cGVzIGFuZCBjdWx0aXZhcnMgdG8gaW5jcmVhc2luZyByYXRlcyBvZiBuaXRyb2dlbiBmZXJ0aWxpemVyLiDCoFJhdGVzIGluY2x1ZGVkIDAsIDYsIDEyLCAxOCwgMjQsIG9yIDQ4IGtnIG5pdHJvZ2VuIHBlciBoZWN0YXJlIHBlciB3ZWVrIGZvciBmb3VyIGNvbnNlY3V0aXZlIHdlZWtzLiDCoEdyYXNzIHNhbXBsZXMgaW5jbHVkZWQgdGhyZWUsIG1vcnBob2xvZ2ljYWxseSBkaXN0aW5jdCBvZmYtdHlwZSBncmFzc2VzIGFuZCBiZXJtdWRhZ3Jhc3MgY3VsdGl2YXJzIENoYW1waW9uLCBNaW5pVmVyZGUsIGFuZCBUaWZFYWdsZS4gwqBUaGUgcmVzcG9uc2UgdmFyaWFibGUgaXMgY2xpcHBpbmcgd2VpZ2h0IGV4cHJlc3NlZCBhcyBtZyBwZXIgc3F1YXJlIGNtLiDCoFRoZSBleHBlcmltZW50IHdhcyBhIGNvbXBsZXRlbHkgcmFuZG9taXplZCBkZXNpZ24gd2l0aCBncmFzcyBzYW1wbGUgYW5kIG5pdHJvZ2VuIHJhdGUgaW4gYSBmYWN0b3JpYWwgdHJlYXRtZW50IGFycmFuZ2VtZW50LiDCoENsaXBwaW5ncyB3ZXJlIGhhcnZlc3RlZCA3LCAxNCwgMjEsIGFuZCAyOCBkYXlzIGFmdGVyIHRyZWF0bWVudCBhbmQgd2FzIGluY2x1ZGVkIGluIHRoZSBhbmFseXNpcyBhcyBhIHJlcGVhdGVkIG1lYXN1cmUuPC9kZXNjcmlwdGlvbj48L2Rlc2NyaXB0aW9ucz48c3ViamVjdHM+PHN1YmplY3Q+UGxhbnQgQmlvbG9neTwvc3ViamVjdD48c3ViamVjdCBzY2hlbWVVUkk9Imh0dHA6Ly93d3cuYWJzLmdvdi5hdS9hdXNzdGF0cy9hYnNALm5zZi8wLzZCQjQyN0FCOTY5NkMyMjVDQTI1NzQxODAwMDQ0NjNFIiBzdWJqZWN0U2NoZW1lPSJGT1IiPjYwNzA1IFBsYW50IFBoeXNpb2xvZ3k8L3N1YmplY3Q+PHN1YmplY3Qgc2NoZW1lVVJJPSJodHRwOi8vd3d3LmFicy5nb3YuYXUvYXVzc3RhdHMvYWJzQC5uc2YvMC82QkI0MjdBQjk2OTZDMjI1Q0EyNTc0MTgwMDA0NDYzRSIgc3ViamVjdFNjaGVtZT0iRk9SIj42MDcwMyBQbGFudCBEZXZlbG9wbWVudGFsIGFuZCBSZXByb2R1Y3RpdmUgQmlvbG9neTwvc3ViamVjdD48L3N1YmplY3RzPjxwdWJsaXNoZXI+Rmlnc2hhcmU8L3B1Ymxpc2hlcj48cHVibGljYXRpb25ZZWFyPjIwMTc8L3B1YmxpY2F0aW9uWWVhcj48ZGF0ZXM+PGRhdGUgZGF0ZVR5cGU9IkNyZWF0ZWQiPjIwMTctMDItMjU8L2RhdGU+PGRhdGUgZGF0ZVR5cGU9IlVwZGF0ZWQiPjIwMTctMDItMjY8L2RhdGU+PC9kYXRlcz48cmVzb3VyY2VUeXBlIHJlc291cmNlVHlwZUdlbmVyYWw9IkRhdGFzZXQiPkRhdGFzZXQ8L3Jlc291cmNlVHlwZT48c2l6ZXM+PHNpemU+MTQwMTEgQnl0ZXM8L3NpemU+PC9zaXplcz48cmlnaHRzTGlzdD48cmlnaHRzIHJpZ2h0c1VSST0iaHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LzQuMC8iPkNDIEJZPC9yaWdodHM+PC9yaWdodHNMaXN0PjwvcmVzb3VyY2U+"
+        },
+        "relationships": {
+            "data-center": {
+                "meta": {}
+            },
+            "member": {
+                "meta": {}
+            },
+            "registration-agency": {
+                "meta": {}
+            },
+            "resource-type": {
+                "meta": {}
+            },
+            "work-type": {
+                "meta": {}
+            }
+        }
+    }, {
+        "id": "https://doi.org/10.5281/ZENODO.322598",
+        "type": "works",
+        "attributes": {
+            "doi": "10.5281/ZENODO.322598",
+            "url": null,
+            "author": [{
+                "family": "Ghosn",
+                "given": "Irma"
+            }],
+            "title": "Humanizing Teaching English To Young Learners With Children'S Literature",
+            "container-title": "Zenodo",
+            "description": "Article 3 – Humanizing Teaching English to Young Learners with Children’s Literature",
+            "resource-type-subtype": "Journal article",
+            "data-center-id": "cern.zenodo",
+            "member-id": "cern",
+            "registration-agency-id": "datacite",
+            "resource-type-id": "text",
+            "work-type-id": "report",
+            "version": null,
+            "license": null,
+            "schema-version": "3",
+            "results": [],
+            "related-identifiers": [],
+            "published": "2013",
+            "deposited": "2017-02-26T00:51:29Z",
+            "updated": "2017-02-26T00:51:29Z",
+            "media": null,
+            "xml": "PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0ndXRmLTgnPz4KPHJlc291cmNlIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhtbG5zPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtMyIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtMyBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC0zL21ldGFkYXRhLnhzZCI+CiAgPGlkZW50aWZpZXIgaWRlbnRpZmllclR5cGU9IkRPSSI+MTAuNTI4MS96ZW5vZG8uMzIyNTk4PC9pZGVudGlmaWVyPgogIDxjcmVhdG9ycz4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWU+R2hvc24sIElybWE8L2NyZWF0b3JOYW1lPgogICAgICA8YWZmaWxpYXRpb24+TGViYW5lc2UgQW1lcmljYW4gVW5pdmVyc2l0eTwvYWZmaWxpYXRpb24+CiAgICA8L2NyZWF0b3I+CiAgPC9jcmVhdG9ycz4KICA8dGl0bGVzPgogICAgPHRpdGxlPkh1bWFuaXppbmcgVGVhY2hpbmcgRW5nbGlzaCBUbyBZb3VuZyBMZWFybmVycyBXaXRoIENoaWxkcmVuJ1MgTGl0ZXJhdHVyZTwvdGl0bGU+CiAgPC90aXRsZXM+CiAgPHB1Ymxpc2hlcj5aZW5vZG88L3B1Ymxpc2hlcj4KICA8cHVibGljYXRpb25ZZWFyPjIwMTM8L3B1YmxpY2F0aW9uWWVhcj4KICA8c3ViamVjdHM+CiAgICA8c3ViamVjdD5hdXRoZW50aWMgY2hpbGRyZW4ncyBsaXRlcmF0dXJlPC9zdWJqZWN0PgogICAgPHN1YmplY3Q+aHVtYW5pemluZyBFbmdsaXNoIHRlYWNoaW5nPC9zdWJqZWN0PgogICAgPHN1YmplY3Q+ZW1wYXRoeTwvc3ViamVjdD4KICA8L3N1YmplY3RzPgogIDxkYXRlcz4KICAgIDxkYXRlIGRhdGVUeXBlPSJJc3N1ZWQiPjIwMTMtMDUtMTU8L2RhdGU+CiAgPC9kYXRlcz4KICA8cmVzb3VyY2VUeXBlIHJlc291cmNlVHlwZUdlbmVyYWw9IlRleHQiPkpvdXJuYWwgYXJ0aWNsZTwvcmVzb3VyY2VUeXBlPgogIDxyaWdodHNMaXN0PgogICAgPHJpZ2h0cyByaWdodHNVUkk9ImluZm86ZXUtcmVwby9zZW1hbnRpY3Mvb3BlbkFjY2VzcyI+T3BlbiBBY2Nlc3M8L3JpZ2h0cz4KICA8L3JpZ2h0c0xpc3Q+CiAgPGRlc2NyaXB0aW9ucz4KICAgIDxkZXNjcmlwdGlvbiBkZXNjcmlwdGlvblR5cGU9IkFic3RyYWN0Ij4mbHQ7cCZndDtBcnRpY2xlIDMg4oCTIEh1bWFuaXppbmcgVGVhY2hpbmcgRW5nbGlzaCB0byBZb3VuZyBMZWFybmVycyB3aXRoIENoaWxkcmVu4oCZcyBMaXRlcmF0dXJlJmx0Oy9wJmd0OzwvZGVzY3JpcHRpb24+CiAgPC9kZXNjcmlwdGlvbnM+CjwvcmVzb3VyY2U+Cg=="
+        },
+        "relationships": {
+            "data-center": {
+                "meta": {}
+            },
+            "member": {
+                "meta": {}
+            },
+            "registration-agency": {
+                "meta": {}
+            },
+            "resource-type": {
+                "meta": {}
+            },
+            "work-type": {
+                "meta": {}
+            }
+        }
+    }, {
+        "id": "https://doi.org/10.15468/DL.8CF7LA",
+        "type": "works",
+        "attributes": {
+            "doi": "10.15468/DL.8CF7LA",
+            "url": null,
+            "author": [{
+                "literal": "Occdownload Gbif.Org"
+            }],
+            "title": "GBIF Occurrence Download",
+            "container-title": "The Global Biodiversity Information Facility",
+            "description": "A dataset containing 2 species occurrences available in GBIF matching the query: TaxonKey: Chitra chitra (Hamilton, 1831). The dataset includes 2 records from 1 constituent datasets: \n 2 records from MVZ Herp Collection (Arctos). Data from some individual datasets included in this download may be licensed under less restrictive terms.",
+            "resource-type-subtype": null,
+            "data-center-id": "dk.gbif",
+            "member-id": "dk",
+            "registration-agency-id": "datacite",
+            "resource-type-id": "dataset",
+            "work-type-id": "dataset",
+            "version": null,
+            "license": "https://creativecommons.org/licenses/by/4.0/",
+            "schema-version": "3",
+            "results": [],
+            "related-identifiers": [],
+            "published": "2017",
+            "deposited": "2017-02-26T00:48:51Z",
+            "updated": "2017-02-26T00:48:51Z",
+            "media": null,
+            "xml": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/Pgo8cmVzb3VyY2UgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtMyBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC0zL21ldGFkYXRhLnhzZCIgeG1sbnM9Imh0dHA6Ly9kYXRhY2l0ZS5vcmcvc2NoZW1hL2tlcm5lbC0zIiB4bWxuczp4c2k9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hLWluc3RhbmNlIj4KICAgIDxpZGVudGlmaWVyIGlkZW50aWZpZXJUeXBlPSJET0kiPjEwLjE1NDY4L2RsLjhjZjdsYTwvaWRlbnRpZmllcj4KICAgIDxjcmVhdG9ycz4KICAgICAgICA8Y3JlYXRvcj4KICAgICAgICAgICAgPGNyZWF0b3JOYW1lPm9jY2Rvd25sb2FkIGdiaWYub3JnPC9jcmVhdG9yTmFtZT4KICAgICAgICA8L2NyZWF0b3I+CiAgICA8L2NyZWF0b3JzPgogICAgPHRpdGxlcz4KICAgICAgICA8dGl0bGU+R0JJRiBPY2N1cnJlbmNlIERvd25sb2FkPC90aXRsZT4KICAgIDwvdGl0bGVzPgogICAgPHB1Ymxpc2hlcj5UaGUgR2xvYmFsIEJpb2RpdmVyc2l0eSBJbmZvcm1hdGlvbiBGYWNpbGl0eTwvcHVibGlzaGVyPgogICAgPHB1YmxpY2F0aW9uWWVhcj4yMDE3PC9wdWJsaWNhdGlvblllYXI+CiAgICA8c3ViamVjdHM+CiAgICAgICAgPHN1YmplY3QgeG1sOmxhbmc9ImVuZyI+R0JJRjwvc3ViamVjdD4KICAgICAgICA8c3ViamVjdCB4bWw6bGFuZz0iZW5nIj5iaW9kaXZlcnNpdHk8L3N1YmplY3Q+CiAgICAgICAgPHN1YmplY3QgeG1sOmxhbmc9ImVuZyI+c3BlY2llcyBvY2N1cnJlbmNlczwvc3ViamVjdD4KICAgIDwvc3ViamVjdHM+CiAgICA8ZGF0ZXM+CiAgICAgICAgPGRhdGUgZGF0ZVR5cGU9IkNyZWF0ZWQiPjIwMTctMDItMjY8L2RhdGU+CiAgICAgICAgPGRhdGUgZGF0ZVR5cGU9IlVwZGF0ZWQiPjIwMTctMDItMjY8L2RhdGU+CiAgICA8L2RhdGVzPgogICAgPHJlc291cmNlVHlwZSByZXNvdXJjZVR5cGVHZW5lcmFsPSJEYXRhc2V0Ii8+CiAgICA8YWx0ZXJuYXRlSWRlbnRpZmllcnM+CiAgICAgICAgPGFsdGVybmF0ZUlkZW50aWZpZXIgYWx0ZXJuYXRlSWRlbnRpZmllclR5cGU9IkdCSUYiPjAwNjQ0MDItMTYwOTEwMTUwODUyMDkxPC9hbHRlcm5hdGVJZGVudGlmaWVyPgogICAgPC9hbHRlcm5hdGVJZGVudGlmaWVycz4KICAgIDxyZWxhdGVkSWRlbnRpZmllcnM+CiAgICAgICAgPHJlbGF0ZWRJZGVudGlmaWVyIHJlbGF0ZWRJZGVudGlmaWVyVHlwZT0iRE9JIiByZWxhdGlvblR5cGU9IlJlZmVyZW5jZXMiPjEwLjE1NDY4L3BpMW10czwvcmVsYXRlZElkZW50aWZpZXI+CiAgICA8L3JlbGF0ZWRJZGVudGlmaWVycz4KICAgIDxzaXplcz4KICAgICAgICA8c2l6ZT4xMzUwNDwvc2l6ZT4KICAgIDwvc2l6ZXM+CiAgICA8Zm9ybWF0cz4KICAgICAgICA8Zm9ybWF0PkRhcndpbiBDb3JlIEFyY2hpdmU8L2Zvcm1hdD4KICAgIDwvZm9ybWF0cz4KICAgIDxyaWdodHNMaXN0PgogICAgICAgIDxyaWdodHMgcmlnaHRzVVJJPSJodHRwOi8vY3JlYXRpdmVjb21tb25zLm9yZy9saWNlbnNlcy9ieS80LjAvbGVnYWxjb2RlIj5DcmVhdGl2ZSBDb21tb25zIEF0dHJpYnV0aW9uIChDQy1CWSkgNC4wPC9yaWdodHM+CiAgICA8L3JpZ2h0c0xpc3Q+CiAgICA8ZGVzY3JpcHRpb25zPgogICAgICAgIDxkZXNjcmlwdGlvbiBkZXNjcmlwdGlvblR5cGU9IkFic3RyYWN0IiB4bWw6bGFuZz0iZW5nIj5BIGRhdGFzZXQgY29udGFpbmluZyAyIHNwZWNpZXMgb2NjdXJyZW5jZXMgYXZhaWxhYmxlIGluIEdCSUYgbWF0Y2hpbmcgdGhlIHF1ZXJ5OiBUYXhvbktleTogQ2hpdHJhIGNoaXRyYSAoSGFtaWx0b24sIDE4MzEpLiBUaGUgZGF0YXNldCBpbmNsdWRlcyAyIHJlY29yZHMgZnJvbSAxIGNvbnN0aXR1ZW50IGRhdGFzZXRzOiAKIDIgcmVjb3JkcyBmcm9tIE1WWiBIZXJwIENvbGxlY3Rpb24gKEFyY3RvcykuIERhdGEgZnJvbSBzb21lIGluZGl2aWR1YWwgZGF0YXNldHMgaW5jbHVkZWQgaW4gdGhpcyBkb3dubG9hZCBtYXkgYmUgbGljZW5zZWQgdW5kZXIgbGVzcyByZXN0cmljdGl2ZSB0ZXJtcy48L2Rlc2NyaXB0aW9uPgogICAgPC9kZXNjcmlwdGlvbnM+CjwvcmVzb3VyY2U+Cg=="
+        },
+        "relationships": {
+            "data-center": {
+                "meta": {}
+            },
+            "member": {
+                "meta": {}
+            },
+            "registration-agency": {
+                "meta": {}
+            },
+            "resource-type": {
+                "meta": {}
+            },
+            "work-type": {
+                "meta": {}
+            }
+        }
+    }, {
+        "id": "https://doi.org/10.13140/RG.2.2.12869.04321",
+        "type": "works",
+        "attributes": {
+            "doi": "10.13140/RG.2.2.12869.04321",
+            "url": null,
+            "author": [{
+                "family": "Ruiz",
+                "given": "Alina Alonso"
+            }, {
+                "family": "Águila",
+                "given": "Héctor Díaz"
+            }, {
+                "family": "Sánchez",
+                "given": "Mercedes I. Veliz"
+            }],
+            "title": "Evaluación de la prescripción de Meropenem en el Hospital General “Mártires del 9 de Abril” Sagua la Grande, Villa Clara. Cuba",
+            "container-title": "Unpublished",
+            "description": "",
+            "resource-type-subtype": null,
+            "data-center-id": "rg.rg",
+            "member-id": "rg",
+            "registration-agency-id": "datacite",
+            "resource-type-id": "dataset",
+            "work-type-id": "dataset",
+            "version": null,
+            "license": null,
+            "schema-version": "4",
+            "results": [],
+            "related-identifiers": [],
+            "published": "2017",
+            "deposited": "2017-02-26T00:48:19Z",
+            "updated": "2017-02-26T00:48:19Z",
+            "media": null,
+            "xml": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxyZXNvdXJjZSB4c2k6c2NoZW1hTG9jYXRpb249Imh0dHA6Ly9kYXRhY2l0ZS5vcmcvc2NoZW1hL2tlcm5lbC00IGh0dHA6Ly9zY2hlbWEuZGF0YWNpdGUub3JnL21ldGEva2VybmVsLTQvbWV0YWRhdGEueHNkIiB4bWxucz0iaHR0cDovL2RhdGFjaXRlLm9yZy9zY2hlbWEva2VybmVsLTQiIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiPjxpZGVudGlmaWVyIGlkZW50aWZpZXJUeXBlPSJET0kiPjEwLjEzMTQwL1JHLjIuMi4xMjg2OS4wNDMyMTwvaWRlbnRpZmllcj48Y3JlYXRvcnM+PGNyZWF0b3I+PGNyZWF0b3JOYW1lPkFsaW5hIEFsb25zbyBSdWl6PC9jcmVhdG9yTmFtZT48L2NyZWF0b3I+PGNyZWF0b3I+PGNyZWF0b3JOYW1lPkjDqWN0b3IgRMOtYXogw4FndWlsYTwvY3JlYXRvck5hbWU+PC9jcmVhdG9yPjxjcmVhdG9yPjxjcmVhdG9yTmFtZT5NZXJjZWRlcyBJLiBWZWxpeiBTw6FuY2hlejwvY3JlYXRvck5hbWU+PC9jcmVhdG9yPjwvY3JlYXRvcnM+PHRpdGxlcz48dGl0bGU+RXZhbHVhY2nDs24gZGUgbGEgcHJlc2NyaXBjacOzbiBkZSBNZXJvcGVuZW0gZW4gZWwgSG9zcGl0YWwgR2VuZXJhbCDigJxNw6FydGlyZXMgZGVsIDkgZGUgQWJyaWzigJ0gU2FndWEgbGEgR3JhbmRlLCBWaWxsYSBDbGFyYS4gQ3ViYTwvdGl0bGU+PC90aXRsZXM+PHB1Ymxpc2hlcj5VbnB1Ymxpc2hlZDwvcHVibGlzaGVyPjxwdWJsaWNhdGlvblllYXI+MjAxNzwvcHVibGljYXRpb25ZZWFyPjxyZXNvdXJjZVR5cGUgcmVzb3VyY2VUeXBlR2VuZXJhbD0iRGF0YXNldCIvPjxsYW5ndWFnZT5lczwvbGFuZ3VhZ2U+PC9yZXNvdXJjZT4="
+        },
+        "relationships": {
+            "data-center": {
+                "meta": {}
+            },
+            "member": {
+                "meta": {}
+            },
+            "registration-agency": {
+                "meta": {}
+            },
+            "resource-type": {
+                "meta": {}
+            },
+            "work-type": {
+                "meta": {}
+            }
+        }
+    }, {
+        "id": "https://doi.org/10.5281/ZENODO.322597",
+        "type": "works",
+        "attributes": {
+            "doi": "10.5281/ZENODO.322597",
+            "url": null,
+            "author": [{
+                "family": "Kaminski",
+                "given": "Annett"
+            }],
+            "title": "From Reading Pictures To Understanding A Story In The Foreign Language",
+            "container-title": "Zenodo",
+            "description": "Article 2 – From Reading Pictures to Understanding a Story\n\n ",
+            "resource-type-subtype": "Journal article",
+            "data-center-id": "cern.zenodo",
+            "member-id": "cern",
+            "registration-agency-id": "datacite",
+            "resource-type-id": "text",
+            "work-type-id": "report",
+            "version": null,
+            "license": null,
+            "schema-version": "3",
+            "results": [],
+            "related-identifiers": [],
+            "published": "2013",
+            "deposited": "2017-02-26T00:47:48Z",
+            "updated": "2017-02-26T00:47:48Z",
+            "media": null,
+            "xml": "PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0ndXRmLTgnPz4KPHJlc291cmNlIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhtbG5zPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtMyIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtMyBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC0zL21ldGFkYXRhLnhzZCI+CiAgPGlkZW50aWZpZXIgaWRlbnRpZmllclR5cGU9IkRPSSI+MTAuNTI4MS96ZW5vZG8uMzIyNTk3PC9pZGVudGlmaWVyPgogIDxjcmVhdG9ycz4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWU+S2FtaW5za2ksIEFubmV0dDwvY3JlYXRvck5hbWU+CiAgICAgIDxhZmZpbGlhdGlvbj5Vbml2ZXJzaXR5IG9mIEtvYmxlbnotTGFuZGF1LDwvYWZmaWxpYXRpb24+CiAgICA8L2NyZWF0b3I+CiAgPC9jcmVhdG9ycz4KICA8dGl0bGVzPgogICAgPHRpdGxlPkZyb20gUmVhZGluZyBQaWN0dXJlcyBUbyBVbmRlcnN0YW5kaW5nIEEgU3RvcnkgSW4gVGhlIEZvcmVpZ24gTGFuZ3VhZ2U8L3RpdGxlPgogIDwvdGl0bGVzPgogIDxwdWJsaXNoZXI+WmVub2RvPC9wdWJsaXNoZXI+CiAgPHB1YmxpY2F0aW9uWWVhcj4yMDEzPC9wdWJsaWNhdGlvblllYXI+CiAgPHN1YmplY3RzPgogICAgPHN1YmplY3Q+RUZMPC9zdWJqZWN0PgogICAgPHN1YmplY3Q+dm9jYWJ1bGFyeSBsZWFybmluZzwvc3ViamVjdD4KICAgIDxzdWJqZWN0PnBpY3R1cmVib29rPC9zdWJqZWN0PgogICAgPHN1YmplY3Q+dmlzdWFsIGltYWdlczwvc3ViamVjdD4KICAgIDxzdWJqZWN0PlRoZSBTbWFydGVzdCBHaWFudCBpbiBUb3duPC9zdWJqZWN0PgogICAgPHN1YmplY3Q+aW50ZXJ0ZXh0dWFsaXR5PC9zdWJqZWN0PgogIDwvc3ViamVjdHM+CiAgPGRhdGVzPgogICAgPGRhdGUgZGF0ZVR5cGU9Iklzc3VlZCI+MjAxMy0wNS0xNTwvZGF0ZT4KICA8L2RhdGVzPgogIDxyZXNvdXJjZVR5cGUgcmVzb3VyY2VUeXBlR2VuZXJhbD0iVGV4dCI+Sm91cm5hbCBhcnRpY2xlPC9yZXNvdXJjZVR5cGU+CiAgPHJpZ2h0c0xpc3Q+CiAgICA8cmlnaHRzIHJpZ2h0c1VSST0iaW5mbzpldS1yZXBvL3NlbWFudGljcy9vcGVuQWNjZXNzIj5PcGVuIEFjY2VzczwvcmlnaHRzPgogIDwvcmlnaHRzTGlzdD4KICA8ZGVzY3JpcHRpb25zPgogICAgPGRlc2NyaXB0aW9uIGRlc2NyaXB0aW9uVHlwZT0iQWJzdHJhY3QiPiZsdDtwJmd0O0FydGljbGUgMiDigJMgRnJvbSBSZWFkaW5nIFBpY3R1cmVzIHRvIFVuZGVyc3RhbmRpbmcgYSBTdG9yeSZsdDsvcCZndDsKCiZsdDtwJmd0O8KgJmx0Oy9wJmd0OzwvZGVzY3JpcHRpb24+CiAgPC9kZXNjcmlwdGlvbnM+CjwvcmVzb3VyY2U+Cg=="
+        },
+        "relationships": {
+            "data-center": {
+                "meta": {}
+            },
+            "member": {
+                "meta": {}
+            },
+            "registration-agency": {
+                "meta": {}
+            },
+            "resource-type": {
+                "meta": {}
+            },
+            "work-type": {
+                "meta": {}
+            }
+        }
+    }, {
+        "id": "https://doi.org/10.5281/ZENODO.322596",
+        "type": "works",
+        "attributes": {
+            "doi": "10.5281/ZENODO.322596",
+            "url": null,
+            "author": [{
+                "family": "Deszcz-Tryhubczak",
+                "given": "Justyna"
+            }, {
+                "family": "Marecki",
+                "given": "Mateusz"
+            }],
+            "title": "The World Turned Upside Down: Exploring Alternate History With Young Adults",
+            "container-title": "Zenodo",
+            "description": "Article 1 – The World Turned Upside Down",
+            "resource-type-subtype": "Journal article",
+            "data-center-id": "cern.zenodo",
+            "member-id": "cern",
+            "registration-agency-id": "datacite",
+            "resource-type-id": "text",
+            "work-type-id": "report",
+            "version": null,
+            "license": null,
+            "schema-version": "3",
+            "results": [],
+            "related-identifiers": [],
+            "published": "2013",
+            "deposited": "2017-02-26T00:44:31Z",
+            "updated": "2017-02-26T00:44:31Z",
+            "media": null,
+            "xml": "PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0ndXRmLTgnPz4KPHJlc291cmNlIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhtbG5zPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtMyIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtMyBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC0zL21ldGFkYXRhLnhzZCI+CiAgPGlkZW50aWZpZXIgaWRlbnRpZmllclR5cGU9IkRPSSI+MTAuNTI4MS96ZW5vZG8uMzIyNTk2PC9pZGVudGlmaWVyPgogIDxjcmVhdG9ycz4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWU+RGVzemN6LVRyeWh1YmN6YWssIEp1c3R5bmE8L2NyZWF0b3JOYW1lPgogICAgICA8YWZmaWxpYXRpb24+VW5pdmVyc2l0eSBvZiBXcm9jxYJhdzwvYWZmaWxpYXRpb24+CiAgICA8L2NyZWF0b3I+CiAgICA8Y3JlYXRvcj4KICAgICAgPGNyZWF0b3JOYW1lPk1hcmVja2ksIE1hdGV1c3o8L2NyZWF0b3JOYW1lPgogICAgICA8YWZmaWxpYXRpb24+VW5pdmVyc2l0eSBvZiBXcm9jxYJhdzwvYWZmaWxpYXRpb24+CiAgICA8L2NyZWF0b3I+CiAgPC9jcmVhdG9ycz4KICA8dGl0bGVzPgogICAgPHRpdGxlPlRoZSBXb3JsZCBUdXJuZWQgVXBzaWRlIERvd246IEV4cGxvcmluZyBBbHRlcm5hdGUgSGlzdG9yeSBXaXRoIFlvdW5nIEFkdWx0czwvdGl0bGU+CiAgPC90aXRsZXM+CiAgPHB1Ymxpc2hlcj5aZW5vZG88L3B1Ymxpc2hlcj4KICA8cHVibGljYXRpb25ZZWFyPjIwMTM8L3B1YmxpY2F0aW9uWWVhcj4KICA8c3ViamVjdHM+CiAgICA8c3ViamVjdD5hbHRlcm5hdGUgaGlzdG9yeTwvc3ViamVjdD4KICAgIDxzdWJqZWN0PnRoZSB0aGlyZCBjb25kaXRpb25hbDwvc3ViamVjdD4KICAgIDxzdWJqZWN0PnV0b3BpYTwvc3ViamVjdD4KICAgIDxzdWJqZWN0PnRlZW5hZ2UgbGVhcm5lcnM8L3N1YmplY3Q+CiAgICA8c3ViamVjdD5jcmVhdGl2ZSB3cml0aW5nPC9zdWJqZWN0PgogIDwvc3ViamVjdHM+CiAgPGRhdGVzPgogICAgPGRhdGUgZGF0ZVR5cGU9Iklzc3VlZCI+MjAxMy0wNS0xNTwvZGF0ZT4KICA8L2RhdGVzPgogIDxyZXNvdXJjZVR5cGUgcmVzb3VyY2VUeXBlR2VuZXJhbD0iVGV4dCI+Sm91cm5hbCBhcnRpY2xlPC9yZXNvdXJjZVR5cGU+CiAgPHJpZ2h0c0xpc3Q+CiAgICA8cmlnaHRzIHJpZ2h0c1VSST0iaW5mbzpldS1yZXBvL3NlbWFudGljcy9vcGVuQWNjZXNzIj5PcGVuIEFjY2VzczwvcmlnaHRzPgogIDwvcmlnaHRzTGlzdD4KICA8ZGVzY3JpcHRpb25zPgogICAgPGRlc2NyaXB0aW9uIGRlc2NyaXB0aW9uVHlwZT0iQWJzdHJhY3QiPiZsdDtwJmd0O0FydGljbGUgMSDigJMgVGhlIFdvcmxkIFR1cm5lZCBVcHNpZGUgRG93biZsdDsvcCZndDs8L2Rlc2NyaXB0aW9uPgogIDwvZGVzY3JpcHRpb25zPgo8L3Jlc291cmNlPgo="
+        },
+        "relationships": {
+            "data-center": {
+                "meta": {}
+            },
+            "member": {
+                "meta": {}
+            },
+            "registration-agency": {
+                "meta": {}
+            },
+            "resource-type": {
+                "meta": {}
+            },
+            "work-type": {
+                "meta": {}
+            }
+        }
+    }, {
+        "id": "https://doi.org/10.5281/ZENODO.322595",
+        "type": "works",
+        "attributes": {
+            "doi": "10.5281/ZENODO.322595",
+            "url": null,
+            "author": [{
+                "family": "Dolan",
+                "given": "Anne M."
+            }],
+            "title": "Intercultural Education, Picturebooks And Refugees: Approaches For Language Teachers",
+            "container-title": "Zenodo",
+            "description": "Article 6 – Intercultural Education, Picturebooks and Refugees\n\n ",
+            "resource-type-subtype": "Journal article",
+            "data-center-id": "cern.zenodo",
+            "member-id": "cern",
+            "registration-agency-id": "datacite",
+            "resource-type-id": "text",
+            "work-type-id": "report",
+            "version": null,
+            "license": null,
+            "schema-version": "3",
+            "results": [],
+            "related-identifiers": [],
+            "published": "2014",
+            "deposited": "2017-02-26T00:39:12Z",
+            "updated": "2017-02-26T00:39:12Z",
+            "media": null,
+            "xml": "PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0ndXRmLTgnPz4KPHJlc291cmNlIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhtbG5zPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtMyIgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vZGF0YWNpdGUub3JnL3NjaGVtYS9rZXJuZWwtMyBodHRwOi8vc2NoZW1hLmRhdGFjaXRlLm9yZy9tZXRhL2tlcm5lbC0zL21ldGFkYXRhLnhzZCI+CiAgPGlkZW50aWZpZXIgaWRlbnRpZmllclR5cGU9IkRPSSI+MTAuNTI4MS96ZW5vZG8uMzIyNTk1PC9pZGVudGlmaWVyPgogIDxjcmVhdG9ycz4KICAgIDxjcmVhdG9yPgogICAgICA8Y3JlYXRvck5hbWU+RG9sYW4sIEFubmUgTS48L2NyZWF0b3JOYW1lPgogICAgICA8YWZmaWxpYXRpb24+TWFyeSBJbW1hY3VsYXRlIENvbGxlZ2U8L2FmZmlsaWF0aW9uPgogICAgPC9jcmVhdG9yPgogIDwvY3JlYXRvcnM+CiAgPHRpdGxlcz4KICAgIDx0aXRsZT5JbnRlcmN1bHR1cmFsIEVkdWNhdGlvbiwgUGljdHVyZWJvb2tzIEFuZCBSZWZ1Z2VlczogQXBwcm9hY2hlcyBGb3IgTGFuZ3VhZ2UgVGVhY2hlcnM8L3RpdGxlPgogIDwvdGl0bGVzPgogIDxwdWJsaXNoZXI+WmVub2RvPC9wdWJsaXNoZXI+CiAgPHB1YmxpY2F0aW9uWWVhcj4yMDE0PC9wdWJsaWNhdGlvblllYXI+CiAgPHN1YmplY3RzPgogICAgPHN1YmplY3Q+cmVmdWdlZXM8L3N1YmplY3Q+CiAgICA8c3ViamVjdD5hc3lsdW0gc2Vla2Vyczwvc3ViamVjdD4KICAgIDxzdWJqZWN0PnBpY3R1cmVib29rczwvc3ViamVjdD4KICAgIDxzdWJqZWN0PmludGVyY3VsdHVyYWwgZWR1Y2F0aW9uPC9zdWJqZWN0PgogICAgPHN1YmplY3Q+Y3JpdGljYWwgbXVsdGljdWx0dXJhbCBlZHVjYXRpb248L3N1YmplY3Q+CiAgPC9zdWJqZWN0cz4KICA8ZGF0ZXM+CiAgICA8ZGF0ZSBkYXRlVHlwZT0iSXNzdWVkIj4yMDE0LTA1LTE1PC9kYXRlPgogIDwvZGF0ZXM+CiAgPHJlc291cmNlVHlwZSByZXNvdXJjZVR5cGVHZW5lcmFsPSJUZXh0Ij5Kb3VybmFsIGFydGljbGU8L3Jlc291cmNlVHlwZT4KICA8cmlnaHRzTGlzdD4KICAgIDxyaWdodHMgcmlnaHRzVVJJPSJpbmZvOmV1LXJlcG8vc2VtYW50aWNzL29wZW5BY2Nlc3MiPk9wZW4gQWNjZXNzPC9yaWdodHM+CiAgPC9yaWdodHNMaXN0PgogIDxkZXNjcmlwdGlvbnM+CiAgICA8ZGVzY3JpcHRpb24gZGVzY3JpcHRpb25UeXBlPSJBYnN0cmFjdCI+Jmx0O3AmZ3Q7QXJ0aWNsZSA2IOKAkyBJbnRlcmN1bHR1cmFsIEVkdWNhdGlvbiwgUGljdHVyZWJvb2tzIGFuZCBSZWZ1Z2VlcyZsdDsvcCZndDsKCiZsdDtwJmd0O8KgJmx0Oy9wJmd0OzwvZGVzY3JpcHRpb24+CiAgPC9kZXNjcmlwdGlvbnM+CjwvcmVzb3VyY2U+Cg=="
+        },
+        "relationships": {
+            "data-center": {
+                "meta": {}
+            },
+            "member": {
+                "meta": {}
+            },
+            "registration-agency": {
+                "meta": {}
+            },
+            "resource-type": {
+                "meta": {}
+            },
+            "work-type": {
+                "meta": {}
+            }
+        }
+    }],
+    "meta": {
+        "resource-types": [{
+            "id": "dataset",
+            "title": "Dataset",
+            "count": 3015175
+        }, {
+            "id": "text",
+            "title": "Text",
+            "count": 1469899
+        }, {
+            "id": "image",
+            "title": "Image",
+            "count": 810904
+        }, {
+            "id": "collection",
+            "title": "Collection",
+            "count": 345464
+        }, {
+            "id": "other",
+            "title": "Other",
+            "count": 44390
+        }, {
+            "id": "software",
+            "title": "Software",
+            "count": 19713
+        }, {
+            "id": "audiovisual",
+            "title": "Audiovisual",
+            "count": 14822
+        }, {
+            "id": "event",
+            "title": "Event",
+            "count": 6547
+        }, {
+            "id": "physical-object",
+            "title": "Physical object",
+            "count": 6472
+        }, {
+            "id": "model",
+            "title": "Model",
+            "count": 617
+        }, {
+            "id": "sound",
+            "title": "Sound",
+            "count": 381
+        }, {
+            "id": "interactive-resource",
+            "title": "Interactive resource",
+            "count": 352
+        }, {
+            "id": "workflow",
+            "title": "Workflow",
+            "count": 253
+        }, {
+            "id": "film",
+            "title": "Film",
+            "count": 131
+        }, {
+            "id": "service",
+            "title": "Service",
+            "count": 14
+        }],
+        "years": [{
+            "id": "2017",
+            "title": "2017",
+            "count": 98774
+        }, {
+            "id": "2016",
+            "title": "2016",
+            "count": 871779
+        }, {
+            "id": "2015",
+            "title": "2015",
+            "count": 1305863
+        }, {
+            "id": "2014",
+            "title": "2014",
+            "count": 1009226
+        }, {
+            "id": "2013",
+            "title": "2013",
+            "count": 241316
+        }, {
+            "id": "2012",
+            "title": "2012",
+            "count": 192838
+        }, {
+            "id": "2011",
+            "title": "2011",
+            "count": 307081
+        }, {
+            "id": "2010",
+            "title": "2010",
+            "count": 131896
+        }, {
+            "id": "2009",
+            "title": "2009",
+            "count": 123598
+        }, {
+            "id": "2008",
+            "title": "2008",
+            "count": 122360
+        }, {
+            "id": "2007",
+            "title": "2007",
+            "count": 157019
+        }, {
+            "id": "2006",
+            "title": "2006",
+            "count": 143803
+        }, {
+            "id": "2005",
+            "title": "2005",
+            "count": 158315
+        }, {
+            "id": "2004",
+            "title": "2004",
+            "count": 77028
+        }, {
+            "id": "2003",
+            "title": "2003",
+            "count": 73735
+        }],
+        "data-centers": [{
+            "id": "bl.ccdc",
+            "title": "The Cambridge Crystallographic Data Centre",
+            "count": 648338
+        }, {
+            "id": "figshare.ars",
+            "title": "figshare Academic Research System",
+            "count": 501798
+        }, {
+            "id": "estdoi.bio",
+            "title": "TÜ Loodusmuuseum",
+            "count": 487451
+        }, {
+            "id": "gesis.die",
+            "title": "Deutsches Institut für Erwachsenenbildung",
+            "count": 373193
+        }, {
+            "id": "tib.pangaea",
+            "title": "PANGAEA - Publishing Network for Geoscientific and Environmental Data",
+            "count": 353071
+        }, {
+            "id": "rg.rg",
+            "title": "ResearchGate",
+            "count": 314858
+        }, {
+            "id": "ethz.epics-ba",
+            "title": "E-Pics Bildarchiv",
+            "count": 299888
+        }, {
+            "id": "dk.gbif",
+            "title": "Global Biodiversity Information Facility",
+            "count": 241523
+        }, {
+            "id": "cern.hepdata",
+            "title": "HEPData.net",
+            "count": 236465
+        }, {
+            "id": "ethz.wsllfi",
+            "title": "WSL Landesforstinventar",
+            "count": 228420
+        }, {
+            "id": "cisti.ubc",
+            "title": "University of British Columbia",
+            "count": 201678
+        }, {
+            "id": "ethz.seals",
+            "title": "E-Periodica",
+            "count": 190718
+        }, {
+            "id": "bl.imperial",
+            "title": "Imperial College London",
+            "count": 164117
+        }, {
+            "id": "cern.zenodo",
+            "title": "ZENODO - Research. Shared.",
+            "count": 163345
+        }, {
+            "id": "ands.centre72",
+            "title": "PARADISEC",
+            "count": 155569
+        }],
+        "schema-versions": [{
+            "id": "4",
+            "title": "Schema 4",
+            "count": 145891
+        }, {
+            "id": "3",
+            "title": "Schema 3",
+            "count": 5935822
+        }, {
+            "id": "2.2",
+            "title": "Schema 2.2",
+            "count": 402779
+        }, {
+            "id": "2.1",
+            "title": "Schema 2.1",
+            "count": 3437
+        }, {
+            "id": "2.0",
+            "title": "Schema 2.0",
+            "count": 2
+        }],
+        "total": 6487931
+    }
+}

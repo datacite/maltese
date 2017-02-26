@@ -1,0 +1,109 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.datacite.org/works?from-update-date=2015-04-07&offset=0&order=asc&rows=0&sort=updated&until-update-date=2015-04-08
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Maremma - https://github.com/datacite/maremma
+      Accept:
+      - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - openresty/1.11.2.2
+      Date:
+      - Sun, 26 Feb 2017 09:39:55 GMT
+      Content-Type:
+      - application/vnd.api+json; charset=utf-8
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Accept-Encoding
+      Access-Control-Max-Age:
+      - '1728000'
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 4d8199a9-3098-4e6f-a1fe-ec6f809a2a9c
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Etag:
+      - W/"8a9f8749b5d565ebb940f74bdecdeb42"
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Runtime:
+      - '0.043001'
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger 5.1.2
+      Access-Control-Allow-Headers:
+      - Content-Type,Accept,Accept-Encoding,Origin,User-Agent,Cache-Control,Keep-Alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJkYXRhIjpbXSwibWV0YSI6eyJyZXNvdXJjZS10eXBlcyI6W3siaWQiOiJk
+        YXRhc2V0IiwidGl0bGUiOiJEYXRhc2V0IiwiY291bnQiOjEwMzN9LHsiaWQi
+        OiJ0ZXh0IiwidGl0bGUiOiJUZXh0IiwiY291bnQiOjcyNH0seyJpZCI6Im90
+        aGVyIiwidGl0bGUiOiJPdGhlciIsImNvdW50IjoxMjZ9LHsiaWQiOiJjb2xs
+        ZWN0aW9uIiwidGl0bGUiOiJDb2xsZWN0aW9uIiwiY291bnQiOjY4fSx7Imlk
+        IjoiaW1hZ2UiLCJ0aXRsZSI6IkltYWdlIiwiY291bnQiOjMyfSx7ImlkIjoi
+        c29mdHdhcmUiLCJ0aXRsZSI6IlNvZnR3YXJlIiwiY291bnQiOjI5fSx7Imlk
+        IjoiYXVkaW92aXN1YWwiLCJ0aXRsZSI6IkF1ZGlvdmlzdWFsIiwiY291bnQi
+        OjJ9XSwieWVhcnMiOlt7ImlkIjoiMjU1NyIsInRpdGxlIjoiMjU1NyIsImNv
+        dW50IjoxNjN9LHsiaWQiOiIyNTU2IiwidGl0bGUiOiIyNTU2IiwiY291bnQi
+        OjE4OX0seyJpZCI6IjI1NTAiLCJ0aXRsZSI6IjI1NTAiLCJjb3VudCI6MTR9
+        LHsiaWQiOiIyNTQ5IiwidGl0bGUiOiIyNTQ5IiwiY291bnQiOjE0fSx7Imlk
+        IjoiMjAxNSIsInRpdGxlIjoiMjAxNSIsImNvdW50IjoxMzc4fSx7ImlkIjoi
+        MjAxNCIsInRpdGxlIjoiMjAxNCIsImNvdW50IjoxODd9LHsiaWQiOiIyMDEz
+        IiwidGl0bGUiOiIyMDEzIiwiY291bnQiOjg1fSx7ImlkIjoiMjAxMiIsInRp
+        dGxlIjoiMjAxMiIsImNvdW50Ijo1OH0seyJpZCI6IjIwMTEiLCJ0aXRsZSI6
+        IjIwMTEiLCJjb3VudCI6NTF9LHsiaWQiOiIyMDEwIiwidGl0bGUiOiIyMDEw
+        IiwiY291bnQiOjMwfSx7ImlkIjoiMjAwOSIsInRpdGxlIjoiMjAwOSIsImNv
+        dW50IjozNn0seyJpZCI6IjIwMDciLCJ0aXRsZSI6IjIwMDciLCJjb3VudCI6
+        MTh9LHsiaWQiOiIyMDA2IiwidGl0bGUiOiIyMDA2IiwiY291bnQiOjI0fSx7
+        ImlkIjoiMjAwNSIsInRpdGxlIjoiMjAwNSIsImNvdW50IjoxN30seyJpZCI6
+        IjE5NDMiLCJ0aXRsZSI6IjE5NDMiLCJjb3VudCI6MTEwfV0sImRhdGEtY2Vu
+        dGVycyI6W3siaWQiOiJkay5nYmlmIiwidGl0bGUiOiJHbG9iYWwgQmlvZGl2
+        ZXJzaXR5IEluZm9ybWF0aW9uIEZhY2lsaXR5IiwiY291bnQiOjY5OX0seyJp
+        ZCI6InJnLnJnIiwidGl0bGUiOiJSZXNlYXJjaEdhdGUiLCJjb3VudCI6NjEw
+        fSx7ImlkIjoibnJjdC5kYjEiLCJ0aXRsZSI6Ik5SQ1QgRGF0YSBDZW50ZXIi
+        LCJjb3VudCI6NDUwfSx7ImlkIjoiZmlnc2hhcmUuYXJzIiwidGl0bGUiOiJm
+        aWdzaGFyZSBBY2FkZW1pYyBSZXNlYXJjaCBTeXN0ZW0iLCJjb3VudCI6MTY5
+        fSx7ImlkIjoiY2RsLmRwbGFuZXQiLCJ0aXRsZSI6IkRhdGEtUGxhbmV0Iiwi
+        Y291bnQiOjEyNX0seyJpZCI6ImV0aHouc2VhbHMiLCJ0aXRsZSI6IkUtUGVy
+        aW9kaWNhIiwiY291bnQiOjExMH0seyJpZCI6InRpYi51YnRkb2lzIiwidGl0
+        bGUiOiJVbml2ZXJzaXTDpHRzYmlibGlvdGhlayBUw7xiaW5nZW4iLCJjb3Vu
+        dCI6NjJ9LHsiaWQiOiJjZXJuLnplbm9kbyIsInRpdGxlIjoiWkVOT0RPIC0g
+        UmVzZWFyY2guIFNoYXJlZC4iLCJjb3VudCI6NDJ9LHsiaWQiOiJjZGwucGVl
+        cmoiLCJ0aXRsZSI6IlBlZXJKIiwiY291bnQiOjI2fSx7ImlkIjoiY3J1aS51
+        bmlsZSIsInRpdGxlIjoiVW5pdmVyc2l0w6AgZGVsIFNhbGVudG8iLCJjb3Vu
+        dCI6MjV9LHsiaWQiOiJjZGwubHRlcm5ldCIsInRpdGxlIjoiTG9uZyBUZXJt
+        IEVjb2xvZ2ljYWwgUmVzZWFyY2ggKExURVIpIE5ldHdvcmsiLCJjb3VudCI6
+        MjJ9LHsiaWQiOiJjZGwucnV0Z2VycyIsInRpdGxlIjoiUnV0Z2VycyBVbml2
+        ZXJzaXR5IExpYnJhcnkiLCJjb3VudCI6MTh9LHsiaWQiOiJjcnVpLnVuaWJv
+        IiwidGl0bGUiOiJVbml2ZXJzaXTDoCBkZWdsaSBTdHVkaSBkaSBCb2xvZ25h
+        IiwiY291bnQiOjE2fSx7ImlkIjoiY2RsLmN1bGlzIiwidGl0bGUiOiJDb2x1
+        bWJpYSBVbml2ZXJzaXR5IExpYnJhcmllcy9JbmZvcm1hdGlvbiBTZXJ2aWNl
+        cyAoQ1VML0lTKSIsImNvdW50IjoxNH0seyJpZCI6InRpYi5raXQiLCJ0aXRs
+        ZSI6IkthcmxzcnVoZXIgSW5zdGl0dXQgZsO8ciBUZWNobm9sb2dpZSIsImNv
+        dW50IjoxNH1dLCJzY2hlbWEtdmVyc2lvbnMiOlt7ImlkIjoiMyIsInRpdGxl
+        IjoiU2NoZW1hIDMiLCJjb3VudCI6MjMzMH0seyJpZCI6IjIuMiIsInRpdGxl
+        IjoiU2NoZW1hIDIuMiIsImNvdW50IjoxODJ9LHsiaWQiOiIyLjEiLCJ0aXRs
+        ZSI6IlNjaGVtYSAyLjEiLCJjb3VudCI6OX1dLCJ0b3RhbCI6MjUyMX19
+    http_version: 
+  recorded_at: Tue, 07 Apr 2015 22:00:00 GMT
+recorded_with: VCR 3.0.3
