@@ -65,12 +65,12 @@ module Maltese
         parse_data(data, sitemap: sitemap)
       end
 
+      # sync time with AWS S3 before uploading
+      fog_storage.sync_clock
+
       sitemap.finalize!
       end_time = Time.now
       puts sitemap.sitemap_index.stats_summary(:time_taken => end_time - start_time)
-      #return [OpenStruct.new(body: { "data" => [] })] if data.empty?
-
-      #push_data(data, options)
     end
 
     def get_data(options={})
@@ -83,8 +83,18 @@ module Maltese
     end
 
     def sitemap
-      @sitemap ||= SitemapGenerator::LinkSet.new(default_host: sitemap_url,
-                                                 finalize: false)
+      @sitemap ||= SitemapGenerator::LinkSet.new(
+        default_host: sitemap_url,
+        adapter: SitemapGenerator::S3Adapter.new,
+        sitemaps_host: sitemaps_host,
+        sitemaps_path: sitemaps_path,
+        finalize: false)
+    end
+
+    def fog_storage
+      Fog::Storage.new(provider: 'AWS',
+                       aws_access_key_id: ENV['AWS_ACCESS_KEY_ID'],
+                       aws_secret_access_key: ENV['AWS_SECRET_ACCESS_KEY'])
     end
 
     def url
@@ -93,6 +103,14 @@ module Maltese
 
     def sitemap_url
       ENV['SITEMAP_URL'].presence || "https://search.datacite.org"
+    end
+
+    def sitemaps_host
+      "http://#{ENV['FOG_DIRECTORY']}.s3.amazonaws.com/"
+    end
+
+    def sitemaps_path
+      'sitemaps/'
     end
 
     def timeout

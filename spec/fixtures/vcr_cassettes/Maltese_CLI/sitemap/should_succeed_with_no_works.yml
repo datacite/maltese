@@ -19,7 +19,7 @@ http_interactions:
       Server:
       - openresty/1.11.2.2
       Date:
-      - Sun, 26 Feb 2017 11:17:22 GMT
+      - Sun, 26 Feb 2017 12:49:13 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Connection:
@@ -30,9 +30,9 @@ http_interactions:
       - GET, POST, OPTIONS
     body:
       encoding: UTF-8
-      string: '{"responseHeader":{"status":0,"QTime":0},"response":{"numFound":0,"start":0,"docs":[]}}
+      string: '{"responseHeader":{"status":0,"QTime":1},"response":{"numFound":0,"start":0,"docs":[]}}
 
 '
     http_version: 
-  recorded_at: Sun, 26 Feb 2017 11:17:22 GMT
+  recorded_at: Sun, 26 Feb 2017 12:49:13 GMT
 recorded_with: VCR 3.0.3

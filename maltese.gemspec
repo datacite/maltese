@@ -20,6 +20,8 @@ Gem::Specification.new do |s|
   s.add_dependency 'dotenv', '~> 2.1', '>= 2.1.1'
   s.add_dependency 'thor', '~> 0.19'
   s.add_dependency 'sitemap_generator', '~> 5.1'
+  s.add_dependency 'fog-aws', '~> 0.7.6'
+  s.add_dependency 'mime-types', '~> 3.1'
   s.add_development_dependency 'bundler', '~> 1.0'
   s.add_development_dependency 'rspec', '~> 3.4'
   s.add_development_dependency 'rake', '~> 12.0'

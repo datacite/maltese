@@ -12,6 +12,9 @@
 
 # Used by dotenv library to load environment variables.
 .env
+.env.*
+!.env.example
+!.env.travis
 
 ## Specific to RubyMotion:
 .dat*

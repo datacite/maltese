@@ -1,3 +1,5 @@
+ENV["FOG_DIRECTORY"] = "sitemaps.test.datacite.org"
+
 require 'bundler/setup'
 Bundler.setup
 
@@ -86,5 +88,8 @@ VCR.configure do |c|
   c.ignore_localhost = true
   c.ignore_hosts 'codeclimate.com'
   c.configure_rspec_metadata!
-  c.filter_sensitive_data("<VOLPINO_TOKEN>") { ENV['VOLPINO_TOKEN'] }
+  c.filter_sensitive_data("<AWS_ACCESS_KEY_ID>") { ENV["AWS_ACCESS_KEY_ID"] }
+  c.filter_sensitive_data("<AWS_SECRET_ACCESS_KEY>") { ENV["AWS_SECRET_ACCESS_KEY"] }
+  c.filter_sensitive_data("<FOG_DIRECTORY>") { ENV['FOG_DIRECTORY'] }
+  c.filter_sensitive_data("<FOG_REGION>") { ENV["FOG_REGION"] }
 end
