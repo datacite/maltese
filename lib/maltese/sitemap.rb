@@ -2,19 +2,19 @@ module Maltese
   class Sitemap
     attr_reader :sitemap_bucket, :sitemap_url, :from_date, :until_date
 
-    def initialize(attributes={})
-      @sitemap_bucket = attributes[:sitemap_bucket]|| "sitemaps.datacite.org"
-      @sitemap_url = attributes[:sitemap_url] || "https://search.datacite.org"
-      @from_date = attributes[:from_date].presence || (Time.now.to_date - 1.day).iso8601
-      @until_date = attributes[:until_date].presence || Time.now.to_date.iso8601
-    end
-
     # load ENV variables from container environment if json file exists
     # see https://github.com/phusion/baseimage-docker#envvar_dumps
     env_json_file = "/etc/container_environment.json"
     if File.size?(env_json_file).to_i > 2
       env_vars = JSON.parse(File.read(env_json_file))
       env_vars.each { |k, v| ENV[k] = v }
+    end
+
+    def initialize(attributes={})
+      @sitemap_bucket = attributes[:sitemap_bucket]|| "sitemaps.datacite.org"
+      @sitemap_url = attributes[:sitemap_url] || "https://search.datacite.org"
+      @from_date = attributes[:from_date].presence || (Time.now.to_date - 1.day).iso8601
+      @until_date = attributes[:until_date].presence || Time.now.to_date.iso8601
     end
 
     def search_path
@@ -43,6 +43,7 @@ module Maltese
         adapter: s3_adapter,
         sitemaps_host: sitemaps_host,
         sitemaps_path: sitemaps_path,
+        include_index: true,
         finalize: false)
     end
 
