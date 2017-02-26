@@ -46,6 +46,7 @@ module Maltese
         adapter: s3_adapter,
         sitemaps_host: sitemaps_host,
         sitemaps_path: sitemaps_path,
+        include_index: true,
         finalize: false)
     end
 
