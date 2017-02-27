@@ -11,7 +11,7 @@ module Maltese
     end
 
     def initialize(attributes={})
-      @sitemap_bucket = attributes[:sitemap_bucket].presence|| "search.datacite.org"
+      @sitemap_bucket = attributes[:sitemap_bucket].presence || "search.datacite.org"
       @from_date = attributes[:from_date].presence || (Time.now.to_date - 1.day).iso8601
       @until_date = attributes[:until_date].presence || Time.now.to_date.iso8601
     end
