@@ -39,6 +39,7 @@ module Maltese
     def sitemap
       @sitemap ||= SitemapGenerator::LinkSet.new(
         default_host: sitemap_url,
+        sitemaps_host: sitemap_url,
         adapter: s3_adapter,
         sitemaps_path: sitemaps_path,
         finalize: false)
@@ -48,8 +49,8 @@ module Maltese
       SitemapGenerator::S3Adapter.new(fog_provider: 'AWS',
                                       aws_access_key_id: ENV['AWS_ACCESS_KEY_ID'],
                                       aws_secret_access_key: ENV['AWS_SECRET_ACCESS_KEY'],
-                                      fog_directory: sitemap_bucket,
                                       fog_region: ENV['AWS_REGION'],
+                                      fog_directory: sitemap_bucket,
                                       path_style: true)
     end
 

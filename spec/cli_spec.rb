@@ -6,7 +6,7 @@ describe Maltese::CLI do
     described_class.new
   end
 
-  let(:from_date) { "2015-04-07" }
+  let(:from_date) { "2015-03-15" }
   let(:until_date) { "2015-04-08" }
   let(:sitemap_bucket) { "search.datacite.org" }
   let(:cli_options) { { sitemap_bucket: sitemap_bucket,
@@ -16,11 +16,16 @@ describe Maltese::CLI do
   describe "sitemap", vcr: true, :order => :defined do
     it 'should succeed' do
       subject.options = cli_options
-      expect { subject.sitemap }.to output(/2522 links/).to_stdout
-      sitemap = Zlib::GzipReader.open("public/sitemaps-test/sitemap.xml.gz") { |gz| gz.read }
+      expect { subject.sitemap }.to output(/3380 links/).to_stdout
+      sitemap = Zlib::GzipReader.open("public/sitemaps-test/sitemap2.xml.gz") { |gz| gz.read }
       doc = Nokogiri::XML(sitemap)
-      expect(doc.xpath("//xmlns:url").size).to eq(2522)
+      expect(doc.xpath("//xmlns:url").size).to eq(3380)
       expect(doc.xpath("//xmlns:loc").last.text).to eq("https://search.datacite.org/works/10.6084/M9.FIGSHARE.1371139")
+
+      sitemap_index = Zlib::GzipReader.open("public/sitemaps-test/sitemap.xml.gz") { |gz| gz.read }
+      doc = Nokogiri::XML(sitemap_index)
+      expect(doc.xpath("//xmlns:sitemap").size).to eq(2)
+      expect(doc.xpath("//xmlns:loc").last.text).to eq("https://search.datacite.org/sitemaps-test/sitemap2.xml.gz")
     end
 
     it 'should succeed with no works' do
