@@ -14,6 +14,8 @@ module Maltese
       @sitemap_bucket = attributes[:sitemap_bucket].presence || "search.datacite.org"
       @from_date = attributes[:from_date].presence || (Time.now.to_date - 1.day).iso8601
       @until_date = attributes[:until_date].presence || Time.now.to_date.iso8601
+      @solr_username = ENV['SOLR_USERNAME']
+      @solr_password = ENV['SOLR_PASSWORD']
     end
 
     def sitemap_url
@@ -21,7 +23,7 @@ module Maltese
     end
 
     def search_path
-      "#{sitemap_url}/api?"
+      "https://solr.datacite.org/public/api?"
     end
 
     def sitemaps_path
@@ -61,6 +63,11 @@ module Maltese
     end
 
     def queue_jobs(options={})
+
+      # Add basic auth options in
+      options = options.merge(username: @solr_username, password: @solr_password)
+      puts options.inspect
+
       total = get_total(options)
 
       if total > 0
@@ -92,7 +99,7 @@ module Maltese
                  rows: options[:rows],
                  fl: "doi,updated",
                  sort: "updated asc",
-                 wt: "json" }
+                 wt: "json"}
       search_path + URI.encode_www_form(params)
     end
 
