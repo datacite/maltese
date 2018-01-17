@@ -42,7 +42,7 @@ module Maltese
       @sitemap ||= SitemapGenerator::LinkSet.new(
         default_host: sitemap_url,
         sitemaps_host: sitemap_url,
-        #adapter: s3_adapter,
+        adapter: s3_adapter,
         sitemaps_path: sitemaps_path,
         finalize: false)
     end
@@ -138,7 +138,7 @@ module Maltese
 
     def push_data(options={})
       # sync time with AWS S3 before uploading
-      #fog_storage.sync_clock
+      fog_storage.sync_clock
 
       sitemap.finalize!
       options[:start_time] ||= Time.now
