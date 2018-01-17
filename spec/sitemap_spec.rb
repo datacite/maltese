@@ -30,7 +30,7 @@ describe Maltese::Sitemap, vcr: true do
 
   context "get_total" do
     it "with works" do
-      expect(subject.get_total).to eq(2521)
+      expect(subject.get_total).to eq(2435)
     end
 
     it "with no works" do
@@ -48,7 +48,7 @@ describe Maltese::Sitemap, vcr: true do
 
     it "should report if there are works returned by the Datacite Solr API" do
       response = subject.queue_jobs
-      expect(response).to eq(2521)
+      expect(response).to eq(2435)
     end
   end
 
@@ -61,7 +61,7 @@ describe Maltese::Sitemap, vcr: true do
 
     it "should report if there are works returned by the Datacite Solr API" do
       response = subject.get_data
-      expect(response.body["data"]["response"]["numFound"]).to eq(2521)
+      expect(response.body["data"]["response"]["numFound"]).to eq(2435)
       doc = response.body["data"]["response"]["docs"].first
       expect(doc["doi"]).to eq("10.15468/DL.6OKWWI")
     end

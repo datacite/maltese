@@ -16,16 +16,11 @@ describe Maltese::CLI do
   describe "sitemap", vcr: true, :order => :defined do
     it 'should succeed' do
       subject.options = cli_options
-      expect { subject.sitemap }.to output(/3380 links/).to_stdout
-      sitemap = Zlib::GzipReader.open("public/sitemaps-test/sitemap2.xml.gz") { |gz| gz.read }
+      expect { subject.sitemap }.to output(/43274 links/).to_stdout
+      sitemap = Zlib::GzipReader.open("public/sitemaps-test/sitemap.xml.gz") { |gz| gz.read }
       doc = Nokogiri::XML(sitemap)
-      expect(doc.xpath("//xmlns:url").size).to eq(3380)
+      expect(doc.xpath("//xmlns:url").size).to eq(43274)
       expect(doc.xpath("//xmlns:loc").last.text).to eq("https://search.datacite.org/works/10.6084/M9.FIGSHARE.1371139")
-
-      sitemap_index = Zlib::GzipReader.open("public/sitemaps-test/sitemap.xml.gz") { |gz| gz.read }
-      doc = Nokogiri::XML(sitemap_index)
-      expect(doc.xpath("//xmlns:sitemap").size).to eq(2)
-      expect(doc.xpath("//xmlns:loc").last.text).to eq("https://search.datacite.org/sitemaps-test/sitemap2.xml.gz")
     end
 
     it 'should succeed with no works' do
