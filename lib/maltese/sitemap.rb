@@ -42,7 +42,7 @@ module Maltese
       @sitemap ||= SitemapGenerator::LinkSet.new(
         default_host: sitemap_url,
         sitemaps_host: sitemap_url,
-        adapter: s3_adapter,
+        #adapter: s3_adapter,
         sitemaps_path: sitemaps_path,
         finalize: false)
     end
@@ -63,11 +63,6 @@ module Maltese
     end
 
     def queue_jobs(options={})
-
-      # Add basic auth options in
-      options = options.merge(username: @solr_username, password: @solr_password)
-      puts options.inspect
-
       total = get_total(options)
 
       if total > 0
@@ -82,6 +77,9 @@ module Maltese
 
     def get_total(options={})
       query_url = get_query_url(options.merge(rows: 0))
+      # Add basic auth options in
+      options = options.merge(username: @solr_username, password: @solr_password)
+
       result = Maremma.get(query_url, options)
       result.body.fetch("data", {}).fetch("response", {}).fetch("numFound", 0)
     end
@@ -120,6 +118,10 @@ module Maltese
 
     def get_data(options={})
       query_url = get_query_url(options)
+
+      # Add basic auth options in
+      options = options.merge(username: @solr_username, password: @solr_password)
+
       Maremma.get(query_url, options)
     end
 
@@ -136,7 +138,7 @@ module Maltese
 
     def push_data(options={})
       # sync time with AWS S3 before uploading
-      fog_storage.sync_clock
+      #fog_storage.sync_clock
 
       sitemap.finalize!
       options[:start_time] ||= Time.now
