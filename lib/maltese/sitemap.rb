@@ -14,6 +14,8 @@ module Maltese
       @sitemap_bucket = attributes[:sitemap_bucket].presence || "search.datacite.org"
       @from_date = attributes[:from_date].presence || (Time.now.to_date - 1.day).iso8601
       @until_date = attributes[:until_date].presence || Time.now.to_date.iso8601
+      @solr_username = ENV['SOLR_USERNAME']
+      @solr_password = ENV['SOLR_PASSWORD']
     end
 
     def sitemap_url
@@ -21,7 +23,7 @@ module Maltese
     end
 
     def search_path
-      "#{sitemap_url}/api?"
+      "https://solr.datacite.org/public/api?"
     end
 
     def sitemaps_path
@@ -75,6 +77,9 @@ module Maltese
 
     def get_total(options={})
       query_url = get_query_url(options.merge(rows: 0))
+      # Add basic auth options in
+      options = options.merge(username: @solr_username, password: @solr_password)
+
       result = Maremma.get(query_url, options)
       result.body.fetch("data", {}).fetch("response", {}).fetch("numFound", 0)
     end
@@ -92,7 +97,7 @@ module Maltese
                  rows: options[:rows],
                  fl: "doi,updated",
                  sort: "updated asc",
-                 wt: "json" }
+                 wt: "json"}
       search_path + URI.encode_www_form(params)
     end
 
@@ -113,6 +118,10 @@ module Maltese
 
     def get_data(options={})
       query_url = get_query_url(options)
+
+      # Add basic auth options in
+      options = options.merge(username: @solr_username, password: @solr_password)
+
       Maremma.get(query_url, options)
     end
 
