@@ -2,13 +2,13 @@
 http_interactions:
 - request:
     method: get
-    uri: https://solr.datacite.org/public/api?fl=doi,updated&fq=updated:%5B2015-04-07T00:00:00Z%20TO%202015-04-08T23:59:59Z%5D%20AND%20has_metadata:true%20AND%20is_active:true&q=*:*&rows=0&sort=updated%20asc&start=0&wt=json
+    uri: https://solr.test.datacite.org/api?fl=doi,updated&fq=updated:%5B2018-04-08T00:00:00Z%20TO%202018-04-09T23:59:59Z%5D%20AND%20has_metadata:true%20AND%20is_active:true&q=*:*&rows=0&sort=updated%20asc&start=0&wt=json
     body:
       encoding: US-ASCII
       string: ''
     headers:
       User-Agent:
-      - Maremma - https://github.com/datacite/maremma
+      - Mozilla/5.0 (compatible; Maremma/4.1.1; +https://github.com/datacite/maremma)
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
       Authorization:
@@ -16,10 +16,10 @@ http_interactions:
   response:
     status:
       code: 200
-      message: ''
+      message: OK
     headers:
       Date:
-      - Wed, 17 Jan 2018 10:50:15 GMT
+      - Sat, 08 Sep 2018 13:04:27 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Connection:
@@ -35,10 +35,10 @@ http_interactions:
       Access-Control-Expose-Headers:
       - DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range,Authorization
     body:
-      encoding: UTF-8
-      string: '{"responseHeader":{"status":0,"QTime":0},"response":{"numFound":2435,"start":0,"docs":[]}}
+      encoding: ASCII-8BIT
+      string: '{"responseHeader":{"status":0,"QTime":1},"response":{"numFound":4,"start":0,"docs":[]}}
 
 '
     http_version: 
-  recorded_at: Tue, 07 Apr 2015 23:00:00 GMT
+  recorded_at: Sun, 08 Apr 2018 22:00:00 GMT
 recorded_with: VCR 3.0.3

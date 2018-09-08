@@ -2,6 +2,13 @@ module Maltese
   class Sitemap
     attr_reader :sitemap_bucket, :from_date, :until_date
 
+    # load ENV variables from .env file if it exists
+    env_file = File.expand_path("../../../.env", __FILE__)
+    if File.exist?(env_file)
+      require 'dotenv'
+      Dotenv.overload env_file
+    end
+
     # load ENV variables from container environment if json file exists
     # see https://github.com/phusion/baseimage-docker#envvar_dumps
     env_json_file = "/etc/container_environment.json"
@@ -11,7 +18,7 @@ module Maltese
     end
 
     def initialize(attributes={})
-      @sitemap_bucket = attributes[:sitemap_bucket].presence || "search.datacite.org"
+      @sitemap_bucket = attributes[:sitemap_bucket].presence || "sitemaps-search-datacite"
       @from_date = attributes[:from_date].presence || (Time.now.to_date - 1.day).iso8601
       @until_date = attributes[:until_date].presence || Time.now.to_date.iso8601
       @solr_username = ENV['SOLR_USERNAME']
@@ -19,11 +26,11 @@ module Maltese
     end
 
     def sitemap_url
-      "https://#{sitemap_bucket}"
+      ENV['RACK'] == "test" ? "https://search.test.datacite.org" : "https://search.datacite.org"
     end
 
     def search_path
-      "https://solr.datacite.org/public/api?"
+      ENV['RACK'] == "test" ? "https://solr.test.datacite.org/api?" : "https://solr.datacite.org/api?"
     end
 
     def sitemaps_path
