@@ -10,23 +10,23 @@ http_interactions:
       User-Agent:
       - fog-core/1.45.0
       X-Amz-Date:
-      - 20180908T130426Z
+      - 20180908T225231Z
       X-Amz-Content-Sha256:
       - e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
       Authorization:
       - AWS4-HMAC-SHA256 Credential=<AWS_ACCESS_KEY_ID>/20180908/us-east-1/s3/aws4_request,
-        SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=bdb4d00565ef3c75fc83346a38caba7f8d7cf2ef7c0725a3038dcdf5b5537659
+        SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=4809335dfcff0706d1cb12c32bd1d5e3ce586ad64fc785d621a8a6a67a057197
   response:
     status:
       code: 200
       message: OK
     headers:
       X-Amz-Id-2:
-      - WKzrs+2G3rvyMseoIsfhFG85YNBMiO/egfcIOK5HnEBBn5QXwHkcdDmq1QDOqZpJ1MN3Z6LMwx0=
+      - bPS2LDaDb8FD2R31osZEaA+H1YzzGXAlHcnD0ms5hGOW1c8tIM1lnhy38AtJXPXaJTZqH/FRhto=
       X-Amz-Request-Id:
-      - 9390FAB989FA697F
+      - 395C053ADA08B7F9
       Date:
-      - Sat, 08 Sep 2018 13:04:27 GMT
+      - Sat, 08 Sep 2018 22:52:34 GMT
       Content-Type:
       - application/xml
       Server:
@@ -40,7 +40,7 @@ http_interactions:
   recorded_at: Sun, 08 Apr 2018 22:00:00 GMT
 - request:
     method: put
-    uri: https://sitemaps-search-datacite.s3-eu-west-1.amazonaws.com/sitemaps-test/sitemap.xml.gz
+    uri: https://sitemaps-search-datacite-test.s3-eu-west-1.amazonaws.com/sitemap.xml.gz
     body:
       encoding: US-ASCII
       string: ''
@@ -52,28 +52,28 @@ http_interactions:
       X-Amz-Acl:
       - public-read
       X-Amz-Date:
-      - 20180908T130427Z
+      - 20180908T225234Z
       X-Amz-Content-Sha256:
       - STREAMING-AWS4-HMAC-SHA256-PAYLOAD
       X-Amz-Decoded-Content-Length:
-      - '29478'
+      - '29477'
       Authorization:
       - AWS4-HMAC-SHA256 Credential=<AWS_ACCESS_KEY_ID>/20180908/eu-west-1/s3/aws4_request,
         SignedHeaders=content-type;host;x-amz-acl;x-amz-content-sha256;x-amz-date;x-amz-decoded-content-length,
-        Signature=0c868da9ca6da7a2b1bc7b082ff79daf9cb5f7617c493238d71f7cb9c509b687
+        Signature=8a89f8ea4dc72ca2b8df57064d44bc0cf9ee4df1f2841fe3d2c87f2c6ebb8743
   response:
     status:
       code: 200
       message: OK
     headers:
       X-Amz-Id-2:
-      - HJjGAw/lCzv2B8O7dVxlpJ+JEBm89yjc2DC0dYQCtfzZuGUxrXjTp5YlUW6SH1bbiCVoRFInc2M=
+      - ciy4VD5rRm6nxdV5ULj3e0mXB0eatIcEHH7RuOYgVvaxhl3DLhb5jbNCoeN3V42T9mXBMilPiWI=
       X-Amz-Request-Id:
-      - 37EFBBC2F7039344
+      - B2498A85D0432342
       Date:
-      - Sat, 08 Sep 2018 13:04:27 GMT
+      - Sat, 08 Sep 2018 22:52:34 GMT
       Etag:
-      - '"121d824eb89fe28918038dd45f51c07d"'
+      - '"5f55ade3c71bb6bf2338e9cb1210c4e2"'
       Content-Length:
       - '0'
       Server:

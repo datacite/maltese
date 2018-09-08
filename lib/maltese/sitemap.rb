@@ -18,7 +18,7 @@ module Maltese
     end
 
     def initialize(attributes={})
-      @sitemap_bucket = attributes[:sitemap_bucket].presence || "sitemaps-search-datacite"
+      @sitemap_bucket = attributes[:sitemap_bucket].presence || "sitemaps-search-datacite-test"
       @from_date = attributes[:from_date].presence || (Time.now.to_date - 1.day).iso8601
       @until_date = attributes[:until_date].presence || Time.now.to_date.iso8601
       @solr_username = ENV['SOLR_USERNAME']
@@ -26,15 +26,11 @@ module Maltese
     end
 
     def sitemap_url
-      ENV['RACK'] == "test" ? "https://search.test.datacite.org" : "https://search.datacite.org"
+      ENV['RACK_ENV'] == "production" ? "https://search.datacite.org/" : "https://search.test.datacite.org/"
     end
 
     def search_path
-      ENV['RACK'] == "test" ? "https://solr.test.datacite.org/api?" : "https://solr.datacite.org/api?"
-    end
-
-    def sitemaps_path
-      ENV['RACK'] == "test" ? 'sitemaps-test' : 'sitemaps/'
+      ENV['RACK_ENV'] == "production" ? "https://solr.datacite.org/api?" : "https://solr.test.datacite.org/api?"
     end
 
     def timeout
@@ -50,7 +46,6 @@ module Maltese
         default_host: sitemap_url,
         sitemaps_host: sitemap_url,
         adapter: s3_adapter,
-        sitemaps_path: sitemaps_path,
         finalize: false)
     end
 

@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 08 Sep 2018 13:04:22 GMT
+      - Sat, 08 Sep 2018 22:52:29 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Connection:
@@ -60,7 +60,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 08 Sep 2018 13:04:22 GMT
+      - Sat, 08 Sep 2018 22:52:30 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Connection:
@@ -92,32 +92,32 @@ http_interactions:
       User-Agent:
       - fog-core/1.45.0
       X-Amz-Date:
-      - 20180408T215320Z
+      - 20180408T220000Z
       X-Amz-Content-Sha256:
       - e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
       Authorization:
       - AWS4-HMAC-SHA256 Credential=<AWS_ACCESS_KEY_ID>/20180408/us-east-1/s3/aws4_request,
-        SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=3e4720f35d3e7621e26b16dfd8181bb2b171e156b08872841f6a9d76f80c9f39
+        SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=66e6edc9e291e9fec7f58a56037a36db17830565105b4cf801ae768dfda1ff2d
   response:
     status:
       code: 403
       message: Forbidden
     headers:
       X-Amz-Request-Id:
-      - 2BEE35CFC2AC1287
+      - B7895DC13BE05211
       X-Amz-Id-2:
-      - COJmJWioMq4nNw6E/OoQkq59l3mw+0wBoHyIe9yOpOYQ2RkhmPJXKNGDWik1C9I1FXfSh31N6RY=
+      - VDp0eVs9gcpXN0OeNwtFSBc0UMKw0Tp4IZ2tfD0WkLU5wm5yRckbmL5x1zJW3yf7pneNN8Pgb4c=
       Content-Type:
       - application/xml
       Date:
-      - Sat, 08 Sep 2018 13:04:22 GMT
+      - Sat, 08 Sep 2018 22:52:29 GMT
       Server:
       - AmazonS3
     body:
       encoding: ASCII-8BIT
       string: |-
         <?xml version="1.0" encoding="UTF-8"?>
-        <Error><Code>RequestTimeTooSkewed</Code><Message>The difference between the request time and the current time is too large.</Message><RequestTime>20180408T215320Z</RequestTime><ServerTime>2018-09-08T13:04:24Z</ServerTime><MaxAllowedSkewMilliseconds>900000</MaxAllowedSkewMilliseconds><RequestId>2BEE35CFC2AC1287</RequestId><HostId>COJmJWioMq4nNw6E/OoQkq59l3mw+0wBoHyIe9yOpOYQ2RkhmPJXKNGDWik1C9I1FXfSh31N6RY=</HostId></Error>
+        <Error><Code>RequestTimeTooSkewed</Code><Message>The difference between the request time and the current time is too large.</Message><RequestTime>20180408T220000Z</RequestTime><ServerTime>2018-09-08T22:52:31Z</ServerTime><MaxAllowedSkewMilliseconds>900000</MaxAllowedSkewMilliseconds><RequestId>B7895DC13BE05211</RequestId><HostId>VDp0eVs9gcpXN0OeNwtFSBc0UMKw0Tp4IZ2tfD0WkLU5wm5yRckbmL5x1zJW3yf7pneNN8Pgb4c=</HostId></Error>
     http_version: 
   recorded_at: Sun, 08 Apr 2018 22:00:00 GMT
 - request:
@@ -130,32 +130,32 @@ http_interactions:
       User-Agent:
       - fog-core/1.45.0
       X-Amz-Date:
-      - 20180408T215320Z
+      - 20180408T220000Z
       X-Amz-Content-Sha256:
       - e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
       Authorization:
       - AWS4-HMAC-SHA256 Credential=<AWS_ACCESS_KEY_ID>/20180408/us-east-1/s3/aws4_request,
-        SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=3e4720f35d3e7621e26b16dfd8181bb2b171e156b08872841f6a9d76f80c9f39
+        SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=66e6edc9e291e9fec7f58a56037a36db17830565105b4cf801ae768dfda1ff2d
   response:
     status:
       code: 403
       message: Forbidden
     headers:
       X-Amz-Request-Id:
-      - 8919A29E0A2C9372
+      - 555405CF74750628
       X-Amz-Id-2:
-      - w3hpygoDxpyls/91VlvzaQ8gKWO7rn9D8Ic5Y5ykjDyJhdMgpL9TGVUsDwaPXhp2JyZkBSLBOxQ=
+      - SUw/P6+hxIZgX/lSzXHQ+JYTD6Hl/3zVEwAEIUvMHSJJJd1xKtFMWphIricB6amnzbwdwIAJS9k=
       Content-Type:
       - application/xml
       Date:
-      - Sat, 08 Sep 2018 13:04:23 GMT
+      - Sat, 08 Sep 2018 22:52:29 GMT
       Server:
       - AmazonS3
     body:
       encoding: ASCII-8BIT
       string: |-
         <?xml version="1.0" encoding="UTF-8"?>
-        <Error><Code>RequestTimeTooSkewed</Code><Message>The difference between the request time and the current time is too large.</Message><RequestTime>20180408T215320Z</RequestTime><ServerTime>2018-09-08T13:04:24Z</ServerTime><MaxAllowedSkewMilliseconds>900000</MaxAllowedSkewMilliseconds><RequestId>8919A29E0A2C9372</RequestId><HostId>w3hpygoDxpyls/91VlvzaQ8gKWO7rn9D8Ic5Y5ykjDyJhdMgpL9TGVUsDwaPXhp2JyZkBSLBOxQ=</HostId></Error>
+        <Error><Code>RequestTimeTooSkewed</Code><Message>The difference between the request time and the current time is too large.</Message><RequestTime>20180408T220000Z</RequestTime><ServerTime>2018-09-08T22:52:31Z</ServerTime><MaxAllowedSkewMilliseconds>900000</MaxAllowedSkewMilliseconds><RequestId>555405CF74750628</RequestId><HostId>SUw/P6+hxIZgX/lSzXHQ+JYTD6Hl/3zVEwAEIUvMHSJJJd1xKtFMWphIricB6amnzbwdwIAJS9k=</HostId></Error>
     http_version: 
   recorded_at: Sun, 08 Apr 2018 22:00:00 GMT
 - request:
@@ -168,32 +168,32 @@ http_interactions:
       User-Agent:
       - fog-core/1.45.0
       X-Amz-Date:
-      - 20180408T215320Z
+      - 20180408T220000Z
       X-Amz-Content-Sha256:
       - e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
       Authorization:
       - AWS4-HMAC-SHA256 Credential=<AWS_ACCESS_KEY_ID>/20180408/us-east-1/s3/aws4_request,
-        SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=3e4720f35d3e7621e26b16dfd8181bb2b171e156b08872841f6a9d76f80c9f39
+        SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=66e6edc9e291e9fec7f58a56037a36db17830565105b4cf801ae768dfda1ff2d
   response:
     status:
       code: 403
       message: Forbidden
     headers:
       X-Amz-Request-Id:
-      - 73022FB10C2F114F
+      - 84F52E2F7914D75D
       X-Amz-Id-2:
-      - BnNfqRi+5RDJ9VrsA+7jICMGZSUMsuLXtzkGYY0rvJ8XjLyYWpgKCc07FySmEBVE+7TcKvgT8eM=
+      - LT0Q+9Dg1HsU5WFo2Eb44efhtup8aUxOud6FcSR38K7OETxLVQmHq0+vMG1scZ7ebL5A8PM6Nn4=
       Content-Type:
       - application/xml
       Date:
-      - Sat, 08 Sep 2018 13:04:23 GMT
+      - Sat, 08 Sep 2018 22:52:31 GMT
       Server:
       - AmazonS3
     body:
       encoding: ASCII-8BIT
       string: |-
         <?xml version="1.0" encoding="UTF-8"?>
-        <Error><Code>RequestTimeTooSkewed</Code><Message>The difference between the request time and the current time is too large.</Message><RequestTime>20180408T215320Z</RequestTime><ServerTime>2018-09-08T13:04:25Z</ServerTime><MaxAllowedSkewMilliseconds>900000</MaxAllowedSkewMilliseconds><RequestId>73022FB10C2F114F</RequestId><HostId>BnNfqRi+5RDJ9VrsA+7jICMGZSUMsuLXtzkGYY0rvJ8XjLyYWpgKCc07FySmEBVE+7TcKvgT8eM=</HostId></Error>
+        <Error><Code>RequestTimeTooSkewed</Code><Message>The difference between the request time and the current time is too large.</Message><RequestTime>20180408T220000Z</RequestTime><ServerTime>2018-09-08T22:52:32Z</ServerTime><MaxAllowedSkewMilliseconds>900000</MaxAllowedSkewMilliseconds><RequestId>84F52E2F7914D75D</RequestId><HostId>LT0Q+9Dg1HsU5WFo2Eb44efhtup8aUxOud6FcSR38K7OETxLVQmHq0+vMG1scZ7ebL5A8PM6Nn4=</HostId></Error>
     http_version: 
   recorded_at: Sun, 08 Apr 2018 22:00:00 GMT
 - request:
@@ -206,37 +206,37 @@ http_interactions:
       User-Agent:
       - fog-core/1.45.0
       X-Amz-Date:
-      - 20180408T215320Z
+      - 20180408T220000Z
       X-Amz-Content-Sha256:
       - e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
       Authorization:
       - AWS4-HMAC-SHA256 Credential=<AWS_ACCESS_KEY_ID>/20180408/us-east-1/s3/aws4_request,
-        SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=3e4720f35d3e7621e26b16dfd8181bb2b171e156b08872841f6a9d76f80c9f39
+        SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=66e6edc9e291e9fec7f58a56037a36db17830565105b4cf801ae768dfda1ff2d
   response:
     status:
       code: 403
       message: Forbidden
     headers:
       X-Amz-Request-Id:
-      - 309A38C5178F7C0B
+      - 0F7DA6A0FC3A0364
       X-Amz-Id-2:
-      - LW+tqo4WUUSKYifktQ/vjTc558Zln8uM4PecDB89pBwjo+N65MyS4/pHuoWL42tXzLKLpwQwuKQ=
+      - r4shHCltWav9+25vrNj0m3Gi8SWeu9h2w9zhZbqeBXiKzj6lUdXhkb4+XwgbYkT62vMQNmpHm50=
       Content-Type:
       - application/xml
       Date:
-      - Sat, 08 Sep 2018 13:04:24 GMT
+      - Sat, 08 Sep 2018 22:52:31 GMT
       Server:
       - AmazonS3
     body:
       encoding: ASCII-8BIT
       string: |-
         <?xml version="1.0" encoding="UTF-8"?>
-        <Error><Code>RequestTimeTooSkewed</Code><Message>The difference between the request time and the current time is too large.</Message><RequestTime>20180408T215320Z</RequestTime><ServerTime>2018-09-08T13:04:25Z</ServerTime><MaxAllowedSkewMilliseconds>900000</MaxAllowedSkewMilliseconds><RequestId>309A38C5178F7C0B</RequestId><HostId>LW+tqo4WUUSKYifktQ/vjTc558Zln8uM4PecDB89pBwjo+N65MyS4/pHuoWL42tXzLKLpwQwuKQ=</HostId></Error>
+        <Error><Code>RequestTimeTooSkewed</Code><Message>The difference between the request time and the current time is too large.</Message><RequestTime>20180408T220000Z</RequestTime><ServerTime>2018-09-08T22:52:32Z</ServerTime><MaxAllowedSkewMilliseconds>900000</MaxAllowedSkewMilliseconds><RequestId>0F7DA6A0FC3A0364</RequestId><HostId>r4shHCltWav9+25vrNj0m3Gi8SWeu9h2w9zhZbqeBXiKzj6lUdXhkb4+XwgbYkT62vMQNmpHm50=</HostId></Error>
     http_version: 
   recorded_at: Sun, 08 Apr 2018 22:00:00 GMT
 - request:
     method: put
-    uri: https://sitemaps-search-datacite.s3-eu-west-1.amazonaws.com/sitemaps-test/sitemap.xml.gz
+    uri: https://sitemaps-search-datacite-test.s3-eu-west-1.amazonaws.com/sitemap.xml.gz
     body:
       encoding: US-ASCII
       string: ''
@@ -248,28 +248,28 @@ http_interactions:
       X-Amz-Acl:
       - public-read
       X-Amz-Date:
-      - 20180908T130424Z
+      - 20180908T225231Z
       X-Amz-Content-Sha256:
       - STREAMING-AWS4-HMAC-SHA256-PAYLOAD
       X-Amz-Decoded-Content-Length:
-      - '429'
+      - '428'
       Authorization:
       - AWS4-HMAC-SHA256 Credential=<AWS_ACCESS_KEY_ID>/20180908/eu-west-1/s3/aws4_request,
         SignedHeaders=content-type;host;x-amz-acl;x-amz-content-sha256;x-amz-date;x-amz-decoded-content-length,
-        Signature=029e0565db0aa14eee9ce073ab37e7d9c19e90c07830d5dac1fb4539e019523b
+        Signature=5a9fb2759d7cfd0752367e1eef3034b864bcdb2dda440c12e51f38a42725d265
   response:
     status:
       code: 200
       message: OK
     headers:
       X-Amz-Id-2:
-      - NNMy0gc6ZihZhtbyM0jVdlhfVcR5k/6hGhXbgxhnTTU2bzacF8Ft2IsQOLaS0EDoUakhJVbPrs8=
+      - S6s7iCh3JtKf/4Ga7yoi64zBHXn3Lt/OFRefLaFnZQkAzhmaKBhaK8qJnz+OIALSZeviSEDFu7M=
       X-Amz-Request-Id:
-      - F6125105D2A76224
+      - 584767FAE3B7D31A
       Date:
-      - Sat, 08 Sep 2018 13:04:25 GMT
+      - Sat, 08 Sep 2018 22:52:33 GMT
       Etag:
-      - '"8fe15014c702b84675c5bd09a63ad59a"'
+      - '"e22944ef168799f896eaafc72d571bb3"'
       Content-Length:
       - '0'
       Server:

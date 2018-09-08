@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 08 Sep 2018 13:04:22 GMT
+      - Sat, 08 Sep 2018 22:52:32 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Connection:
@@ -36,7 +36,7 @@ http_interactions:
       - DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range,Authorization
     body:
       encoding: ASCII-8BIT
-      string: '{"responseHeader":{"status":0,"QTime":2},"response":{"numFound":4,"start":0,"docs":[{"updated":"2018-04-09T10:25:02Z","doi":"10.5256/F1000RESEARCH.68843.R16717"},{"updated":"2018-04-09T11:05:02Z","doi":"10.5256/F1000RESEARCH.68852.R16719"},{"updated":"2018-04-09T11:05:02Z","doi":"10.5256/F1000RESEARCH.68852.R16720"},{"updated":"2018-04-09T11:40:02Z","doi":"10.5256/F1000RESEARCH.68854.R16723"}]}}
+      string: '{"responseHeader":{"status":0,"QTime":0},"response":{"numFound":4,"start":0,"docs":[{"updated":"2018-04-09T10:25:02Z","doi":"10.5256/F1000RESEARCH.68843.R16717"},{"updated":"2018-04-09T11:05:02Z","doi":"10.5256/F1000RESEARCH.68852.R16719"},{"updated":"2018-04-09T11:05:02Z","doi":"10.5256/F1000RESEARCH.68852.R16720"},{"updated":"2018-04-09T11:40:02Z","doi":"10.5256/F1000RESEARCH.68854.R16723"}]}}
 
 '
     http_version: 
