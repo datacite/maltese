@@ -17,7 +17,7 @@ describe Maltese::CLI do
     it 'should succeed' do
       subject.options = cli_options
       expect { subject.sitemap }.to output(/266 links/).to_stdout
-      sitemap = Zlib::GzipReader.open("public/sitemaps-test/sitemap.xml.gz") { |gz| gz.read }
+      sitemap = Zlib::GzipReader.open("public/sitemap.xml.gz") { |gz| gz.read }
       doc = Nokogiri::XML(sitemap)
       expect(doc.xpath("//xmlns:url").size).to eq(266)
       expect(doc.xpath("//xmlns:loc").last.text).to eq("https://search.test.datacite.org/works/10.0133/37522")
