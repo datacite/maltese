@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://solr.test.datacite.org/api?fl=doi,updated&fq=updated:%5B2018-04-08T00:00:00Z%20TO%202018-04-09T23:59:59Z%5D%20AND%20has_metadata:true%20AND%20is_active:true&q=*:*&rows=0&sort=updated%20asc&start=0&wt=json
+    uri: https://solr.test.datacite.org/api?fl=doi,updated&fq=updated:%5B2018-09-08T00:00:00Z%20TO%202018-09-09T23:59:59Z%5D%20AND%20has_metadata:true%20AND%20is_active:true&q=*:*&rows=0&sort=updated%20asc&start=0&wt=json
     body:
       encoding: US-ASCII
       string: ''
@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 08 Sep 2018 22:52:32 GMT
+      - Sun, 09 Sep 2018 05:56:15 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Connection:
@@ -36,9 +36,9 @@ http_interactions:
       - DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range,Authorization
     body:
       encoding: ASCII-8BIT
-      string: '{"responseHeader":{"status":0,"QTime":0},"response":{"numFound":4,"start":0,"docs":[]}}
+      string: '{"responseHeader":{"status":0,"QTime":1},"response":{"numFound":10,"start":0,"docs":[]}}
 
 '
     http_version: 
-  recorded_at: Sun, 08 Apr 2018 22:00:00 GMT
+  recorded_at: Sun, 09 Sep 2018 05:56:15 GMT
 recorded_with: VCR 3.0.3

@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://solr.test.datacite.org/api?fl=doi,updated&fq=updated:%5B2018-04-08T00:00:00Z%20TO%202018-04-09T23:59:59Z%5D%20AND%20has_metadata:true%20AND%20is_active:true&q=*:*&rows=0&sort=updated%20asc&start=0&wt=json
+    uri: https://solr.test.datacite.org/api?fl=doi,updated&fq=updated:%5B2018-09-08T00:00:00Z%20TO%202018-09-09T23:59:59Z%5D%20AND%20has_metadata:true%20AND%20is_active:true&q=*:*&rows=0&sort=updated%20asc&start=0&wt=json
     body:
       encoding: US-ASCII
       string: ''
@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 08 Sep 2018 22:52:29 GMT
+      - Sun, 09 Sep 2018 05:56:16 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Connection:
@@ -36,14 +36,14 @@ http_interactions:
       - DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range,Authorization
     body:
       encoding: ASCII-8BIT
-      string: '{"responseHeader":{"status":0,"QTime":1},"response":{"numFound":4,"start":0,"docs":[]}}
+      string: '{"responseHeader":{"status":0,"QTime":0},"response":{"numFound":10,"start":0,"docs":[]}}
 
 '
     http_version: 
-  recorded_at: Sun, 08 Apr 2018 22:00:00 GMT
+  recorded_at: Sun, 09 Sep 2018 05:56:16 GMT
 - request:
     method: get
-    uri: https://solr.test.datacite.org/api?fl=doi,updated&fq=updated:%5B2018-04-08T00:00:00Z%20TO%202018-04-09T23:59:59Z%5D%20AND%20has_metadata:true%20AND%20is_active:true&q=*:*&rows=50000&sort=updated%20asc&start=0&wt=json
+    uri: https://solr.test.datacite.org/api?fl=doi,updated&fq=updated:%5B2018-09-08T00:00:00Z%20TO%202018-09-09T23:59:59Z%5D%20AND%20has_metadata:true%20AND%20is_active:true&q=*:*&rows=50000&sort=updated%20asc&start=0&wt=json
     body:
       encoding: US-ASCII
       string: ''
@@ -60,7 +60,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 08 Sep 2018 22:52:30 GMT
+      - Sun, 09 Sep 2018 05:56:16 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Connection:
@@ -77,206 +77,65 @@ http_interactions:
       - DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range,Authorization
     body:
       encoding: ASCII-8BIT
-      string: '{"responseHeader":{"status":0,"QTime":0},"response":{"numFound":4,"start":0,"docs":[{"updated":"2018-04-09T10:25:02Z","doi":"10.5256/F1000RESEARCH.68843.R16717"},{"updated":"2018-04-09T11:05:02Z","doi":"10.5256/F1000RESEARCH.68852.R16719"},{"updated":"2018-04-09T11:05:02Z","doi":"10.5256/F1000RESEARCH.68852.R16720"},{"updated":"2018-04-09T11:40:02Z","doi":"10.5256/F1000RESEARCH.68854.R16723"}]}}
+      string: '{"responseHeader":{"status":0,"QTime":1},"response":{"numFound":10,"start":0,"docs":[{"updated":"2018-09-08T05:28:56Z","doi":"10.15771/IMEJIDEV.RM"},{"updated":"2018-09-08T05:30:17Z","doi":"10.15771/IMEJIDEV.RN"},{"updated":"2018-09-08T05:32:36Z","doi":"10.15771/IMEJIDEV.RO"},{"updated":"2018-09-08T05:34:48Z","doi":"10.15771/IMEJIDEV.RP"},{"updated":"2018-09-08T05:36:38Z","doi":"10.15771/IMEJIDEV.RQ"},{"updated":"2018-09-09T05:28:52Z","doi":"10.15771/IMEJIDEV.RR"},{"updated":"2018-09-09T05:30:14Z","doi":"10.15771/IMEJIDEV.RS"},{"updated":"2018-09-09T05:32:28Z","doi":"10.15771/IMEJIDEV.RT"},{"updated":"2018-09-09T05:34:41Z","doi":"10.15771/IMEJIDEV.RU"},{"updated":"2018-09-09T05:36:38Z","doi":"10.15771/IMEJIDEV.RV"}]}}
 
 '
     http_version: 
-  recorded_at: Sun, 08 Apr 2018 22:00:00 GMT
-- request:
-    method: get
-    uri: https://s3.amazonaws.com/
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - fog-core/1.45.0
-      X-Amz-Date:
-      - 20180408T220000Z
-      X-Amz-Content-Sha256:
-      - e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-      Authorization:
-      - AWS4-HMAC-SHA256 Credential=<AWS_ACCESS_KEY_ID>/20180408/us-east-1/s3/aws4_request,
-        SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=66e6edc9e291e9fec7f58a56037a36db17830565105b4cf801ae768dfda1ff2d
-  response:
-    status:
-      code: 403
-      message: Forbidden
-    headers:
-      X-Amz-Request-Id:
-      - B7895DC13BE05211
-      X-Amz-Id-2:
-      - VDp0eVs9gcpXN0OeNwtFSBc0UMKw0Tp4IZ2tfD0WkLU5wm5yRckbmL5x1zJW3yf7pneNN8Pgb4c=
-      Content-Type:
-      - application/xml
-      Date:
-      - Sat, 08 Sep 2018 22:52:29 GMT
-      Server:
-      - AmazonS3
-    body:
-      encoding: ASCII-8BIT
-      string: |-
-        <?xml version="1.0" encoding="UTF-8"?>
-        <Error><Code>RequestTimeTooSkewed</Code><Message>The difference between the request time and the current time is too large.</Message><RequestTime>20180408T220000Z</RequestTime><ServerTime>2018-09-08T22:52:31Z</ServerTime><MaxAllowedSkewMilliseconds>900000</MaxAllowedSkewMilliseconds><RequestId>B7895DC13BE05211</RequestId><HostId>VDp0eVs9gcpXN0OeNwtFSBc0UMKw0Tp4IZ2tfD0WkLU5wm5yRckbmL5x1zJW3yf7pneNN8Pgb4c=</HostId></Error>
-    http_version: 
-  recorded_at: Sun, 08 Apr 2018 22:00:00 GMT
-- request:
-    method: get
-    uri: https://s3.amazonaws.com/
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - fog-core/1.45.0
-      X-Amz-Date:
-      - 20180408T220000Z
-      X-Amz-Content-Sha256:
-      - e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-      Authorization:
-      - AWS4-HMAC-SHA256 Credential=<AWS_ACCESS_KEY_ID>/20180408/us-east-1/s3/aws4_request,
-        SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=66e6edc9e291e9fec7f58a56037a36db17830565105b4cf801ae768dfda1ff2d
-  response:
-    status:
-      code: 403
-      message: Forbidden
-    headers:
-      X-Amz-Request-Id:
-      - 555405CF74750628
-      X-Amz-Id-2:
-      - SUw/P6+hxIZgX/lSzXHQ+JYTD6Hl/3zVEwAEIUvMHSJJJd1xKtFMWphIricB6amnzbwdwIAJS9k=
-      Content-Type:
-      - application/xml
-      Date:
-      - Sat, 08 Sep 2018 22:52:29 GMT
-      Server:
-      - AmazonS3
-    body:
-      encoding: ASCII-8BIT
-      string: |-
-        <?xml version="1.0" encoding="UTF-8"?>
-        <Error><Code>RequestTimeTooSkewed</Code><Message>The difference between the request time and the current time is too large.</Message><RequestTime>20180408T220000Z</RequestTime><ServerTime>2018-09-08T22:52:31Z</ServerTime><MaxAllowedSkewMilliseconds>900000</MaxAllowedSkewMilliseconds><RequestId>555405CF74750628</RequestId><HostId>SUw/P6+hxIZgX/lSzXHQ+JYTD6Hl/3zVEwAEIUvMHSJJJd1xKtFMWphIricB6amnzbwdwIAJS9k=</HostId></Error>
-    http_version: 
-  recorded_at: Sun, 08 Apr 2018 22:00:00 GMT
-- request:
-    method: get
-    uri: https://s3.amazonaws.com/
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - fog-core/1.45.0
-      X-Amz-Date:
-      - 20180408T220000Z
-      X-Amz-Content-Sha256:
-      - e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-      Authorization:
-      - AWS4-HMAC-SHA256 Credential=<AWS_ACCESS_KEY_ID>/20180408/us-east-1/s3/aws4_request,
-        SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=66e6edc9e291e9fec7f58a56037a36db17830565105b4cf801ae768dfda1ff2d
-  response:
-    status:
-      code: 403
-      message: Forbidden
-    headers:
-      X-Amz-Request-Id:
-      - 84F52E2F7914D75D
-      X-Amz-Id-2:
-      - LT0Q+9Dg1HsU5WFo2Eb44efhtup8aUxOud6FcSR38K7OETxLVQmHq0+vMG1scZ7ebL5A8PM6Nn4=
-      Content-Type:
-      - application/xml
-      Date:
-      - Sat, 08 Sep 2018 22:52:31 GMT
-      Server:
-      - AmazonS3
-    body:
-      encoding: ASCII-8BIT
-      string: |-
-        <?xml version="1.0" encoding="UTF-8"?>
-        <Error><Code>RequestTimeTooSkewed</Code><Message>The difference between the request time and the current time is too large.</Message><RequestTime>20180408T220000Z</RequestTime><ServerTime>2018-09-08T22:52:32Z</ServerTime><MaxAllowedSkewMilliseconds>900000</MaxAllowedSkewMilliseconds><RequestId>84F52E2F7914D75D</RequestId><HostId>LT0Q+9Dg1HsU5WFo2Eb44efhtup8aUxOud6FcSR38K7OETxLVQmHq0+vMG1scZ7ebL5A8PM6Nn4=</HostId></Error>
-    http_version: 
-  recorded_at: Sun, 08 Apr 2018 22:00:00 GMT
-- request:
-    method: get
-    uri: https://s3.amazonaws.com/
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - fog-core/1.45.0
-      X-Amz-Date:
-      - 20180408T220000Z
-      X-Amz-Content-Sha256:
-      - e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-      Authorization:
-      - AWS4-HMAC-SHA256 Credential=<AWS_ACCESS_KEY_ID>/20180408/us-east-1/s3/aws4_request,
-        SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=66e6edc9e291e9fec7f58a56037a36db17830565105b4cf801ae768dfda1ff2d
-  response:
-    status:
-      code: 403
-      message: Forbidden
-    headers:
-      X-Amz-Request-Id:
-      - 0F7DA6A0FC3A0364
-      X-Amz-Id-2:
-      - r4shHCltWav9+25vrNj0m3Gi8SWeu9h2w9zhZbqeBXiKzj6lUdXhkb4+XwgbYkT62vMQNmpHm50=
-      Content-Type:
-      - application/xml
-      Date:
-      - Sat, 08 Sep 2018 22:52:31 GMT
-      Server:
-      - AmazonS3
-    body:
-      encoding: ASCII-8BIT
-      string: |-
-        <?xml version="1.0" encoding="UTF-8"?>
-        <Error><Code>RequestTimeTooSkewed</Code><Message>The difference between the request time and the current time is too large.</Message><RequestTime>20180408T220000Z</RequestTime><ServerTime>2018-09-08T22:52:32Z</ServerTime><MaxAllowedSkewMilliseconds>900000</MaxAllowedSkewMilliseconds><RequestId>0F7DA6A0FC3A0364</RequestId><HostId>r4shHCltWav9+25vrNj0m3Gi8SWeu9h2w9zhZbqeBXiKzj6lUdXhkb4+XwgbYkT62vMQNmpHm50=</HostId></Error>
-    http_version: 
-  recorded_at: Sun, 08 Apr 2018 22:00:00 GMT
+  recorded_at: Sun, 09 Sep 2018 05:56:16 GMT
 - request:
     method: put
-    uri: https://sitemaps-search-datacite-test.s3-eu-west-1.amazonaws.com/sitemap.xml.gz
+    uri: https://s3.eu-west-1.amazonaws.com/search.test.datacite.org/sitemaps/sitemap.xml.gz
     body:
-      encoding: US-ASCII
-      string: ''
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAC2lFsAA82WW2+bMBiG/wridooP5ASWQ2/WSZ2aHdq0mnbngQfWjJ1hryT/vo5JJza1FpU2CYkLsJ/XfjD+LOjFoZHRA2+N0GoTY4DiiKtCl0JVm/hu926Wxhc5/dVKw23kWGXIwYhNXFu7JxB2XQe6OdBtBROEMPyyvb4tat6wmVDGMlXwOHI8Mb7xWhfM+okGcSOs69obP0jPGXhuhAhk0SvYp3twMGXc675qrnOGiIZV/I9kpXUlOSh083du5mGIAX5KP4iS67FpDw/TindmbPjEDr0b/U3I0eI9Df1H7/N79yauZ+wAZ3w4wqG2jXxue+Asy6Dvjf1+yqnURX7ijAMNZ21RA8uNBSWzrHAz+BiFJ4xKZmyjyzxBOJ2hzF07tCbLFcGrNyghCDnujNCiZqri31v+M2eyY0dD4aCJ7luhW2GPubOm8PcThV5qvFmn2x8GYgTwcr3G8Gp7+f7q7eU9uNm+5Jzu0JIkqdP++rxuo5Wt5fEFXwSW/8X3Q9B3jgheT8r3Y9g3IfNpre+nsO+CLNJJ+X4O+67IfFq+N4Ezoq+3ZFK+t0HfU70tJuW7C/smbokn5XsX9nX1hiflex/2/bf1BvtfufwRZcBypPkJAAA=
     headers:
-      User-Agent:
-      - fog-core/1.45.0
       Content-Type:
-      - application/gzip
+      - application/x-gzip
+      Accept-Encoding:
+      - ''
+      User-Agent:
+      - aws-sdk-ruby3/3.27.0 ruby/2.4.2 x86_64-darwin16 aws-sdk-s3/1.19.0
       X-Amz-Acl:
       - public-read
+      Cache-Control:
+      - private, max-age=0, no-cache
+      Expect:
+      - 100-continue
+      Content-Md5:
+      - EltG+Vr1ljTq62ZObzwa9A==
       X-Amz-Date:
-      - 20180908T225231Z
+      - 20180909T055616Z
       X-Amz-Content-Sha256:
-      - STREAMING-AWS4-HMAC-SHA256-PAYLOAD
-      X-Amz-Decoded-Content-Length:
-      - '428'
+      - a584c70c3c371edafc7fa3877fe90d4ecc3bced144548faf530d457f2bd47708
       Authorization:
-      - AWS4-HMAC-SHA256 Credential=<AWS_ACCESS_KEY_ID>/20180908/eu-west-1/s3/aws4_request,
-        SignedHeaders=content-type;host;x-amz-acl;x-amz-content-sha256;x-amz-date;x-amz-decoded-content-length,
-        Signature=5a9fb2759d7cfd0752367e1eef3034b864bcdb2dda440c12e51f38a42725d265
+      - AWS4-HMAC-SHA256 Credential=<AWS_ACCESS_KEY_ID>/20180909/eu-west-1/s3/aws4_request,
+        SignedHeaders=cache-control;content-md5;content-type;expect;host;user-agent;x-amz-acl;x-amz-content-sha256;x-amz-date,
+        Signature=cbc07dd1beec127135f144c81e455d3ac1322c601ee193be940597d5d31d0b9e
+      Content-Length:
+      - '473'
+      Accept:
+      - "*/*"
   response:
     status:
       code: 200
       message: OK
     headers:
       X-Amz-Id-2:
-      - S6s7iCh3JtKf/4Ga7yoi64zBHXn3Lt/OFRefLaFnZQkAzhmaKBhaK8qJnz+OIALSZeviSEDFu7M=
+      - Eyyrh8hEwci3fwpWv4ujkAkQ7692sFEVNzwP7FAASDPkDRK92buuDbr/YejZb3w3nN9wli+XF24=
       X-Amz-Request-Id:
-      - 584767FAE3B7D31A
+      - 7DA9F7CCCA2E75C6
       Date:
-      - Sat, 08 Sep 2018 22:52:33 GMT
+      - Sun, 09 Sep 2018 05:56:17 GMT
       Etag:
-      - '"e22944ef168799f896eaafc72d571bb3"'
+      - '"125b46f95af59634eaeb664e6f3c1af4"'
       Content-Length:
       - '0'
       Server:
       - AmazonS3
     body:
-      encoding: ASCII-8BIT
+      encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Sun, 08 Apr 2018 22:00:00 GMT
+  recorded_at: Sun, 09 Sep 2018 05:56:16 GMT
 recorded_with: VCR 3.0.3

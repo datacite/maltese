@@ -18,7 +18,7 @@ module Maltese
     end
 
     def initialize(attributes={})
-      @sitemap_bucket = attributes[:sitemap_bucket].presence || "sitemaps-search-datacite-test"
+      @sitemap_bucket = attributes[:sitemap_bucket].presence || "search.test.datacite.org"
       @from_date = attributes[:from_date].presence || (Time.now.to_date - 1.day).iso8601
       @until_date = attributes[:until_date].presence || Time.now.to_date.iso8601
       @solr_username = ENV['SOLR_USERNAME']
@@ -27,6 +27,10 @@ module Maltese
 
     def sitemap_url
       ENV['RACK_ENV'] == "production" ? "https://search.datacite.org/" : "https://search.test.datacite.org/"
+    end
+
+    def sitemaps_path
+      "sitemaps/"
     end
 
     def search_path
@@ -45,23 +49,16 @@ module Maltese
       @sitemap ||= SitemapGenerator::LinkSet.new(
         default_host: sitemap_url,
         sitemaps_host: sitemap_url,
+        sitemaps_path: sitemaps_path,
         adapter: s3_adapter,
         finalize: false)
     end
 
     def s3_adapter
-      SitemapGenerator::S3Adapter.new(fog_provider: 'AWS',
+      SitemapGenerator::AwsSdkAdapter.new(sitemap_bucket,
                                       aws_access_key_id: ENV['AWS_ACCESS_KEY_ID'],
                                       aws_secret_access_key: ENV['AWS_SECRET_ACCESS_KEY'],
-                                      fog_region: ENV['AWS_REGION'],
-                                      fog_directory: sitemap_bucket,
-                                      path_style: true)
-    end
-
-    def fog_storage
-      Fog::Storage.new(provider: 'AWS',
-                       aws_access_key_id: ENV['AWS_ACCESS_KEY_ID'],
-                       aws_secret_access_key: ENV['AWS_SECRET_ACCESS_KEY'])
+                                      aws_region: ENV['AWS_REGION'])
     end
 
     def queue_jobs(options={})
@@ -139,9 +136,6 @@ module Maltese
     end
 
     def push_data(options={})
-      # sync time with AWS S3 before uploading
-      fog_storage.sync_clock
-
       sitemap.finalize!
       options[:start_time] ||= Time.now
       sitemap.sitemap_index.stats_summary(:time_taken => Time.now - options[:start_time])

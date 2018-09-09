@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 08 Sep 2018 22:52:29 GMT
+      - Sun, 09 Sep 2018 05:56:18 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Connection:
@@ -36,9 +36,9 @@ http_interactions:
       - DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range,Authorization
     body:
       encoding: ASCII-8BIT
-      string: '{"responseHeader":{"status":0,"QTime":1},"response":{"numFound":0,"start":0,"docs":[]}}
+      string: '{"responseHeader":{"status":0,"QTime":0},"response":{"numFound":0,"start":0,"docs":[]}}
 
 '
     http_version: 
-  recorded_at: Sat, 08 Sep 2018 22:52:29 GMT
+  recorded_at: Sun, 09 Sep 2018 05:56:18 GMT
 recorded_with: VCR 3.0.3

@@ -8,7 +8,7 @@ describe Maltese::CLI do
 
   let(:from_date) { "2018-03-15" }
   let(:until_date) { "2018-04-08" }
-  let(:sitemap_bucket) { "sitemaps-search-datacite-test" }
+  let(:sitemap_bucket) { "search.test.datacite.org" }
   let(:cli_options) { { sitemap_bucket: sitemap_bucket,
                         from_date: from_date,
                         until_date: until_date } }

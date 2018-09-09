@@ -1,17 +1,20 @@
 require 'spec_helper'
 
 describe Maltese::Sitemap, vcr: true do
-  before(:each) { allow(Time).to receive(:now).and_return(Time.mktime(2018, 4, 9)) }
-
   subject { Maltese::Sitemap.new }
+
+  let(:total) { 10 }
+  let(:doi) { "10.15771/IMEJIDEV.RM" }
+  let(:from_date) { (Date.current - 1.day).strftime("%F") }
+  let(:until_date) { Date.current.strftime("%F") }
 
   context "get_query_url" do
     it "default" do
-      expect(subject.get_query_url).to eq("https://solr.test.datacite.org/api?q=*%3A*&fq=updated%3A%5B2018-04-08T00%3A00%3A00Z+TO+2018-04-09T23%3A59%3A59Z%5D+AND+has_metadata%3Atrue+AND+is_active%3Atrue&start=0&rows=50000&fl=doi%2Cupdated&sort=updated+asc&wt=json")
+      expect(subject.get_query_url).to eq("https://solr.test.datacite.org/api?q=*%3A*&fq=updated%3A%5B#{from_date}T00%3A00%3A00Z+TO+#{until_date}T23%3A59%3A59Z%5D+AND+has_metadata%3Atrue+AND+is_active%3Atrue&start=0&rows=50000&fl=doi%2Cupdated&sort=updated+asc&wt=json")
     end
 
     it "with zero rows" do
-      expect(subject.get_query_url(rows: 0)).to eq("https://solr.test.datacite.org/api?q=*%3A*&fq=updated%3A%5B2018-04-08T00%3A00%3A00Z+TO+2018-04-09T23%3A59%3A59Z%5D+AND+has_metadata%3Atrue+AND+is_active%3Atrue&start=0&rows=0&fl=doi%2Cupdated&sort=updated+asc&wt=json")
+      expect(subject.get_query_url(rows: 0)).to eq("https://solr.test.datacite.org/api?q=*%3A*&fq=updated%3A%5B#{from_date}T00%3A00%3A00Z+TO+#{until_date}T23%3A59%3A59Z%5D+AND+has_metadata%3Atrue+AND+is_active%3Atrue&start=0&rows=0&fl=doi%2Cupdated&sort=updated+asc&wt=json")
     end
 
     it "with different from_date and until_date" do
@@ -20,17 +23,17 @@ describe Maltese::Sitemap, vcr: true do
     end
 
     it "with offset" do
-      expect(subject.get_query_url(offset: 250)).to eq("https://solr.test.datacite.org/api?q=*%3A*&fq=updated%3A%5B2018-04-08T00%3A00%3A00Z+TO+2018-04-09T23%3A59%3A59Z%5D+AND+has_metadata%3Atrue+AND+is_active%3Atrue&start=250&rows=50000&fl=doi%2Cupdated&sort=updated+asc&wt=json")
+      expect(subject.get_query_url(offset: 250)).to eq("https://solr.test.datacite.org/api?q=*%3A*&fq=updated%3A%5B#{from_date}T00%3A00%3A00Z+TO+#{until_date}T23%3A59%3A59Z%5D+AND+has_metadata%3Atrue+AND+is_active%3Atrue&start=250&rows=50000&fl=doi%2Cupdated&sort=updated+asc&wt=json")
     end
 
     it "with rows" do
-      expect(subject.get_query_url(rows: 250)).to eq("https://solr.test.datacite.org/api?q=*%3A*&fq=updated%3A%5B2018-04-08T00%3A00%3A00Z+TO+2018-04-09T23%3A59%3A59Z%5D+AND+has_metadata%3Atrue+AND+is_active%3Atrue&start=0&rows=250&fl=doi%2Cupdated&sort=updated+asc&wt=json")
+      expect(subject.get_query_url(rows: 250)).to eq("https://solr.test.datacite.org/api?q=*%3A*&fq=updated%3A%5B#{from_date}T00%3A00%3A00Z+TO+#{until_date}T23%3A59%3A59Z%5D+AND+has_metadata%3Atrue+AND+is_active%3Atrue&start=0&rows=250&fl=doi%2Cupdated&sort=updated+asc&wt=json")
     end
   end
 
   context "get_total" do
     it "with works" do
-      expect(subject.get_total).to eq(4)
+      expect(subject.get_total).to eq(total)
     end
 
     it "with no works" do
@@ -48,7 +51,7 @@ describe Maltese::Sitemap, vcr: true do
 
     it "should report if there are works returned by the Datacite Solr API" do
       response = subject.queue_jobs
-      expect(response).to eq(4)
+      expect(response).to eq(total)
     end
   end
 
@@ -61,9 +64,9 @@ describe Maltese::Sitemap, vcr: true do
 
     it "should report if there are works returned by the Datacite Solr API" do
       response = subject.get_data
-      expect(response.body.dig("data", "response", "numFound")).to eq(4)
+      expect(response.body.dig("data", "response", "numFound")).to eq(total)
       doc = response.body.dig("data", "response", "docs").first
-      expect(doc["doi"]).to eq("10.5256/F1000RESEARCH.68843.R16717")
+      expect(doc["doi"]).to eq(doi)
     end
 
     it "should catch errors with the Datacite Solr API" do

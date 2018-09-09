@@ -1,6 +1,6 @@
 require 'sitemap_generator'
 require 'maremma'
-require 'fog/aws'
+require 'aws-sdk-s3'
 require 'mime/types'
 require 'active_support/all'
 
