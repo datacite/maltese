@@ -9,7 +9,7 @@ Ruby gem and command-line tool for generating sitemap files from the DataCite RE
 Run as a command-line tool:
 
 ```
-maltese sitemap --from_date 2017-02-15
+maltese sitemap
 ```
 
 ## Installation

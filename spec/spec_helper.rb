@@ -92,5 +92,4 @@ VCR.configure do |c|
   c.filter_sensitive_data("<AWS_SECRET_ACCESS_KEY>") { ENV["AWS_SECRET_ACCESS_KEY"] }
   c.filter_sensitive_data("<FOG_DIRECTORY>") { ENV['FOG_DIRECTORY'] }
   c.filter_sensitive_data("<FOG_REGION>") { ENV["FOG_REGION"] }
-  c.filter_sensitive_data('<ENCODED AUTH HEADER>') { Base64.strict_encode64("#{ENV.fetch('SOLR_USERNAME')}:#{ENV.fetch('SOLR_PASSWORD')}") }
 end

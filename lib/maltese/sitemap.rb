@@ -21,8 +21,6 @@ module Maltese
       @sitemap_bucket = attributes[:sitemap_bucket].presence || "search.test.datacite.org"
       @from_date = attributes[:from_date].presence || (Time.now.to_date - 1.day).iso8601
       @until_date = attributes[:until_date].presence || Time.now.to_date.iso8601
-      @solr_username = ENV['SOLR_USERNAME']
-      @solr_password = ENV['SOLR_PASSWORD']
     end
 
     def sitemap_url
@@ -34,7 +32,7 @@ module Maltese
     end
 
     def search_path
-      ENV['RACK_ENV'] == "production" ? "https://solr.datacite.org/api?" : "https://solr.test.datacite.org/api?"
+      ENV['RACK_ENV'] == "production" ? "https://api.datacite.org/dois?" : "https://api.test.datacite.org/dois?"
     end
 
     def timeout
@@ -42,7 +40,7 @@ module Maltese
     end
 
     def job_batch_size
-      50000
+      1000
     end
 
     def sitemap
@@ -75,28 +73,20 @@ module Maltese
     end
 
     def get_total(options={})
-      query_url = get_query_url(options.merge(rows: 0))
-      # Add basic auth options in
-      options = options.merge(username: @solr_username, password: @solr_password)
+      query_url = get_query_url(options.merge(size: 0))
 
       result = Maremma.get(query_url, options)
-      result.body.fetch("data", {}).fetch("response", {}).fetch("numFound", 0)
+      result.body.dig("meta", "total")
     end
 
     def get_query_url(options={})
-      options[:offset] = options[:offset].to_i || 0
-      options[:rows] = options[:rows].presence || job_batch_size
+      options[:cursor] = options[:cursor] || 1
+      options[:size] = options[:size] || job_batch_size
 
-      updated = "updated:[#{from_date}T00:00:00Z TO #{until_date}T23:59:59Z]"
-      fq = "#{updated} AND has_metadata:true AND is_active:true"
-
-      params = { q: "*:*",
-                 fq: fq,
-                 start: options[:offset],
-                 rows: options[:rows],
-                 fl: "doi,updated",
-                 sort: "updated asc",
-                 wt: "json"}
+      params = { 
+        "page[cursor]": options[:cursor],
+        "page[size]": options[:size],
+      }
       search_path + URI.encode_www_form(params)
     end
 
@@ -104,11 +94,9 @@ module Maltese
       options[:start_time] = Time.now
 
       # walk through paginated results
-      total_pages = (options[:total].to_f / job_batch_size).ceil
-
-      (0...total_pages).each do |page|
-        options[:offset] = page * job_batch_size
+      while options[:cursor] do
         data = get_data(options.merge(timeout: timeout))
+        options[:cursor] = data.dig("links", "next")
         parse_data(data)
       end
 
@@ -118,19 +106,15 @@ module Maltese
     def get_data(options={})
       query_url = get_query_url(options)
 
-      # Add basic auth options in
-      options = options.merge(username: @solr_username, password: @solr_password)
-
       Maremma.get(query_url, options)
     end
 
     def parse_data(result)
       return result.body.fetch("errors") if result.body.fetch("errors", nil).present?
 
-      items = result.body.fetch("data", {}).fetch('response', {}).fetch('docs', nil)
-      Array(items).each do |item|
-        loc = "/works/" + item.fetch("doi")
-        sitemap.add loc, changefreq: "monthly", lastmod: item.fetch("updated")
+      result.body.fetch("data", []).each do |item|
+        loc = "/works/" + item.dig("attrributes", "doi")
+        sitemap.add loc, changefreq: "monthly", lastmod: item.dig("attrributes", "updated")
       end
       sitemap.sitemap.link_count
     end
