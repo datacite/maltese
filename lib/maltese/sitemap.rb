@@ -1,6 +1,6 @@
 module Maltese
   class Sitemap
-    attr_reader :sitemap_bucket, :from_date, :until_date
+    attr_reader :sitemap_bucket
 
     # load ENV variables from .env file if it exists
     env_file = File.expand_path("../../../.env", __FILE__)
@@ -19,8 +19,6 @@ module Maltese
 
     def initialize(attributes={})
       @sitemap_bucket = attributes[:sitemap_bucket].presence || "search.test.datacite.org"
-      @from_date = attributes[:from_date].presence || (Time.now.to_date - 1.day).iso8601
-      @until_date = attributes[:until_date].presence || Time.now.to_date.iso8601
     end
 
     def sitemap_url

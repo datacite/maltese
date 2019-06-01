@@ -19,8 +19,6 @@ module Maltese
 
     desc "sitemap", "generate sitemap for DataCite Search"
     method_option :sitemap_bucket, type: :string
-    method_option :from_date, type: :string
-    method_option :until_date, type: :string
     def sitemap
       sitemap = Maltese::Sitemap.new(options)
       sitemap.queue_jobs

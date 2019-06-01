@@ -11,6 +11,6 @@ RUN apt-get update && apt-get upgrade -y -o Dpkg::Options::="--force-confold" &&
     apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 # Install maltese gem
-RUN /sbin/setuser app gem install maltese -v 0.2
+RUN /sbin/setuser app gem install maltese -v 0.8.1
 
-CMD maltese sitemap --sitemap_bucket $SITEMAP_BUCKET --from_date $FROM_DATE
+CMD maltese sitemap --sitemap_bucket $SITEMAP_BUCKET
