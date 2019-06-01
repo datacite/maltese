@@ -61,7 +61,7 @@ module Maltese
       total = get_total(options)
 
       if total > 0
-        puts process_data(options.merge(total: total))
+        puts process_data(options.merge(total: total, cursor: 1))
       else
         puts "No works found."
       end

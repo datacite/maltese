@@ -25,21 +25,21 @@ describe Maltese::Sitemap, vcr: true do
 
   context "get_total" do
     it "with works" do
-      expect(subject.get_total).to eq(72023)
+      expect(subject.get_total).to eq(74502)
     end
   end
 
   context "queue_jobs" do
     it "should report if there are works returned by the Datacite REST API" do
       response = subject.queue_jobs
-      expect(response).to eq(72023)
+      expect(response).to eq(74502)
     end
   end
 
   context "get_data" do
     it "should report if there are works returned by the Datacite REST API" do
       response = subject.get_data
-      expect(response.body.dig("meta", "total")).to eq(72024)
+      expect(response.body.dig("meta", "total")).to eq(74502)
       expect(response.body.fetch("data", []).size).to eq(1000)
       doc = response.body.fetch("data", []).first
       expect(doc.dig("attributes", "doi")).to eq(doi)
