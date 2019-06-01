@@ -38,7 +38,7 @@ describe Maltese::Sitemap, vcr: true do
 
   context "get_data" do
     it "should report if there are works returned by the Datacite REST API" do
-      response = subject.get_data
+      response = subject.get_data(subject.get_query_url)
       expect(response.body.dig("meta", "total")).to eq(74502)
       expect(response.body.fetch("data", []).size).to eq(1000)
       doc = response.body.fetch("data", []).first
@@ -46,8 +46,8 @@ describe Maltese::Sitemap, vcr: true do
     end
 
     it "should catch errors with the Datacite REST API" do
-      stub = stub_request(:get, subject.get_query_url(rows: 0)).to_return(:status => [408])
-      response = subject.get_data(rows: 0)
+      stub = stub_request(:get, subject.get_query_url).to_return(:status => [408])
+      response = subject.get_data(subject.get_query_url)
       expect(response.body).to eq("errors"=>[{"status"=>408, "title"=>"Request timeout"}])
       expect(stub).to have_been_requested
     end

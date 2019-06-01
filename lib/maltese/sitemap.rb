@@ -61,7 +61,7 @@ module Maltese
       total = get_total(options)
 
       if total > 0
-        puts process_data(options.merge(total: total, cursor: 1))
+        puts process_data(options.merge(total: total, url: get_query_url))
       else
         puts "No works found."
       end
@@ -92,19 +92,20 @@ module Maltese
       options[:start_time] = Time.now
 
       # walk through paginated results
-      while options[:cursor] do
-        data = get_data(options.merge(timeout: timeout))
-        options[:cursor] = data.dig("links", "next")
-        parse_data(data)
+      while options[:url] do
+        response = get_data(options[:url])
+        parse_data(response)
+        options[:url] = response.body.dig("links", "next")
+
+        # don't loop when testing
+        break if ENV['RACK'] == "test"     
       end
 
       push_data(options)
     end
 
-    def get_data(options={})
-      query_url = get_query_url(options)
-
-      Maremma.get(query_url, options)
+    def get_data(url)
+      Maremma.get(url)
     end
 
     def parse_data(result)
