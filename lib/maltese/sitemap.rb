@@ -65,7 +65,7 @@ module Maltese
       if total > 0
         puts process_data(options.merge(total: total))
       else
-        puts "No works found for date range #{from_date} - #{until_date}."
+        puts "No works found."
       end
 
       # return number of works queued
@@ -113,7 +113,7 @@ module Maltese
       return result.body.fetch("errors") if result.body.fetch("errors", nil).present?
 
       result.body.fetch("data", []).each do |item|
-        loc = "/works/" + item.dig("attrributes", "doi")
+        loc = "/works/" + item.dig("attributes", "doi")
         sitemap.add loc, changefreq: "monthly", lastmod: item.dig("attrributes", "updated")
       end
       sitemap.sitemap.link_count

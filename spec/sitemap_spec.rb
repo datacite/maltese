@@ -3,8 +3,7 @@ require 'spec_helper'
 describe Maltese::Sitemap, vcr: true do
   subject { Maltese::Sitemap.new }
 
-  let(:total) { 143882 }
-  let(:doi) { "10.5256/f1000research.4960.d29592" }
+  let(:doi) { "10.4124/cc3d60p" }
 
   context "get_query_url" do
     it "default" do
@@ -26,21 +25,22 @@ describe Maltese::Sitemap, vcr: true do
 
   context "get_total" do
     it "with works" do
-      expect(subject.get_total).to eq(total)
+      expect(subject.get_total).to eq(72023)
     end
   end
 
   context "queue_jobs" do
     it "should report if there are works returned by the Datacite REST API" do
       response = subject.queue_jobs
-      expect(response).to eq(total)
+      expect(response).to eq(72023)
     end
   end
 
   context "get_data" do
     it "should report if there are works returned by the Datacite REST API" do
       response = subject.get_data
-      expect(response.body.dig("meta", "total")).to eq(total)
+      expect(response.body.dig("meta", "total")).to eq(72024)
+      expect(response.body.fetch("data", []).size).to eq(1000)
       doc = response.body.fetch("data", []).first
       expect(doc.dig("attributes", "doi")).to eq(doi)
     end
@@ -54,18 +54,18 @@ describe Maltese::Sitemap, vcr: true do
   end
 
   context "parse_data" do
-    # it "should report if there are no works returned by the Datacite REST API" do
-    #   body = File.read(fixture_path + 'sitemap_nil.json')
-    #   result = OpenStruct.new(body: { "data" => JSON.parse(body) })
-    #   expect(subject.parse_data(result)).to eq(0)
-    # end
+    it "should report if there are no works returned by the Datacite REST API" do
+      body = File.read(fixture_path + 'sitemap_nil.json')
+      result = OpenStruct.new(body: JSON.parse(body))
+      expect(subject.parse_data(result)).to eq(0)
+    end
 
-    # it "should report if there are works returned by the Datacite REST API" do
-    #   body = File.read(fixture_path + 'sitemap.json')
-    #   result = OpenStruct.new(body: { "data" => JSON.parse(body) })
-    #   response = subject.parse_data(result)
-    #   expect(response).to eq(2522)
-    # end
+    it "should report if there are works returned by the Datacite REST API" do
+      body = File.read(fixture_path + 'sitemap.json')
+      result = OpenStruct.new(body: JSON.parse(body))
+      response = subject.parse_data(result)
+      expect(response).to eq(1001)
+    end
 
     it "should catch timeout errors with the Datacite REST API" do
       result = OpenStruct.new(body: { "errors" => [{ "title" => "the server responded with status 408 for https://REST.test.datacite.org", "status" => 408 }] })
@@ -80,11 +80,11 @@ describe Maltese::Sitemap, vcr: true do
       expect { subject.push_data }.to output(/1 links/).to_stdout
     end
 
-    # it "should report if there are works returned by the Datacite REST API" do
-    #   body = File.read(fixture_path + 'sitemap.json')
-    #   result = OpenStruct.new(body: { "data" => JSON.parse(body) })
-    #   result = subject.parse_data(result)
-    #   expect { subject.push_data }.to output(/2522 links/).to_stdout
-    # end
+    it "should report if there are works returned by the Datacite REST API" do
+      body = File.read(fixture_path + 'sitemap.json')
+      result = OpenStruct.new(body: JSON.parse(body))
+      result = subject.parse_data(result)
+      expect { subject.push_data }.to output(/1001 links/).to_stdout
+    end
   end
 end

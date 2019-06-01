@@ -6,7 +6,7 @@ http_interactions:
     body:
       encoding: ASCII-8BIT
       string: !binary |-
-        H4sIAKuw8VwAA5WSPW+DMBCG/wryWuGPpKkKMmTrlE5Npa6uccGSsSnnBvLv6xhS0aoD2eDuee5exPH92JrkpHrQzhaIYYoSZaWrtK0L9Hp8Sh/RvuRfvQHlk8BayEfQBWq873JChmHAwxa7viYbShl5ez68yEa1ItUWvLBSoSTwOcTiwUnh46KFDtqHVgdxyMQBmYuE4iy5gb0+4xEqNMW9adfs5LoVtfpl1s7VRmHp2r9eGmHCMLvaJ10pt9aO8NK2aoC18oVd5m7duzarg080iT998rvwJaGzdsCMLyeMjW/Nf+fBsiwjsYviPZXcOFleOAggKNHLBnsFHlfCCxk2RI2TC8aNAN+6qtxQlqX0IaXsSGm+u8+3uzu6ySkN3Ixw2Qhbq49efZbCDOIMnCxKvOu167U/lyE1Jz9vnMRQZDr18ht4nkfJGQMAAA==
+        H4sIADIv8lwAA5WSPW+DMBCG/wryWuEP2kYFOWTrlE5Npa6uccCSsSnnBvLv6xhS0aoD2eDuee5exPHd2JrkpHrQzm4RwxQlykpXaVtv0dvhOX1Cu5J/9QaUTwJroRhBb1HjfVcQMgwDHu6x62uSUcrI+8v+VTaqFam24IWVCiWBLyAW904KHxctdNA+tDqIQyYOyFwkFOfJDez1GY9QoSnuTbtmp9CtqNUvs3auNgpL1/710ggThtnVPulKubV2hJe2VQOslS/sMnfrPrRZHXyiSfzpk9+FLwmdtQNmfDlhbHxr/jsPluc5iV0U76nkxsnywkEAQYleNtgr8LgSXsiwIWqcXDBuBPjWVWVGWZ7STUrZgebF40ORbe5oVlAauBnhshG2VsdefZbCDOIMnCxKvOu167U/lyE1Jz9vnMRQZDr18huuVNkBGQMAAA==
     headers:
       Content-Type:
       - application/x-gzip
@@ -21,15 +21,15 @@ http_interactions:
       Expect:
       - 100-continue
       Content-Md5:
-      - zzDS9b4WnE4Xgc0wHqD4YQ==
+      - MqcFmQwtK0tNhF7KTvb3Gg==
       X-Amz-Date:
-      - 20190531T225435Z
+      - 20190601T075426Z
       X-Amz-Content-Sha256:
-      - 95a54d99578fc2d01f61703e3c14df3b47e58a8c30bef039ecb61a77fa2880c2
+      - 05cf62d823348cf6e54c7547a080c9c54abdb582d2cda5a40b06ec271d02de45
       Authorization:
-      - AWS4-HMAC-SHA256 Credential=AKIAJAMMCXAR3IXMNCGQ/20190531/eu-west-1/s3/aws4_request,
+      - AWS4-HMAC-SHA256 Credential=AKIAJAMMCXAR3IXMNCGQ/20190601/eu-west-1/s3/aws4_request,
         SignedHeaders=cache-control;content-md5;content-type;expect;host;user-agent;x-amz-acl;x-amz-content-sha256;x-amz-date,
-        Signature=af21780b190df52a7fe7e35c4e755c4a65e17bf5e72eef701135f2984814c04e
+        Signature=5933684d5b219e3a060fe9f2179bb50a19df6af7792d156d7afaa4376d67ca1b
       Content-Length:
       - '334'
       Accept:
@@ -40,13 +40,13 @@ http_interactions:
       message: OK
     headers:
       X-Amz-Id-2:
-      - 9rROpJwUTam0/P6mynBl18XnQ9MESABcZ49q89kdR+r0lS+odfkcqmeJT81Hcky+60j0pDi5XWw=
+      - rykr6Devdhw7TsCUhLIHYVWk6wBC8AJoT4GiEf4bdrUYYE2ryLvCnru960QcFKJGMmaW01OvWr0=
       X-Amz-Request-Id:
-      - '077559B4AC5C40B3'
+      - 1CB23DE1C89089F5
       Date:
-      - Fri, 31 May 2019 22:54:37 GMT
+      - Sat, 01 Jun 2019 07:54:27 GMT
       Etag:
-      - '"cf30d2f5be169c4e1781cd301ea0f861"'
+      - '"32a705990c2d2b4b4d845eca4ef6f71a"'
       Content-Length:
       - '0'
       Server:
@@ -55,5 +55,5 @@ http_interactions:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Fri, 31 May 2019 22:54:36 GMT
+  recorded_at: Sat, 01 Jun 2019 07:54:26 GMT
 recorded_with: VCR 3.0.3

@@ -1,11 +1,11 @@
 {
-    "responseHeader": {
-        "status": 0,
-        "QTime": 0
+    "data": [],
+    "included": [],
+    "meta": {
+        "total": 0,
+        "totalPages": 0
     },
-    "response": {
-        "numFound": 0,
-        "start": 0,
-        "docs": []
+    "links": {
+        "self": "https://api.test.datacite.org/dois?query=xxxxx&page%5Bcursor%5D=1&page%5Bsize%5D=1000"
     }
 }
