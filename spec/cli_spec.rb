@@ -12,11 +12,11 @@ describe Maltese::CLI do
   describe "sitemap", vcr: true, :order => :defined do
     it 'should succeed' do
       subject.options = cli_options
-      expect { subject.sitemap }.to output(/1001 links/).to_stdout
+      expect { subject.sitemap }.to output(/10001 links/).to_stdout
       sitemap = Zlib::GzipReader.open("public/sitemaps/sitemap.xml.gz") { |gz| gz.read }
       doc = Nokogiri::XML(sitemap)
-      expect(doc.xpath("//xmlns:url").size).to eq(1001)
-      expect(doc.xpath("//xmlns:loc").last.text).to eq("https://search.test.datacite.org/works/10.22002/d1.88")
+      expect(doc.xpath("//xmlns:url").size).to eq(10001)
+      expect(doc.xpath("//xmlns:loc").last.text).to eq("https://search.test.datacite.org/works/10.0133/1519753351949")
     end
   end
 end

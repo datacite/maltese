@@ -34,11 +34,11 @@ module Maltese
     end
 
     def timeout
-      120
+      60
     end
 
     def job_batch_size
-      1000
+      10000
     end
 
     def sitemap
@@ -82,8 +82,9 @@ module Maltese
       options[:size] = options[:size] || job_batch_size
 
       params = { 
-        "page[cursor]": options[:cursor],
-        "page[size]": options[:size],
+        "fields[dois]" => "doi,updated",
+        "page[cursor]" => options[:cursor],
+        "page[size]" => options[:size]
       }
       search_path + URI.encode_www_form(params)
     end
@@ -105,7 +106,7 @@ module Maltese
     end
 
     def get_data(url)
-      Maremma.get(url)
+      Maremma.get(url, timeout: 300)
     end
 
     def parse_data(result)

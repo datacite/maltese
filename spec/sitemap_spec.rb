@@ -7,19 +7,19 @@ describe Maltese::Sitemap, vcr: true do
 
   context "get_query_url" do
     it "default" do
-      expect(subject.get_query_url).to eq("https://api.test.datacite.org/dois?page%5Bcursor%5D=1&page%5Bsize%5D=1000")
+      expect(subject.get_query_url).to eq("https://api.test.datacite.org/dois?fields%5Bdois%5D=doi%2Cupdated&page%5Bcursor%5D=1&page%5Bsize%5D=10000")
     end
 
     it "with page[size] zero" do
-      expect(subject.get_query_url(size: 0)).to eq("https://api.test.datacite.org/dois?page%5Bcursor%5D=1&page%5Bsize%5D=0")
+      expect(subject.get_query_url(size: 0)).to eq("https://api.test.datacite.org/dois?fields%5Bdois%5D=doi%2Cupdated&page%5Bcursor%5D=1&page%5Bsize%5D=0")
     end
 
     it "with cursor" do
-      expect(subject.get_query_url(cursor: 250)).to eq("https://api.test.datacite.org/dois?page%5Bcursor%5D=250&page%5Bsize%5D=1000")
+      expect(subject.get_query_url(cursor: 250)).to eq("https://api.test.datacite.org/dois?fields%5Bdois%5D=doi%2Cupdated&page%5Bcursor%5D=250&page%5Bsize%5D=10000")
     end
 
     it "with size" do
-      expect(subject.get_query_url(size: 250)).to eq("https://api.test.datacite.org/dois?page%5Bcursor%5D=1&page%5Bsize%5D=250")
+      expect(subject.get_query_url(size: 250)).to eq("https://api.test.datacite.org/dois?fields%5Bdois%5D=doi%2Cupdated&page%5Bcursor%5D=1&page%5Bsize%5D=250")
     end
   end
 
@@ -40,7 +40,7 @@ describe Maltese::Sitemap, vcr: true do
     it "should report if there are works returned by the Datacite REST API" do
       response = subject.get_data(subject.get_query_url)
       expect(response.body.dig("meta", "total")).to eq(74502)
-      expect(response.body.fetch("data", []).size).to eq(1000)
+      expect(response.body.fetch("data", []).size).to eq(10000)
       doc = response.body.fetch("data", []).first
       expect(doc.dig("attributes", "doi")).to eq(doi)
     end
