@@ -38,7 +38,7 @@ module Maltese
     end
 
     def job_batch_size
-      10000
+      1000
     end
 
     def sitemap

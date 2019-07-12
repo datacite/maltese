@@ -3,11 +3,11 @@ require 'spec_helper'
 describe Maltese::Sitemap, vcr: true do
   subject { Maltese::Sitemap.new }
 
-  let(:doi) { "10.4124/cc3d60p" }
+  let(:doi) { "10.1594/ieda/100004" }
 
   context "get_query_url" do
     it "default" do
-      expect(subject.get_query_url).to eq("https://api.test.datacite.org/dois?fields%5Bdois%5D=doi%2Cupdated&page%5Bcursor%5D=1&page%5Bsize%5D=10000")
+      expect(subject.get_query_url).to eq("https://api.test.datacite.org/dois?fields%5Bdois%5D=doi%2Cupdated&page%5Bcursor%5D=1&page%5Bsize%5D=1000")
     end
 
     it "with page[size] zero" do
@@ -15,7 +15,7 @@ describe Maltese::Sitemap, vcr: true do
     end
 
     it "with cursor" do
-      expect(subject.get_query_url(cursor: 250)).to eq("https://api.test.datacite.org/dois?fields%5Bdois%5D=doi%2Cupdated&page%5Bcursor%5D=250&page%5Bsize%5D=10000")
+      expect(subject.get_query_url(cursor: 250)).to eq("https://api.test.datacite.org/dois?fields%5Bdois%5D=doi%2Cupdated&page%5Bcursor%5D=250&page%5Bsize%5D=1000")
     end
 
     it "with size" do
@@ -25,22 +25,22 @@ describe Maltese::Sitemap, vcr: true do
 
   context "get_total" do
     it "with works" do
-      expect(subject.get_total).to eq(74502)
+      expect(subject.get_total).to eq(329866)
     end
   end
 
   context "queue_jobs" do
     it "should report if there are works returned by the Datacite REST API" do
       response = subject.queue_jobs
-      expect(response).to eq(74502)
+      expect(response).to eq(329866)
     end
   end
 
   context "get_data" do
     it "should report if there are works returned by the Datacite REST API" do
       response = subject.get_data(subject.get_query_url)
-      expect(response.body.dig("meta", "total")).to eq(74502)
-      expect(response.body.fetch("data", []).size).to eq(10000)
+      expect(response.body.dig("meta", "total")).to eq(329866)
+      expect(response.body.fetch("data", []).size).to eq(1000)
       doc = response.body.fetch("data", []).first
       expect(doc.dig("attributes", "doi")).to eq(doi)
     end
