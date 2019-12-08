@@ -3,43 +3,39 @@ require 'spec_helper'
 describe Maltese::Sitemap, vcr: true do
   subject { Maltese::Sitemap.new }
 
-  let(:doi) { "10.1594/ieda/100004" }
+  let(:doi) { "10.1097/npt.0b013e3181c1fc0b" }
 
   context "get_query_url" do
     it "default" do
-      expect(subject.get_query_url).to eq("https://api.test.datacite.org/dois?fields%5Bdois%5D=doi%2Cupdated&page%5Bcursor%5D=1&page%5Bsize%5D=1000")
+      expect(subject.get_query_url).to eq("https://api.test.datacite.org/dois?fields%5Bdois%5D=doi%2Cupdated&page%5Bscroll%5D=3m&page%5Bsize%5D=1000")
     end
 
-    it "with page[size] zero" do
-      expect(subject.get_query_url(size: 0)).to eq("https://api.test.datacite.org/dois?fields%5Bdois%5D=doi%2Cupdated&page%5Bcursor%5D=1&page%5Bsize%5D=0")
-    end
-
-    it "with cursor" do
-      expect(subject.get_query_url(cursor: 250)).to eq("https://api.test.datacite.org/dois?fields%5Bdois%5D=doi%2Cupdated&page%5Bcursor%5D=250&page%5Bsize%5D=1000")
+    it "with page[size] one" do
+      expect(subject.get_query_url(size: 1)).to eq("https://api.test.datacite.org/dois?fields%5Bdois%5D=doi%2Cupdated&page%5Bscroll%5D=3m&page%5Bsize%5D=1")
     end
 
     it "with size" do
-      expect(subject.get_query_url(size: 250)).to eq("https://api.test.datacite.org/dois?fields%5Bdois%5D=doi%2Cupdated&page%5Bcursor%5D=1&page%5Bsize%5D=250")
+      expect(subject.get_query_url(size: 250)).to eq("https://api.test.datacite.org/dois?fields%5Bdois%5D=doi%2Cupdated&page%5Bscroll%5D=3m&page%5Bsize%5D=250")
     end
   end
 
   context "get_total" do
     it "with works" do
-      expect(subject.get_total).to eq(329866)
+      expect(subject.get_total).to eq(807468)
     end
   end
 
   context "queue_jobs" do
     it "should report if there are works returned by the Datacite REST API" do
       response = subject.queue_jobs
-      expect(response).to eq(329866)
+      expect(response).to eq(807880)
     end
   end
 
   context "get_data" do
     it "should report if there are works returned by the Datacite REST API" do
       response = subject.get_data(subject.get_query_url)
-      expect(response.body.dig("meta", "total")).to eq(329866)
+      expect(response.body.dig("meta", "total")).to eq(806854)
       expect(response.body.fetch("data", []).size).to eq(1000)
       doc = response.body.fetch("data", []).first
       expect(doc.dig("attributes", "doi")).to eq(doi)

@@ -71,19 +71,18 @@ module Maltese
     end
 
     def get_total(options={})
-      query_url = get_query_url(options.merge(size: 0))
+      query_url = get_query_url(options.merge(size: 1))
 
       result = Maremma.get(query_url, options)
       result.body.dig("meta", "total")
     end
 
     def get_query_url(options={})
-      options[:cursor] = options[:cursor] || 1
       options[:size] = options[:size] || job_batch_size
 
       params = { 
         "fields[dois]" => "doi,updated",
-        "page[cursor]" => options[:cursor],
+        "page[scroll]" => "3m",
         "page[size]" => options[:size]
       }
       search_path + URI.encode_www_form(params)
