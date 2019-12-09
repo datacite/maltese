@@ -115,6 +115,7 @@ module Maltese
         loc = "/works/" + item.dig("attributes", "doi")
         sitemap.add loc, changefreq: "monthly", lastmod: item.dig("attrributes", "updated")
       end
+      puts "#{result.body.fetch("data", []).size} DOIs parsed."
       sitemap.sitemap.link_count
     end
 
