@@ -109,11 +109,14 @@ module Maltese
     end
 
     def parse_data(result)
-      return result.body.fetch("errors") if result.body.fetch("errors", nil).present?
+      if result.body.fetch("errors", nil).present?
+        puts "An error occured: #{result.body.fetch("errors").inspect}"
+        return result.body.fetch("errors") 
+      end
 
       result.body.fetch("data", []).each do |item|
         loc = "/works/" + item.dig("attributes", "doi")
-        sitemap.add loc, changefreq: "monthly", lastmod: item.dig("attrributes", "updated")
+        sitemap.add loc, changefreq: "monthly", lastmod: item.dig("attributes", "updated")
       end
       puts "#{result.body.fetch("data", []).size} DOIs parsed."
       sitemap.sitemap.link_count
