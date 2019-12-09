@@ -82,7 +82,7 @@ module Maltese
 
       params = { 
         "fields[dois]" => "doi,updated",
-        "page[scroll]" => "3m",
+        "page[scroll]" => "7m",
         "page[size]" => options[:size]
       }
       search_path + URI.encode_www_form(params)
