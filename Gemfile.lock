@@ -1,10 +1,11 @@
 PATH
   remote: .
   specs:
-    maltese (0.8.14)
+    maltese (0.8.15)
       activesupport (>= 4.2.5, < 6)
       aws-sdk-s3 (~> 1.19)
       dotenv (~> 2.1, >= 2.1.1)
+      faraday (= 0.17.0)
       maremma (~> 4.1)
       mime-types (~> 3.1)
       sitemap_generator (~> 6.0)
@@ -46,7 +47,7 @@ GEM
     docile (1.1.5)
     dotenv (2.7.5)
     excon (0.67.0)
-    faraday (0.17.1)
+    faraday (0.17.0)
       multipart-post (>= 1.2, < 3)
     faraday-encoding (0.0.5)
       faraday

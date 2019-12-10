@@ -7,7 +7,7 @@ describe Maltese::CLI do
   end
 
   let(:sitemap_bucket) { "search.test.datacite.org" }
-  let(:cli_options) { { sitemap_bucket: sitemap_bucket } }
+  let(:cli_options) { { sitemap_bucket: sitemap_bucket, rack_env: "test" } }
 
   describe "sitemap", vcr: true, :order => :defined do
     it 'should succeed' do
@@ -16,7 +16,7 @@ describe Maltese::CLI do
       sitemap = Zlib::GzipReader.open("public/sitemaps/sitemap.xml.gz") { |gz| gz.read }
       doc = Nokogiri::XML(sitemap)
       expect(doc.xpath("//xmlns:url").size).to eq(1001)
-      expect(doc.xpath("//xmlns:loc").last.text).to eq("https://search.test.datacite.org/works/10.17557/tjfc.424379")
+      expect(doc.xpath("//xmlns:loc").last.text).to eq("https://search.test.datacite.org/works/10.1007/s10620-013-2631-z")
     end
   end
 end

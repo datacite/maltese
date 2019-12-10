@@ -1,6 +1,6 @@
 module Maltese
   class Sitemap
-    attr_reader :sitemap_bucket
+    attr_reader :sitemap_bucket, :rack_env, :access_key, :secret_key, :region
 
     # load ENV variables from .env file if it exists
     env_file = File.expand_path("../../../.env", __FILE__)
@@ -19,10 +19,14 @@ module Maltese
 
     def initialize(attributes={})
       @sitemap_bucket = attributes[:sitemap_bucket].presence || "search.test.datacite.org"
+      @rack_env = attributes[:rack_env].presence || ENV['RACK_ENV'] || "stage"
+      @access_key = attributes[:access_key].presence || ENV['AWS_ACCESS_KEY_ID']
+      @secret_key = attributes[:secret_key].presence || ENV['AWS_SECRET_ACCESS_KEY']
+      @region = attributes[:region].presence || ENV['AWS_REGION']
     end
 
     def sitemap_url
-      ENV['RACK_ENV'] == "production" ? "https://search.datacite.org/" : "https://search.test.datacite.org/"
+      rack_env == "production" ? "https://search.datacite.org/" : "https://search.test.datacite.org/"
     end
 
     def sitemaps_path
@@ -30,7 +34,7 @@ module Maltese
     end
 
     def search_path
-      ENV['RACK_ENV'] == "production" ? "https://api.datacite.org/dois?" : "https://api.test.datacite.org/dois?"
+      rack_env == "production" ? "https://api.datacite.org/dois?" : "https://api.test.datacite.org/dois?"
     end
 
     def timeout
@@ -52,22 +56,24 @@ module Maltese
 
     def s3_adapter
       SitemapGenerator::AwsSdkAdapter.new(sitemap_bucket,
-                                      aws_access_key_id: ENV['AWS_ACCESS_KEY_ID'],
-                                      aws_secret_access_key: ENV['AWS_SECRET_ACCESS_KEY'],
-                                      aws_region: ENV['AWS_REGION'])
+                                      aws_access_key_id: access_key,
+                                      aws_secret_access_key: secret_key,
+                                      aws_region: region)
     end
 
     def queue_jobs(options={})
       total = get_total(options)
 
-      if total > 0
-        puts process_data(options.merge(total: total, url: get_query_url))
+      if total.nil?
+        puts "An error occured."
+      elsif total > 0
+        process_data(options.merge(total: total, url: get_query_url))
       else
         puts "No works found."
       end
 
       # return number of works queued
-      total
+      total.to_i
     end
 
     def get_total(options={})
@@ -102,14 +108,14 @@ module Maltese
           puts "#{link_count} DOIs parsed."
           options[:url] = response.body.dig("links", "next")
         else
-          puts "An error occured for URL #{options[:url]}:."
+          puts "An error occured for URL #{options[:url]}."
           puts "Error message: #{response.body.fetch("errors").inspect}" if response.body.fetch("errors", nil).present?
           error_count += 1
           options[:url] = nil
         end 
 
         # don't loop when testing
-        break if ENV['RACK'] == "test"     
+        break if rack_env == "test"     
       end
 
       return link_count if error_count > 0
@@ -122,7 +128,7 @@ module Maltese
     end
 
     def parse_data(result)
-      result.body.fetch("data", []).each do |item|
+      Array.wrap(result.body.fetch("data", nil)).each do |item|
         loc = "/works/" + item.dig("attributes", "doi")
         sitemap.add loc, changefreq: "monthly", lastmod: item.dig("attributes", "updated")
       end

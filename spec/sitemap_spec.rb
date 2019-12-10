@@ -1,9 +1,9 @@
 require 'spec_helper'
 
 describe Maltese::Sitemap, vcr: true do
-  subject { Maltese::Sitemap.new }
+  subject { Maltese::Sitemap.new(rack_env: "test") }
 
-  let(:doi) { "10.1002/jca.21694" }
+  let(:doi) { "10.3280/ses2013-001015en" }
 
   context "get_query_url" do
     it "default" do
@@ -21,14 +21,14 @@ describe Maltese::Sitemap, vcr: true do
 
   context "get_total" do
     it "with works" do
-      expect(subject.get_total).to eq(833105)
+      expect(subject.get_total).to eq(846853)
     end
   end
 
   context "queue_jobs" do
     it "should report if there are works returned by the Datacite REST API" do
       response = subject.queue_jobs
-      expect(response).to eq(833085)
+      expect(response).to eq(856504)
     end
   end
 
@@ -43,7 +43,7 @@ describe Maltese::Sitemap, vcr: true do
   context "get_data" do
     it "should report if there are works returned by the Datacite REST API" do
       response = subject.get_data(subject.get_query_url)
-      expect(response.body.dig("meta", "total")).to eq(833098)
+      expect(response.body.dig("meta", "total")).to eq(846839)
       expect(response.body.fetch("data", []).size).to eq(1000)
       doc = response.body.fetch("data", []).first
       expect(doc.dig("attributes", "doi")).to eq(doi)
