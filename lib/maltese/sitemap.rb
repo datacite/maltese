@@ -1,6 +1,8 @@
+require "logger"
+
 module Maltese
   class Sitemap
-    attr_reader :sitemap_bucket, :rack_env, :access_key, :secret_key, :region
+    attr_reader :sitemap_bucket, :rack_env, :access_key, :secret_key, :region, :logger
 
     # load ENV variables from .env file if it exists
     env_file = File.expand_path("../../../.env", __FILE__)
@@ -23,6 +25,8 @@ module Maltese
       @access_key = attributes[:access_key].presence || ENV['AWS_ACCESS_KEY_ID']
       @secret_key = attributes[:secret_key].presence || ENV['AWS_SECRET_ACCESS_KEY']
       @region = attributes[:region].presence || ENV['AWS_REGION']
+
+      @logger = Logger.new(STDOUT)
     end
 
     def sitemap_url
@@ -65,11 +69,11 @@ module Maltese
       total = get_total(options)
 
       if total.nil?
-        puts "An error occured."
+        logger.error "An error occured."
       elsif total > 0
         process_data(options.merge(total: total, url: get_query_url))
       else
-        puts "No works found."
+        logger.info "No works found."
       end
 
       # return number of works queued
@@ -105,11 +109,11 @@ module Maltese
 
         if response.status == 200
           link_count += parse_data(response)
-          puts "#{link_count} DOIs parsed."
+          logger.info "#{link_count} DOIs parsed."
           options[:url] = response.body.dig("links", "next")
         else
-          puts "An error occured for URL #{options[:url]}."
-          puts "Error message: #{response.body.fetch("errors").inspect}" if response.body.fetch("errors", nil).present?
+          logger.error "An error occured for URL #{options[:url]}."
+          logger.error "Error message: #{response.body.fetch("errors").inspect}" if response.body.fetch("errors", nil).present?
           error_count += 1
           options[:url] = nil
         end 
