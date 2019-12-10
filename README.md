@@ -4,7 +4,7 @@
 
 # Maltese
 
-Ruby gem and command-line tool for generating sitemap files from the DataCite REST API. Uses the [SitemapGenerator](https://github.com/kjvarga/sitemap_generator) gem and can be run as Docker container, e.g. using ECS and triggered by AWS Lambda, as described [here](https://medium.com/@pahud/ecs-task-runner-with-lambda-4594b72ccb#.5xpmf2inz).
+Ruby gem and command-line tool for generating sitemap files from the DataCite REST API. Uses the [SitemapGenerator](https://github.com/kjvarga/sitemap_generator) gem and can be run as Docker container, e.g. using as a scheduled task in AWS ECS triggered by AWS Cloudwatch Events.
 
 Run as a command-line tool:
 
