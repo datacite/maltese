@@ -32,6 +32,14 @@ describe Maltese::Sitemap, vcr: true do
     end
   end
 
+  context "process_data" do
+    it "should catch timeout errors with the Datacite REST API" do
+      stub = stub_request(:get, subject.get_query_url).to_return(:status => [408])
+      response = subject.process_data(total: 10, url: subject.get_query_url)
+      expect(response).to eq(0)
+    end
+  end
+
   context "get_data" do
     it "should report if there are works returned by the Datacite REST API" do
       response = subject.get_data(subject.get_query_url)
@@ -61,12 +69,6 @@ describe Maltese::Sitemap, vcr: true do
       result = OpenStruct.new(body: JSON.parse(body))
       response = subject.parse_data(result)
       expect(response).to eq(1001)
-    end
-
-    it "should catch timeout errors with the Datacite REST API" do
-      result = OpenStruct.new(body: { "errors" => [{ "title" => "the server responded with status 408 for https://REST.test.datacite.org", "status" => 408 }] })
-      response = subject.parse_data(result)
-      expect(response).to eq(result.body["errors"])
     end
   end
 

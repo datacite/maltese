@@ -90,16 +90,29 @@ module Maltese
 
     def process_data(options = {})
       options[:start_time] = Time.now
+      link_count = 0
+      error_count = 0
 
       # walk through paginated results
       while options[:url] do
         response = get_data(options[:url])
-        parse_data(response)
-        options[:url] = response.body.dig("links", "next")
+
+        if response.status == 200
+          link_count += parse_data(response)
+          puts "#{link_count} DOIs parsed."
+          options[:url] = response.body.dig("links", "next")
+        else
+          puts "An error occured for URL #{options[:url]}:."
+          puts "Error message: #{response.body.fetch("errors").inspect}" if response.body.fetch("errors", nil).present?
+          error_count += 1
+          options[:url] = nil
+        end 
 
         # don't loop when testing
         break if ENV['RACK'] == "test"     
       end
+
+      return link_count if error_count > 0
 
       push_data(options)
     end
@@ -109,16 +122,10 @@ module Maltese
     end
 
     def parse_data(result)
-      if result.body.fetch("errors", nil).present?
-        puts "An error occured: #{result.body.fetch("errors").inspect}"
-        return result.body.fetch("errors") 
-      end
-
       result.body.fetch("data", []).each do |item|
         loc = "/works/" + item.dig("attributes", "doi")
         sitemap.add loc, changefreq: "monthly", lastmod: item.dig("attributes", "updated")
       end
-      puts "#{result.body.fetch("data", []).size} DOIs parsed."
       sitemap.sitemap.link_count
     end
 
