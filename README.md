@@ -8,7 +8,7 @@ Ruby gem and command-line tool for generating sitemap files from the DataCite RE
 
 Run as a command-line tool:
 
-```
+```ruby
 maltese sitemap
 ```
 
@@ -33,7 +33,7 @@ gem install maltese
 
 We use rspec for unit testing:
 
-```
+```ruby
 bundle exec rspec
 ```
 
@@ -48,4 +48,5 @@ Follow along via [Github Issues](https://github.com/datacite/toccatore/issues).
 * Commit, push and make a pull request. Bonus points for topical branches.
 
 ## License
+
 **maltese** is released under the [MIT License](https://github.com/datacite/maltese/blob/master/LICENSE.md).
