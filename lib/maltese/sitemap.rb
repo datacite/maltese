@@ -1,4 +1,4 @@
-require "logger"
+require 'logstash-logger'
 
 module Maltese
   class Sitemap
@@ -26,7 +26,7 @@ module Maltese
       @secret_key = attributes[:secret_key].presence || ENV['AWS_SECRET_ACCESS_KEY']
       @region = attributes[:region].presence || ENV['AWS_REGION']
 
-      @logger = Logger.new(STDOUT)
+      @logger = LogStashLogger.new(type: :stdout)
     end
 
     def sitemap_url
@@ -108,7 +108,7 @@ module Maltese
         response = get_data(options[:url])
 
         if response.status == 200
-          link_count += parse_data(response)
+          link_count = parse_data(response)
           logger.info "#{link_count} DOIs parsed."
           options[:url] = response.body.dig("links", "next")
         else
