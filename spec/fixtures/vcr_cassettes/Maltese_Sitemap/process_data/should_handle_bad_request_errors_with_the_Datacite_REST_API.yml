@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: put
+    uri: https://s3.eu-west-1.amazonaws.com/search.test.datacite.org/sitemaps/sitemap.xml.gz
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIACe28F0AA5WSTU+EMBCG/wrp1dAPzCZCut2bp/XkmnitpUKT0iJTF/bf2y2sQeMBbzDzPDMvYfhh6mx21gMY7/aIYYoy7ZSvjWv26OX0mD+gg+CfgwUdssg6qCYwe9SG0FeEjOOIx3vsh4YUlDLy+nR8Vq3uZG4cBOmURlnkK0jFo1cypEUrHUyIrR7SkJkDshQJxWX2D/b2jCeo0Rz3X7sWpzKdbPQPs/G+sRor3/328gQThtnNPpta+612gte20yNsla/sOnfn34zdHHymSfrps9/HL4mdrQMWfD1hakNn/zoPVpYlSV2U7klw65W4chBB0HJQLQ4aAq5lkCpuSBonV4xbCaHztSgoK3NW5IydaFkVu2pX3lFaURq5BeGqla7R74P+ENKO8gKcrEq8H4wfTLiImJqT7zdOUigyn7r4AuvlHP0ZAwAA
+    headers:
+      Content-Type:
+      - application/x-gzip
+      Accept-Encoding:
+      - ''
+      User-Agent:
+      - aws-sdk-ruby3/3.85.0 ruby/2.6.3 universal.x86_64-darwin19 aws-sdk-s3/1.59.0
+      X-Amz-Acl:
+      - public-read
+      Cache-Control:
+      - private, max-age=0, no-cache
+      Expect:
+      - 100-continue
+      Content-Md5:
+      - 6kerbfCyNd6pPzaKoM2YfA==
+      X-Amz-Date:
+      - 20191211T092559Z
+      X-Amz-Content-Sha256:
+      - 8e44f92f3f60740ecea4fa2484527a432755024ddb3217a9594f7ad503653554
+      Authorization:
+      - AWS4-HMAC-SHA256 Credential=AKIAJAMMCXAR3IXMNCGQ/20191211/eu-west-1/s3/aws4_request,
+        SignedHeaders=cache-control;content-md5;content-type;expect;host;user-agent;x-amz-acl;x-amz-content-sha256;x-amz-date,
+        Signature=36ccdaef2b69793980e844b45fdd993ed3733c029b0ea41203666025dc6bfc7c
+      Content-Length:
+      - '333'
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Amz-Id-2:
+      - n6qSeGOxeKGqA0EKgBzqo6Uerr9zBo5MWnpviel/xBg+wUWtujTI8mJy0jVhDBB6xrXD19QKMNc=
+      X-Amz-Request-Id:
+      - 4DEC13308960594B
+      Date:
+      - Wed, 11 Dec 2019 09:26:00 GMT
+      Etag:
+      - '"ea47ab6df0b235dea93f368aa0cd987c"'
+      Content-Length:
+      - '0'
+      Server:
+      - AmazonS3
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 11 Dec 2019 09:25:59 GMT
+recorded_with: VCR 3.0.3

@@ -1,6 +1,9 @@
 require 'logstash-logger'
+require 'retriable'
 
 module Maltese
+  class ::BadGatewayError < StandardError; end
+
   class Sitemap
     attr_reader :sitemap_bucket, :rack_env, :access_key, :secret_key, :region, :logger
 
@@ -105,21 +108,35 @@ module Maltese
 
       # walk through paginated results
       while options[:url] do
-        response = get_data(options[:url])
+        begin
+          response = nil
 
-        if response.status == 200
-          link_count = parse_data(response)
-          logger.info "#{link_count} DOIs parsed."
-          options[:url] = response.body.dig("links", "next")
-        else
-          logger.error "An error occured for URL #{options[:url]}."
-          logger.error "Error message: #{response.body.fetch("errors").inspect}" if response.body.fetch("errors", nil).present?
+          # retry on temporal errors (status codes 408 and 502)
+          Retriable.retriable(base_interval: 10, multiplier: 2) do
+            response = get_data(options[:url])
+
+            raise Timeout::Error, "A timeout error occured for URL #{options[:url]}." if response.status == 408
+            raise BadGatewayError, "A bad gateway error occured for URL #{options[:url]}." if response.status == 502
+          end
+
+          if response.status == 200
+            link_count = parse_data(response)
+            logger.info "#{link_count} DOIs parsed."
+            options[:url] = response.body.dig("links", "next")
+          else
+            logger.error "An error occured for URL #{options[:url]}."
+            logger.error "Error: #{response.body.fetch("errors").inspect}" if response.body.fetch("errors", nil).present?
+            error_count += 1
+            options[:url] = nil
+          end
+        rescue => exception
+          logger.error "Error: #{exception.message}."
           error_count += 1
           options[:url] = nil
-        end 
-
-        # don't loop when testing
-        break if rack_env == "test"     
+        ensure
+          # don't loop when testing
+          break if rack_env == "test"
+        end  
       end
 
       return link_count if error_count > 0

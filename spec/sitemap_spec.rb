@@ -33,8 +33,20 @@ describe Maltese::Sitemap, vcr: true do
   end
 
   context "process_data" do
-    it "should catch timeout errors with the Datacite REST API" do
-      stub = stub_request(:get, subject.get_query_url).to_return(:status => [408])
+    it "should handle timeout errors with the Datacite REST API" do
+      stub = stub_request(:get, subject.get_query_url).and_return({ status: [408] }, { status: [408] }, { status: [200] })
+      response = subject.process_data(total: 10, url: subject.get_query_url)
+      expect(response).to eq(1)
+    end
+
+    it "should handle bad request errors with the Datacite REST API" do
+      stub = stub_request(:get, subject.get_query_url).and_return({ status: [502] }, { status: [200] })
+      response = subject.process_data(total: 10, url: subject.get_query_url)
+      expect(response).to eq(1)
+    end
+
+    it "should retry 2 times for bad request errors with the Datacite REST API" do
+      stub = stub_request(:get, subject.get_query_url).and_return({ status: [502] }, { status: [502] }, { status: [502] })
       response = subject.process_data(total: 10, url: subject.get_query_url)
       expect(response).to eq(0)
     end
