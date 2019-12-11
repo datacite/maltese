@@ -6,7 +6,7 @@ http_interactions:
     body:
       encoding: ASCII-8BIT
       string: !binary |-
-        H4sIACe28F0AA5WSTU+EMBCG/wrp1dAPzCZCut2bp/XkmnitpUKT0iJTF/bf2y2sQeMBbzDzPDMvYfhh6mx21gMY7/aIYYoy7ZSvjWv26OX0mD+gg+CfgwUdssg6qCYwe9SG0FeEjOOIx3vsh4YUlDLy+nR8Vq3uZG4cBOmURlnkK0jFo1cypEUrHUyIrR7SkJkDshQJxWX2D/b2jCeo0Rz3X7sWpzKdbPQPs/G+sRor3/328gQThtnNPpta+612gte20yNsla/sOnfn34zdHHymSfrps9/HL4mdrQMWfD1hakNn/zoPVpYlSV2U7klw65W4chBB0HJQLQ4aAq5lkCpuSBonV4xbCaHztSgoK3NW5IydaFkVu2pX3lFaURq5BeGqla7R74P+ENKO8gKcrEq8H4wfTLiImJqT7zdOUigyn7r4AuvlHP0ZAwAA
+        H4sIAFYw8V0AA5WSPW+DMBCG/wryWuGPdGhAjrNlSqemUlfXuGDJ2JRzA/n3dQypaNWBbHD3PHcv4vh+bG121j0Y73aIYYoy7ZSvjKt36PV0yLdoL/hXb0GHLLIOyhHMDjUhdCUhwzDg4RH7viYbShl5ez6+qEa3MjcOgnRKoyzyJaTi0SsZ0qKFDibEVgdpyMQBmYuE4iK7g7094xEqNMW9a9fslKaVtf5l1t7XVmPl279enmDCMLvZZ1Npv9ZO8NJ2eoC18pVd5m79u7Grg080ST998rv4JbGzdsCMLyeMTWjtf+fBiqIgqYvSPQluvRJXDiIIWvaqwUFDwJUMUsUNSePkinErIbS+EhvKipxtcsZObFvSp5JtHygtKY3cjHDVSFfrj15/CmkHeQFOFiXe9cb3JlxETM3JzxsnKRSZTl18A7M6zacZAwAA
     headers:
       Content-Type:
       - application/x-gzip
@@ -21,15 +21,15 @@ http_interactions:
       Expect:
       - 100-continue
       Content-Md5:
-      - 6kerbfCyNd6pPzaKoM2YfA==
+      - w2OIfPBP5wp6BSNJ9WMxJg==
       X-Amz-Date:
-      - 20191211T092559Z
+      - 20191211T180718Z
       X-Amz-Content-Sha256:
-      - 8e44f92f3f60740ecea4fa2484527a432755024ddb3217a9594f7ad503653554
+      - 659ab60ecd2fbe429996d01151aa599deae30ada18dcf681077b60b829dbc582
       Authorization:
       - AWS4-HMAC-SHA256 Credential=AKIAJAMMCXAR3IXMNCGQ/20191211/eu-west-1/s3/aws4_request,
         SignedHeaders=cache-control;content-md5;content-type;expect;host;user-agent;x-amz-acl;x-amz-content-sha256;x-amz-date,
-        Signature=36ccdaef2b69793980e844b45fdd993ed3733c029b0ea41203666025dc6bfc7c
+        Signature=2bd49dd28c54501486cbf6df28688a4d70b2e2b1f3f1230ab9be5c06388329ed
       Content-Length:
       - '333'
       Accept:
@@ -40,13 +40,13 @@ http_interactions:
       message: OK
     headers:
       X-Amz-Id-2:
-      - n6qSeGOxeKGqA0EKgBzqo6Uerr9zBo5MWnpviel/xBg+wUWtujTI8mJy0jVhDBB6xrXD19QKMNc=
+      - 85csHX9I3N7OnuKxg49k28pHkGsoHOE1GAUu/R1uT4UTsq/vcyIY4MqzohsENYFpOjEjsQlHCOQ=
       X-Amz-Request-Id:
-      - 4DEC13308960594B
+      - DE545C8EB9D0A636
       Date:
-      - Wed, 11 Dec 2019 09:26:00 GMT
+      - Wed, 11 Dec 2019 18:07:20 GMT
       Etag:
-      - '"ea47ab6df0b235dea93f368aa0cd987c"'
+      - '"c363887cf04fe70a7a052349f5633126"'
       Content-Length:
       - '0'
       Server:
@@ -55,5 +55,60 @@ http_interactions:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Wed, 11 Dec 2019 09:25:59 GMT
+  recorded_at: Wed, 11 Dec 2019 18:07:19 GMT
+- request:
+    method: post
+    uri: https://hooks.slack.com/services/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
+    body:
+      encoding: US-ASCII
+      string: payload=%7B%22username%22%3A%22Fabrica%22%2C%22icon_url%22%3A%22https%3A%2F%2Fgithub.com%2Fdatacite%2Fsegugio%2Fblob%2Fmaster%2Fsource%2Fimages%2Ffabrica.png%22%2C%22attachments%22%3A%5B%7B%22title%22%3A%22DataCite+Fabrica+Test%3A+Sitemaps+Updated%22%2C%22color%22%3A%22good%22%2C%22fields%22%3A%5B%7B%22title%22%3A%22URL%22%2C%22value%22%3A%22https%3A%2F%2Fsearch.test.datacite.org%2Fsitemaps%2Fsitemap.xml.gz%22%7D%2C%7B%22title%22%3A%22Number+of+DOIs%22%2C%22value%22%3A1%2C%22short%22%3Atrue%7D%2C%7B%22title%22%3A%22Time+Taken%22%2C%22value%22%3A%221+min%22%2C%22short%22%3Atrue%7D%5D%7D%5D%7D
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/html
+      Content-Length:
+      - '22'
+      Connection:
+      - keep-alive
+      Date:
+      - Wed, 11 Dec 2019 18:07:19 GMT
+      Server:
+      - Apache
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Referrer-Policy:
+      - no-referrer
+      X-Frame-Options:
+      - SAMEORIGIN
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Via:
+      - haproxy-www-ckzp
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 a6f1f6a7cb5a93f6f494d1d5945d867c.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MAD50-C1
+      X-Amz-Cf-Id:
+      - 4SLo-gML_WnTMxRdbIJ6Ld58GVC9lIqB_mg5cb2vkPUzDNJ5f4aPuA==
+    body:
+      encoding: ASCII-8BIT
+      string: ok
+    http_version: 
+  recorded_at: Wed, 11 Dec 2019 18:07:19 GMT
 recorded_with: VCR 3.0.3

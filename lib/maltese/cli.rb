@@ -23,6 +23,7 @@ module Maltese
     method_option :access_key, type: :string
     method_option :secret_key, type: :string
     method_option :region, type: :string
+    method_option :slack_webhook_url, type: :string
     def sitemap
       sitemap = Maltese::Sitemap.new(options)
       sitemap.queue_jobs

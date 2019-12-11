@@ -28,7 +28,7 @@ describe Maltese::Sitemap, vcr: true do
   context "queue_jobs" do
     it "should report if there are works returned by the Datacite REST API" do
       response = subject.queue_jobs
-      expect(response).to eq(856504)
+      expect(response).to eq(895955)
     end
   end
 

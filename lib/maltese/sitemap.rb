@@ -1,11 +1,12 @@
 require 'logstash-logger'
 require 'retriable'
+require 'slack-notifier'
 
 module Maltese
   class ::BadGatewayError < StandardError; end
 
   class Sitemap
-    attr_reader :sitemap_bucket, :rack_env, :access_key, :secret_key, :region, :logger
+    attr_reader :sitemap_bucket, :rack_env, :access_key, :secret_key, :region, :slack_webhook_url, :logger
 
     # load ENV variables from .env file if it exists
     env_file = File.expand_path("../../../.env", __FILE__)
@@ -22,18 +23,26 @@ module Maltese
       env_vars.each { |k, v| ENV[k] = v }
     end
 
+    # icon for Slack messages
+    SLACK_ICON_URL = "https://github.com/datacite/segugio/blob/master/source/images/fabrica.png"
+
     def initialize(attributes={})
       @sitemap_bucket = attributes[:sitemap_bucket].presence || "search.test.datacite.org"
       @rack_env = attributes[:rack_env].presence || ENV['RACK_ENV'] || "stage"
       @access_key = attributes[:access_key].presence || ENV['AWS_ACCESS_KEY_ID']
       @secret_key = attributes[:secret_key].presence || ENV['AWS_SECRET_ACCESS_KEY']
       @region = attributes[:region].presence || ENV['AWS_REGION']
+      @slack_webhook_url = attributes[:slack_webhook_url].presence || ENV['SLACK_WEBHOOK_URL']
 
       @logger = LogStashLogger.new(type: :stdout)
     end
 
     def sitemap_url
       rack_env == "production" ? "https://search.datacite.org/" : "https://search.test.datacite.org/"
+    end
+
+    def slack_title
+      rack_env == "production" ? "DataCite Fabrica" : "DataCite Fabrica Test"
     end
 
     def sitemaps_path
@@ -130,8 +139,13 @@ module Maltese
             options[:url] = nil
           end
         rescue => exception
-          logger.error "Error: #{exception.message}."
+          logger.error "Error: #{exception.message}"
           error_count += 1
+          fields = [
+            { title: "Error", value: exception.message },
+            { title: "Time Taken", value: "#{((Time.now - options[:start_time])/ 60.0).ceil} min", short: true }
+          ]
+          send_notification_to_slack(nil, title: slack_title + ": Sitemaps Not Updated", level: "danger", fields: fields) unless rack_env == "test"
           options[:url] = nil
         ensure
           # don't loop when testing
@@ -151,7 +165,7 @@ module Maltese
     def parse_data(result)
       Array.wrap(result.body.fetch("data", nil)).each do |item|
         loc = "/works/" + item.dig("attributes", "doi")
-        sitemap.add loc, changefreq: "monthly", lastmod: item.dig("attributes", "updated")
+        sitemap.add loc, changefreq: "weekly", lastmod: item.dig("attributes", "updated")
       end
       sitemap.sitemap.link_count
     end
@@ -160,7 +174,36 @@ module Maltese
       sitemap.finalize!
       options[:start_time] ||= Time.now
       sitemap.sitemap_index.stats_summary(:time_taken => Time.now - options[:start_time])
+      
+      fields = [
+        { title: "URL", value: "#{sitemap_url}sitemaps/sitemap.xml.gz" },
+        { title: "Number of DOIs", value: format_number(sitemap.sitemap.link_count), short: true },
+        { title: "Time Taken", value: "#{((Time.now - options[:start_time])/ 60.0).ceil} min", short: true }
+      ]
+      send_notification_to_slack(nil, title: slack_title + ": Sitemaps Updated", level: "good", fields: fields) unless rack_env == "test"
       sitemap.sitemap.link_count
+    end
+
+    def send_notification_to_slack(text, options={})
+      return nil unless slack_webhook_url.present?
+
+      attachment = {
+        title: options[:title] || "Fabrica Message",
+        text: text,
+        color: options[:level] || "good",
+        fields: options[:fields]
+      }.compact
+
+      notifier = Slack::Notifier.new slack_webhook_url,
+                                     username: "Fabrica",
+                                     icon_url: SLACK_ICON_URL
+      response = notifier.ping attachments: [attachment]
+      response.first.body
+    end
+
+    # from https://codereview.stackexchange.com/questions/28054/separate-numbers-with-commas
+    def format_number(number)
+      number.to_s.reverse.gsub(/(\d{3})(?=\d)/, '\\1,').reverse
     end
   end
 end
