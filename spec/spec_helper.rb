@@ -90,6 +90,8 @@ VCR.configure do |c|
   c.configure_rspec_metadata!
   c.filter_sensitive_data("<AWS_ACCESS_KEY_ID>") { ENV["AWS_ACCESS_KEY_ID"] }
   c.filter_sensitive_data("<AWS_SECRET_ACCESS_KEY>") { ENV["AWS_SECRET_ACCESS_KEY"] }
+  c.filter_sensitive_data("<AWS_REGION>") { ENV["AWS_REGION"] }
   c.filter_sensitive_data("<FOG_DIRECTORY>") { ENV['FOG_DIRECTORY'] }
   c.filter_sensitive_data("<FOG_REGION>") { ENV["FOG_REGION"] }
+  c.filter_sensitive_data("<SLACK_WEBHOOK_URL>") { ENV["SLACK_WEBHOOK_URL"] }
 end

@@ -16,7 +16,7 @@ describe Maltese::CLI do
       sitemap = Zlib::GzipReader.open("public/sitemaps/sitemap.xml.gz") { |gz| gz.read }
       doc = Nokogiri::XML(sitemap)
       expect(doc.xpath("//xmlns:url").size).to eq(1001)
-      expect(doc.xpath("//xmlns:loc").last.text).to eq("https://search.test.datacite.org/works/10.1080/19393210.2019.1576774")
+      expect(doc.xpath("//xmlns:loc").last.text).to eq("https://search.test.datacite.org/works/10.4124/ccnlgrf")
     end
   end
 end

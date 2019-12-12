@@ -6,14 +6,14 @@ http_interactions:
     body:
       encoding: ASCII-8BIT
       string: !binary |-
-        H4sIABov8V0AA5WSPW+DMBBA/wryWuEPugTkOFundGoqdXWNC5aMTTk3kH9fx5CKVh2IxGDu3rs7y8cPU2ezsx7AeLdHDFOUaad8bVyzR6+np3yHDoJ/DRZ0yCLroJrA7FEbQl8RMo4jHh+xHxpSUMrI2/PxRbW6k7lxEKRTGmWRryAFj17JkBqtdDAhpnpIRWYOyBIkFJfZHeztjCeo0TzuXb0WpzKdbPQvs/G+sRor3/318gQThtnNPpta+612gte20yNsla/seu7Ovxu7efCZJunRZ7+PN4mZrQUWfF1hakNn/1sPVpYlSVmU9klw65W4chBB0HJQLQ4aAq5lkCp2SBonV4xbCaHztSgoK3NW5Iyd2K6iRfweKK0ojdyCcNVK1+iPQX8KaUd5AU5WId4Pxg8mXEScmpOfP07SUGRedfENZRrExhkDAAA=
+        H4sIABkD8l0AA5WSPW+DMBBA/wryWmGbRKqK5ZAtUzo1lbq6xgVL/qCcG8i/r2NIRasORGIwd+/dneXj+9Ga7Kx60N7tUIEpypSTvtau2aHX0yF/QvuKf/UGVMgi64CNoHeoDaFjhAzDgIct9n1DNpQW5O35+CJbZUWuHQThpEJZ5Bmk4NFLEVKjhQ46xFQHqcjEAZmDhOIyu4O9nfEINZrGvavX7DBtRaN+mY33jVFYevvXyxNMClzc7LOulV9rJ3hpOzXAWvnKLue2/l2b1YNPNEmPPvldvEnMrC0w48sKYxus+W89irIsScqitE8VN15WVw4iCEr0ssVBQcC1CELGDknj5IpxIyBYX1cbWpR5sYnfiZaMPrLt9oFSRmnkZoTLVrhGffTqsxJmEBfgZBHiXa99r8OlilNz8vPHSRqKTKtefQOAwwYmGQMAAA==
     headers:
       Content-Type:
       - application/x-gzip
       Accept-Encoding:
       - ''
       User-Agent:
-      - aws-sdk-ruby3/3.85.0 ruby/2.6.3 universal.x86_64-darwin19 aws-sdk-s3/1.59.0
+      - aws-sdk-ruby3/3.85.1 ruby/2.6.3 universal.x86_64-darwin19 aws-sdk-s3/1.59.0
       X-Amz-Acl:
       - public-read
       Cache-Control:
@@ -21,17 +21,17 @@ http_interactions:
       Expect:
       - 100-continue
       Content-Md5:
-      - b1SRRofjd32K19pj0b6+Aw==
+      - ef2rYLpRj4ORLg7/ck0/2Q==
       X-Amz-Date:
-      - 20191211T180202Z
+      - 20191212T090633Z
       X-Amz-Content-Sha256:
-      - 66507d114ff8199920640a3a8c3245bda188f99593acbee3deb10f3c19919966
+      - 64a515c75bb8594ebbe560658b9e09f4cb478d988d01ca0625f1419f2cd005fc
       Authorization:
-      - AWS4-HMAC-SHA256 Credential=AKIAJAMMCXAR3IXMNCGQ/20191211/eu-west-1/s3/aws4_request,
+      - AWS4-HMAC-SHA256 Credential=AKIAJAMMCXAR3IXMNCGQ/20191212/eu-west-1/s3/aws4_request,
         SignedHeaders=cache-control;content-md5;content-type;expect;host;user-agent;x-amz-acl;x-amz-content-sha256;x-amz-date,
-        Signature=98dfd608b61655f474e5d6a2393864ea1d8741f06c7a48e5c5a80406d9a48e0c
+        Signature=267c51c1b4ed7c162b00c46e12e6822f918a211b02f84f137306be263a721ce4
       Content-Length:
-      - '332'
+      - '334'
       Accept:
       - "*/*"
   response:
@@ -40,13 +40,13 @@ http_interactions:
       message: OK
     headers:
       X-Amz-Id-2:
-      - RIFlc/ra+CEcOv/lD7dZ21B8QUzp08ETl3clCT3UsY6B0WMqBtAxUxUU/kXPXnBlp6haSCQRUd4=
+      - VHZlQFoNQCwJ0EQj1pIIgIpmsB6VFT+deSJP9Bw+C7GbphJwnReSCfsQbM5GtOi8FGgFRq0+X38=
       X-Amz-Request-Id:
-      - 7BE8671648BA07C7
+      - 92877695FB0594AC
       Date:
-      - Wed, 11 Dec 2019 18:02:03 GMT
+      - Thu, 12 Dec 2019 09:06:34 GMT
       Etag:
-      - '"6f54914687e3777d8ad7da63d1bebe03"'
+      - '"79fdab60ba518f83912e0eff724d3fd9"'
       Content-Length:
       - '0'
       Server:
@@ -55,60 +55,5 @@ http_interactions:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Wed, 11 Dec 2019 18:02:02 GMT
-- request:
-    method: post
-    uri: https://hooks.slack.com/services/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
-    body:
-      encoding: US-ASCII
-      string: payload=%7B%22username%22%3A%22Fabrica%22%2C%22icon_url%22%3A%22https%3A%2F%2Fgithub.com%2Fdatacite%2Fsegugio%2Fblob%2Fmaster%2Fsource%2Fimages%2Ffabrica.png%22%2C%22attachments%22%3A%5B%7B%22title%22%3A%22DataCite+Fabrica+Test%3A+Sitemaps+Updated%22%2C%22color%22%3A%22good%22%2C%22fields%22%3A%5B%7B%22title%22%3A%22URL%22%2C%22value%22%3A%22https%3A%2F%2Fsearch.test.datacite.org%2Fsitemaps%2Fsitemap.xml.gz%22%7D%2C%7B%22title%22%3A%22Number+of+DOIs%22%2C%22value%22%3A1%2C%22short%22%3Atrue%7D%2C%7B%22title%22%3A%22Time+Taken%22%2C%22value%22%3A%221+min%22%2C%22short%22%3Atrue%7D%5D%7D%5D%7D
-    headers:
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-      Content-Type:
-      - application/x-www-form-urlencoded
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Type:
-      - text/html
-      Content-Length:
-      - '22'
-      Connection:
-      - keep-alive
-      Date:
-      - Wed, 11 Dec 2019 18:02:03 GMT
-      Server:
-      - Apache
-      Vary:
-      - Accept-Encoding
-      Strict-Transport-Security:
-      - max-age=31536000; includeSubDomains; preload
-      Referrer-Policy:
-      - no-referrer
-      X-Frame-Options:
-      - SAMEORIGIN
-      Access-Control-Allow-Origin:
-      - "*"
-      X-Via:
-      - haproxy-www-ijc7
-      X-Cache:
-      - Miss from cloudfront
-      Via:
-      - 1.1 55a2fcd9a418e7389258b9c7b3bc8efb.cloudfront.net (CloudFront)
-      X-Amz-Cf-Pop:
-      - MAD50-C1
-      X-Amz-Cf-Id:
-      - HZK1DH0NLCONxAD_894fPYbGPnozgV7ttWFREsk9EX7HyvyfaoMRjg==
-    body:
-      encoding: ASCII-8BIT
-      string: ok
-    http_version: 
-  recorded_at: Wed, 11 Dec 2019 18:02:03 GMT
+  recorded_at: Thu, 12 Dec 2019 09:06:34 GMT
 recorded_with: VCR 3.0.3
