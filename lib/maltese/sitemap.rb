@@ -3,6 +3,7 @@ require 'retriable'
 require 'slack-notifier'
 
 module Maltese
+  class ::InternalServerError < StandardError; end
   class ::BadGatewayError < StandardError; end
 
   class Sitemap
@@ -104,6 +105,7 @@ module Maltese
 
       params = { 
         "fields[dois]" => "doi,updated",
+        "exclude-registration-agencies" => "true",
         "page[scroll]" => "7m",
         "page[size]" => options[:size]
       }
@@ -123,11 +125,12 @@ module Maltese
           # speed up tests
           base_interval = rack_env == "test" ? 0.1 : 10
 
-          # retry on temporal errors (status codes 408 and 502)
+          # retry on temporal errors (status codes 408, 500 and 502)
           Retriable.retriable(base_interval: base_interval, multiplier: 2) do
             response = get_data(options[:url])
 
             raise Timeout::Error, "A timeout error occured for URL #{options[:url]}." if response.status == 408
+            raise InternalServerError, "An internal server error occured for URL #{options[:url]}." if response.status == 500
             raise BadGatewayError, "A bad gateway error occured for URL #{options[:url]}." if response.status == 502
           end
 
@@ -157,8 +160,6 @@ module Maltese
           break if rack_env == "test"
         end  
       end
-
-      return link_count if error_count > 0
 
       push_data(options)
     end
