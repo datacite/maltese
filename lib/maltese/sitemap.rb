@@ -194,11 +194,15 @@ module Maltese
         fields: options[:fields]
       }.compact
 
-      notifier = Slack::Notifier.new slack_webhook_url,
-                                     username: "Fabrica",
-                                     icon_url: SLACK_ICON_URL
-      response = notifier.ping attachments: [attachment]
-      response.first.body
+      begin
+        notifier = Slack::Notifier.new slack_webhook_url,
+                                      username: "Fabrica",
+                                      icon_url: SLACK_ICON_URL
+        response = notifier.ping attachments: [attachment]
+        response.first.body
+      rescue Slack::Notifier::APIError => exception
+        logger.error exception.message
+      end
     end
 
     # from https://codereview.stackexchange.com/questions/28054/separate-numbers-with-commas
