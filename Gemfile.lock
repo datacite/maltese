@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    maltese (0.9.4)
+    maltese (0.9.5)
       activesupport (>= 4.2.5, < 6)
       aws-sdk-s3 (~> 1.19)
       dotenv (~> 2.1, >= 2.1.1)

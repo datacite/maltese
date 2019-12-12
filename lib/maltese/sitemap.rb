@@ -120,8 +120,11 @@ module Maltese
         begin
           response = nil
 
+          # speed up tests
+          base_interval = rack_env == "test" ? 0.1 : 10
+
           # retry on temporal errors (status codes 408 and 502)
-          Retriable.retriable(base_interval: 10, multiplier: 2) do
+          Retriable.retriable(base_interval: base_interval, multiplier: 2) do
             response = get_data(options[:url])
 
             raise Timeout::Error, "A timeout error occured for URL #{options[:url]}." if response.status == 408
@@ -130,7 +133,7 @@ module Maltese
 
           if response.status == 200
             link_count = parse_data(response)
-            logger.info "#{link_count} DOIs parsed."
+            logger.info "#{(link_count + sitemap.sitemap_index.total_link_count).to_s(:delimited)} DOIs parsed."
             options[:url] = response.body.dig("links", "next")
           else
             logger.error "An error occured for URL #{options[:url]}."
@@ -143,6 +146,8 @@ module Maltese
           error_count += 1
           fields = [
             { title: "Error", value: exception.message },
+            { title: "Number of DOIs", value: sitemap.sitemap_index.total_link_count.to_s(:delimited), short: true },
+            { title: "Number of Sitemaps", value: sitemap.sitemap_index.link_count.to_s(:delimited), short: true },
             { title: "Time Taken", value: "#{((Time.now - options[:start_time])/ 60.0).ceil} min", short: true }
           ]
           send_notification_to_slack(nil, title: slack_title + ": Sitemaps Not Updated", level: "danger", fields: fields) unless rack_env == "test"
@@ -176,8 +181,9 @@ module Maltese
       sitemap.sitemap_index.stats_summary(:time_taken => Time.now - options[:start_time])
       
       fields = [
-        { title: "URL", value: "#{sitemap_url}sitemaps/sitemap.xml.gz" },
-        { title: "Number of DOIs", value: format_number(sitemap.sitemap.link_count), short: true },
+        { title: "URL", value: sitemap.sitemap_index_url },
+        { title: "Number of DOIs", value: sitemap.sitemap_index.total_link_count.to_s(:delimited), short: true },
+        { title: "Number of Sitemaps", value: sitemap.sitemap_index.link_count.to_s(:delimited), short: true },
         { title: "Time Taken", value: "#{((Time.now - options[:start_time])/ 60.0).ceil} min", short: true }
       ]
       send_notification_to_slack(nil, title: slack_title + ": Sitemaps Updated", level: "good", fields: fields) unless rack_env == "test"
@@ -203,11 +209,6 @@ module Maltese
       rescue Slack::Notifier::APIError => exception
         logger.error exception.message
       end
-    end
-
-    # from https://codereview.stackexchange.com/questions/28054/separate-numbers-with-commas
-    def format_number(number)
-      number.to_s.reverse.gsub(/(\d{3})(?=\d)/, '\\1,').reverse
     end
   end
 end
