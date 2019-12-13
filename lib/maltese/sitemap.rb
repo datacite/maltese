@@ -115,7 +115,6 @@ module Maltese
     def process_data(options = {})
       options[:start_time] = Time.now
       link_count = 0
-      error_count = 0
 
       # walk through paginated results
       while options[:url] do
@@ -141,12 +140,10 @@ module Maltese
           else
             logger.error "An error occured for URL #{options[:url]}."
             logger.error "Error: #{response.body.fetch("errors").inspect}" if response.body.fetch("errors", nil).present?
-            error_count += 1
             options[:url] = nil
           end
         rescue => exception
           logger.error "Error: #{exception.message}"
-          error_count += 1
           fields = [
             { title: "Error", value: exception.message },
             { title: "Number of DOIs", value: sitemap.sitemap_index.total_link_count.to_s(:delimited), short: true },
@@ -202,12 +199,12 @@ module Maltese
       }.compact
 
       begin
-        notifier = Slack::Notifier.new slack_webhook_url,
-                                      username: "Fabrica",
-                                      icon_url: SLACK_ICON_URL
+        notifier = Slack::Notifier.new(slack_webhook_url,
+                                       username: "Fabrica",
+                                       icon_url: SLACK_ICON_URL)
         response = notifier.ping attachments: [attachment]
         response.first.body
-      rescue Slack::Notifier::APIError => exception
+      rescue => exception
         logger.error exception.message
       end
     end
