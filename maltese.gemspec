@@ -26,7 +26,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'sitemap_generator', '~> 6.0'
   s.add_dependency 'aws-sdk-s3', '~> 1.19'
   s.add_dependency 'mime-types', '~> 3.1'
-  s.add_development_dependency 'bundler', '~> 1.0'
+  s.add_development_dependency 'bundler', '~> 2.0'
   s.add_development_dependency 'rspec', '~> 3.4'
   s.add_development_dependency 'rake', '~> 12.0'
   s.add_development_dependency 'rack-test', '~> 0'
