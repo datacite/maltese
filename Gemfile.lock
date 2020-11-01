@@ -125,7 +125,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bundler (~> 1.0)
+  bundler (~> 2.0)
   codeclimate-test-reporter (~> 1.0, >= 1.0.8)
   maltese!
   rack-test (~> 0)
@@ -136,4 +136,4 @@ DEPENDENCIES
   webmock (~> 3.0, >= 3.0.1)
 
 BUNDLED WITH
-   1.17.3
+   2.1.4
