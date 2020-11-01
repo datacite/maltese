@@ -17,7 +17,7 @@ module Maltese
       puts Toccatore::VERSION
     end
 
-    desc "sitemap", "generate sitemap for DataCite Search"
+    desc "sitemap", "generate sitemap for DataCite Commons"
     method_option :sitemap_bucket, type: :string
     method_option :rack_env, type: :string
     method_option :access_key, type: :string

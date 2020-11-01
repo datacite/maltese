@@ -43,7 +43,7 @@ module Maltese
     end
 
     def slack_title
-      rack_env == "production" ? "DataCite Fabrica" : "DataCite Fabrica Stage"
+      rack_env == "production" ? "DataCite Commons" : "DataCite Commons Stage"
     end
 
     def sitemaps_path
