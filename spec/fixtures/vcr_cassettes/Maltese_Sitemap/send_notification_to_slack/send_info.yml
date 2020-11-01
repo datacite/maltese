@@ -21,7 +21,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sun, 01 Nov 2020 07:12:10 GMT
+      - Sun, 01 Nov 2020 07:44:02 GMT
       Server:
       - Apache
       Strict-Transport-Security:
@@ -40,11 +40,21 @@ http_interactions:
       - '22'
       Content-Type:
       - text/html
+      X-Envoy-Upstream-Service-Time:
+      - '38'
+      X-Backend:
+      - main_normal main_canary_with_overflow main_control_with_overflow
+      X-Server:
+      - 10.128.214.120:80
       X-Via:
-      - haproxy-www-ot84,haproxy-edge-fra-4nfl
+      - envoy-www-iad-1mri, haproxy-edge-fra-44lk
+      X-Slack-Shared-Secret-Outcome:
+      - shared-secret
+      Via:
+      - envoy-www-iad-1mri
     body:
       encoding: ASCII-8BIT
       string: ok
     http_version:
-  recorded_at: Sun, 01 Nov 2020 07:12:10 GMT
+  recorded_at: Sun, 01 Nov 2020 07:44:02 GMT
 recorded_with: VCR 3.0.3

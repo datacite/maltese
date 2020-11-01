@@ -17,7 +17,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sun, 01 Nov 2020 06:55:29 GMT
+      - Sun, 01 Nov 2020 07:43:57 GMT
       Content-Type:
       - application/json; charset=utf-8
       Connection:
@@ -31,20 +31,20 @@ http_interactions:
       Vary:
       - Accept-Encoding, Origin
       Etag:
-      - W/"02cdd54e18c5d5921fb244acd94160ed"
+      - W/"ab3fce7b2af67413fa8d504e805a817f"
       X-Runtime:
-      - '0.323182'
+      - '0.405896'
       X-Rack-Cors:
       - miss; no-origin
       X-Request-Id:
-      - 8fb86006-b9c4-469c-bf29-1188582fca70
+      - b7f66256-545e-4c39-9c66-2aa1c39a8252
       X-Powered-By:
       - Phusion Passenger 6.0.6
       Server:
       - nginx/1.14.0 + Phusion Passenger 6.0.6
     body:
       encoding: ASCII-8BIT
-      string: '{"data":[{"id":"10.25601/2f56-s909","type":"dois","attributes":{"doi":"10.25601/2f56-s909","updated":"2020-10-24T10:39:27.000Z"},"relationships":{}}],"meta":{"total":207479,"scroll-id":"DnF1ZXJ5VGhlbkZldGNoBQAAAAAARK3uFkJGUkYwSFc1UmlhY2pRclc5SXBJQ1EAAAAAAESt7xZCRlJGMEhXNVJpYWNqUXJXOUlwSUNRAAAAAABErfAWQkZSRjBIVzVSaWFjalFyVzlJcElDUQAAAAAARK3xFkJGUkYwSFc1UmlhY2pRclc5SXBJQ1EAAAAAAESt8hZCRlJGMEhXNVJpYWNqUXJXOUlwSUNR"},"links":{"self":"https://api.stage.datacite.org/dois?exclude-registration-agencies=true&fields%5Bdois%5D=doi%2Cupdated&page%5Bscroll%5D=7m&page%5Bsize%5D=1","next":"https://api.stage.datacite.org/dois?page%5Bscroll%5D=7m&page%5Bsize%5D=1&scroll-id=DnF1ZXJ5VGhlbkZldGNoBQAAAAAARK3uFkJGUkYwSFc1UmlhY2pRclc5SXBJQ1EAAAAAAESt7xZCRlJGMEhXNVJpYWNqUXJXOUlwSUNRAAAAAABErfAWQkZSRjBIVzVSaWFjalFyVzlJcElDUQAAAAAARK3xFkJGUkYwSFc1UmlhY2pRclc5SXBJQ1EAAAAAAESt8hZCRlJGMEhXNVJpYWNqUXJXOUlwSUNR"}}'
+      string: '{"data":[{"id":"10.25601/2f56-s909","type":"dois","attributes":{"doi":"10.25601/2f56-s909","updated":"2020-10-24T10:39:27.000Z"},"relationships":{}}],"meta":{"total":207479,"scroll-id":"DnF1ZXJ5VGhlbkZldGNoBQAAAAAARLGQFkJGUkYwSFc1UmlhY2pRclc5SXBJQ1EAAAAAAESxkhZCRlJGMEhXNVJpYWNqUXJXOUlwSUNRAAAAAABEsZMWQkZSRjBIVzVSaWFjalFyVzlJcElDUQAAAAAARLGRFkJGUkYwSFc1UmlhY2pRclc5SXBJQ1EAAAAAAESxlBZCRlJGMEhXNVJpYWNqUXJXOUlwSUNR"},"links":{"self":"https://api.stage.datacite.org/dois?exclude-registration-agencies=true&fields%5Bdois%5D=doi%2Cupdated&page%5Bscroll%5D=7m&page%5Bsize%5D=1","next":"https://api.stage.datacite.org/dois?page%5Bscroll%5D=7m&page%5Bsize%5D=1&scroll-id=DnF1ZXJ5VGhlbkZldGNoBQAAAAAARLGQFkJGUkYwSFc1UmlhY2pRclc5SXBJQ1EAAAAAAESxkhZCRlJGMEhXNVJpYWNqUXJXOUlwSUNRAAAAAABEsZMWQkZSRjBIVzVSaWFjalFyVzlJcElDUQAAAAAARLGRFkJGUkYwSFc1UmlhY2pRclc5SXBJQ1EAAAAAAESxlBZCRlJGMEhXNVJpYWNqUXJXOUlwSUNR"}}'
     http_version:
-  recorded_at: Sun, 01 Nov 2020 06:55:29 GMT
+  recorded_at: Sun, 01 Nov 2020 07:43:57 GMT
 recorded_with: VCR 3.0.3
