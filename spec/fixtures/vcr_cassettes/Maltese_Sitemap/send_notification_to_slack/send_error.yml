@@ -5,7 +5,7 @@ http_interactions:
     uri: "<SLACK_WEBHOOK_URL>"
     body:
       encoding: US-ASCII
-      string: payload=%7B%22username%22%3A%22Fabrica%22%2C%22icon_url%22%3A%22https%3A%2F%2Fgithub.com%2Fdatacite%2Fsegugio%2Fblob%2Fmaster%2Fsource%2Fimages%2Ffabrica.png%22%2C%22attachments%22%3A%5B%7B%22title%22%3A%22DataCite+Fabrica+Test%3A+Sitemaps+Not+Updated%22%2C%22color%22%3A%22danger%22%2C%22fields%22%3A%5B%7B%22title%22%3A%22Error%22%2C%22value%22%3A%22Error%3A+A+bad+gateway+error+occured+for+URL+https%3A%2F%2Fapi.datacite.org%2Fdois%3Fpage%255Bscroll%255D%3D7m%5Cu0026page%255Bsize%255D%3D1000%5Cu0026scroll-id%3DDnF1ZXJ5VGhlbkZldGNoBQAAAAACJPb5FjI5NUhiM3dqU0JleHRSWlJGTnhYaXcAAAAAAiT2-hYyOTVIYjN3alNCZXh0UlpSRk54WGl3AAAAAAIk9vsWMjk1SGIzd2pTQmV4dFJaUkZOeFhpdwAAAAACJPb8FjI5NUhiM3dqU0JleHRSWlJGTnhYaXcAAAAAAiT2_RYyOTVIYjN3alNCZXh0UlpSRk54WGl3.%22%7D%2C%7B%22title%22%3A%22Number+of+DOIs%22%2C%22value%22%3A%22141%2C572%22%2C%22short%22%3Atrue%7D%2C%7B%22title%22%3A%22Number+of+Sitemaps%22%2C%22value%22%3A%223%22%2C%22short%22%3Atrue%7D%2C%7B%22title%22%3A%22Time+Taken%22%2C%22value%22%3A%2217+min%22%2C%22short%22%3Atrue%7D%5D%7D%5D%7D
+      string: payload=%7B%22username%22%3A%22Fabrica%22%2C%22icon_url%22%3A%22https%3A%2F%2Fraw.githubusercontent.com%2Fdatacite%2Fhomepage%2Fmaster%2Fsource%2Fimages%2Ffabrica.png%22%2C%22attachments%22%3A%5B%7B%22title%22%3A%22DataCite+Fabrica+Stage%3A+Sitemaps+Not+Updated%22%2C%22color%22%3A%22danger%22%2C%22fields%22%3A%5B%7B%22title%22%3A%22Error%22%2C%22value%22%3A%22Error%3A+A+bad+gateway+error+occured+for+URL+https%3A%2F%2Fapi.datacite.org%2Fdois%3Fpage%255Bscroll%255D%3D7m%5Cu0026page%255Bsize%255D%3D1000%5Cu0026scroll-id%3DDnF1ZXJ5VGhlbkZldGNoBQAAAAACJPb5FjI5NUhiM3dqU0JleHRSWlJGTnhYaXcAAAAAAiT2-hYyOTVIYjN3alNCZXh0UlpSRk54WGl3AAAAAAIk9vsWMjk1SGIzd2pTQmV4dFJaUkZOeFhpdwAAAAACJPb8FjI5NUhiM3dqU0JleHRSWlJGTnhYaXcAAAAAAiT2_RYyOTVIYjN3alNCZXh0UlpSRk54WGl3.%22%7D%2C%7B%22title%22%3A%22Number+of+DOIs%22%2C%22value%22%3A%22141%2C572%22%2C%22short%22%3Atrue%7D%2C%7B%22title%22%3A%22Number+of+Sitemaps%22%2C%22value%22%3A%223%22%2C%22short%22%3Atrue%7D%2C%7B%22title%22%3A%22Time+Taken%22%2C%22value%22%3A%2217+min%22%2C%22short%22%3Atrue%7D%5D%7D%5D%7D
     headers:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
@@ -20,39 +20,41 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Content-Type:
-      - text/html
-      Content-Length:
-      - '22'
-      Connection:
-      - keep-alive
       Date:
-      - Fri, 13 Dec 2019 08:57:43 GMT
+      - Sun, 01 Nov 2020 07:12:09 GMT
       Server:
       - Apache
-      Vary:
-      - Accept-Encoding
       Strict-Transport-Security:
       - max-age=31536000; includeSubDomains; preload
-      Referrer-Policy:
-      - no-referrer
-      X-Frame-Options:
-      - SAMEORIGIN
+      X-Slack-Backend:
+      - r
       Access-Control-Allow-Origin:
       - "*"
+      X-Frame-Options:
+      - SAMEORIGIN
+      Vary:
+      - Accept-Encoding
+      Referrer-Policy:
+      - no-referrer
+      Content-Length:
+      - '22'
+      Content-Type:
+      - text/html
+      X-Envoy-Upstream-Service-Time:
+      - '36'
+      X-Backend:
+      - main_normal main_canary_with_overflow main_control_with_overflow
+      X-Server:
+      - 10.128.194.179:80
       X-Via:
-      - haproxy-www-v6ip
-      X-Cache:
-      - Miss from cloudfront
+      - envoy-www-iad-y0aw, haproxy-edge-fra-y8xi
+      X-Slack-Shared-Secret-Outcome:
+      - shared-secret
       Via:
-      - 1.1 df38bb2685583a05a05461e9dbcff65d.cloudfront.net (CloudFront)
-      X-Amz-Cf-Pop:
-      - MAN50-C1
-      X-Amz-Cf-Id:
-      - qCYumwTrzsq02_b9c1ZbCmluNSOrd6KyiQsfnenvF4r2TEcXj-ruWQ==
+      - envoy-www-iad-y0aw
     body:
       encoding: ASCII-8BIT
       string: ok
-    http_version: 
-  recorded_at: Fri, 13 Dec 2019 08:57:43 GMT
+    http_version:
+  recorded_at: Sun, 01 Nov 2020 07:12:10 GMT
 recorded_with: VCR 3.0.3

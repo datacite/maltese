@@ -2,13 +2,13 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.test.datacite.org/dois?exclude-registration-agencies=true&fields%5Bdois%5D=doi,updated&page%5Bscroll%5D=7m&page%5Bsize%5D=1
+    uri: https://api.stage.datacite.org/dois?exclude-registration-agencies=true&fields%5Bdois%5D=doi,updated&page%5Bscroll%5D=7m&page%5Bsize%5D=1
     body:
       encoding: US-ASCII
       string: ''
     headers:
       User-Agent:
-      - Mozilla/5.0 (compatible; Maremma/4.4; +https://github.com/datacite/maremma)
+      - Mozilla/5.0 (compatible; Maremma/4.7; +https://github.com/datacite/maremma)
       Accept:
       - text/html,application/json,application/xml;q=0.9, text/plain;q=0.8,image/png,*/*;q=0.5
   response:
@@ -17,7 +17,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Thu, 12 Dec 2019 11:02:37 GMT
+      - Sun, 01 Nov 2020 06:55:29 GMT
       Content-Type:
       - application/json; charset=utf-8
       Connection:
@@ -30,19 +30,21 @@ http_interactions:
       - max-age=0, private, must-revalidate
       Vary:
       - Accept-Encoding, Origin
-      X-Request-Id:
-      - 64f44f76-3eec-4359-9e16-ffc10a5de258
       Etag:
-      - W/"ac234645bd6eba83ff40b03c286651c5"
+      - W/"02cdd54e18c5d5921fb244acd94160ed"
       X-Runtime:
-      - '7.529971'
+      - '0.323182'
+      X-Rack-Cors:
+      - miss; no-origin
+      X-Request-Id:
+      - 8fb86006-b9c4-469c-bf29-1188582fca70
       X-Powered-By:
-      - Phusion Passenger 6.0.4
+      - Phusion Passenger 6.0.6
       Server:
-      - nginx/1.17.3 + Phusion Passenger 6.0.4
+      - nginx/1.14.0 + Phusion Passenger 6.0.6
     body:
       encoding: ASCII-8BIT
-      string: '{"data":[{"id":"10.0253/tuprints-00003688","type":"dois","attributes":{"doi":"10.0253/tuprints-00003688","updated":"2019-12-12T11:02:30.000Z"},"relationships":{}}],"meta":{"total":271418,"scroll-id":"DnF1ZXJ5VGhlbkZldGNoBQAAAAAAQ-0gFmxRYVMtQXhkUndlZE1nMzdpUzZiOFEAAAAAAEPtIRZsUWFTLUF4ZFJ3ZWRNZzM3aVM2YjhRAAAAAABD7SIWbFFhUy1BeGRSd2VkTWczN2lTNmI4UQAAAAAAQ-0jFmxRYVMtQXhkUndlZE1nMzdpUzZiOFEAAAAAAEPtJBZsUWFTLUF4ZFJ3ZWRNZzM3aVM2YjhR"},"links":{"self":"https://api.test.datacite.org/dois?exclude-registration-agencies=true&fields%5Bdois%5D=doi%2Cupdated&page%5Bscroll%5D=7m&page%5Bsize%5D=1","next":"https://api.test.datacite.org/dois?page%5Bscroll%5D=7m&page%5Bsize%5D=1&scroll-id=DnF1ZXJ5VGhlbkZldGNoBQAAAAAAQ-0gFmxRYVMtQXhkUndlZE1nMzdpUzZiOFEAAAAAAEPtIRZsUWFTLUF4ZFJ3ZWRNZzM3aVM2YjhRAAAAAABD7SIWbFFhUy1BeGRSd2VkTWczN2lTNmI4UQAAAAAAQ-0jFmxRYVMtQXhkUndlZE1nMzdpUzZiOFEAAAAAAEPtJBZsUWFTLUF4ZFJ3ZWRNZzM3aVM2YjhR"}}'
-    http_version: 
-  recorded_at: Thu, 12 Dec 2019 11:02:37 GMT
+      string: '{"data":[{"id":"10.25601/2f56-s909","type":"dois","attributes":{"doi":"10.25601/2f56-s909","updated":"2020-10-24T10:39:27.000Z"},"relationships":{}}],"meta":{"total":207479,"scroll-id":"DnF1ZXJ5VGhlbkZldGNoBQAAAAAARK3uFkJGUkYwSFc1UmlhY2pRclc5SXBJQ1EAAAAAAESt7xZCRlJGMEhXNVJpYWNqUXJXOUlwSUNRAAAAAABErfAWQkZSRjBIVzVSaWFjalFyVzlJcElDUQAAAAAARK3xFkJGUkYwSFc1UmlhY2pRclc5SXBJQ1EAAAAAAESt8hZCRlJGMEhXNVJpYWNqUXJXOUlwSUNR"},"links":{"self":"https://api.stage.datacite.org/dois?exclude-registration-agencies=true&fields%5Bdois%5D=doi%2Cupdated&page%5Bscroll%5D=7m&page%5Bsize%5D=1","next":"https://api.stage.datacite.org/dois?page%5Bscroll%5D=7m&page%5Bsize%5D=1&scroll-id=DnF1ZXJ5VGhlbkZldGNoBQAAAAAARK3uFkJGUkYwSFc1UmlhY2pRclc5SXBJQ1EAAAAAAESt7xZCRlJGMEhXNVJpYWNqUXJXOUlwSUNRAAAAAABErfAWQkZSRjBIVzVSaWFjalFyVzlJcElDUQAAAAAARK3xFkJGUkYwSFc1UmlhY2pRclc5SXBJQ1EAAAAAAESt8hZCRlJGMEhXNVJpYWNqUXJXOUlwSUNR"}}'
+    http_version:
+  recorded_at: Sun, 01 Nov 2020 06:55:29 GMT
 recorded_with: VCR 3.0.3

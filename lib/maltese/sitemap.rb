@@ -25,7 +25,7 @@ module Maltese
     end
 
     # icon for Slack messages
-    SLACK_ICON_URL = "https://github.com/datacite/segugio/blob/master/source/images/fabrica.png"
+    SLACK_ICON_URL = "https://raw.githubusercontent.com/datacite/homepage/master/source/images/fabrica.png"
 
     def initialize(attributes={})
       @sitemap_bucket = attributes[:sitemap_bucket].presence || "search.test.datacite.org"
@@ -39,11 +39,11 @@ module Maltese
     end
 
     def sitemap_url
-      rack_env == "production" ? "https://search.datacite.org/" : "https://search.test.datacite.org/"
+      rack_env == "production" ? "https://commons.datacite.org/" : "https://commons.stage.datacite.org/"
     end
 
     def slack_title
-      rack_env == "production" ? "DataCite Fabrica" : "DataCite Fabrica Test"
+      rack_env == "production" ? "DataCite Fabrica" : "DataCite Fabrica Stage"
     end
 
     def sitemaps_path
@@ -51,7 +51,7 @@ module Maltese
     end
 
     def search_path
-      rack_env == "production" ? "https://api.datacite.org/dois?" : "https://api.test.datacite.org/dois?"
+      rack_env == "production" ? "https://api.datacite.org/dois?" : "https://api.stage.datacite.org/dois?"
     end
 
     def timeout
@@ -167,7 +167,7 @@ module Maltese
 
     def parse_data(result)
       Array.wrap(result.body.fetch("data", nil)).each do |item|
-        loc = "/works/" + item.dig("attributes", "doi")
+        loc = "/doi.org/" + item.dig("attributes", "doi")
         sitemap.add loc, changefreq: "weekly", lastmod: item.dig("attributes", "updated")
       end
       sitemap.sitemap.link_count

@@ -28,5 +28,17 @@ module Maltese
       sitemap = Maltese::Sitemap.new(options)
       sitemap.queue_jobs
     end
+
+    desc "datafile", "generate datafile for DataCite"
+    method_option :datafile_bucket, type: :string
+    method_option :rack_env, type: :string
+    method_option :access_key, type: :string
+    method_option :secret_key, type: :string
+    method_option :region, type: :string
+    method_option :slack_webhook_url, type: :string
+    def datafile
+      datafile = Maltese::Datafile.new(options)
+      datafile.queue_jobs
+    end
   end
 end

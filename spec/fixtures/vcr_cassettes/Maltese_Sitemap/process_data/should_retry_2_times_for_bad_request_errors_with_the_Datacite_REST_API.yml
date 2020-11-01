@@ -6,14 +6,14 @@ http_interactions:
     body:
       encoding: ASCII-8BIT
       string: !binary |-
-        H4sIAEQe8l0AA5WSPW+DMBBA/wryWuEPugTkOFundGoqdXWNC5aMTTk3kH9fx5CKVh2IxGDu3rs7y8cPU2ezsx7AeLdHDFOUaad8bVyzR6+np3yHDoJ/DRZ0yCLroJrA7FEbQl8RMo4jHh+xHxpSUMrI2/PxRbW6k7lxEKRTGmWRryAFj17JkBqtdDAhpnpIRWYOyBIkFJfZHeztjCeo0TzuXb0WpzKdbPQvs/G+sRor3/318gQThtnNPpta+612gte20yNsla/seu7Ovxu7efCZJunRZ7+PN4mZrQUWfF1hakNn/1sPVpYlSVmU9klw65W4chBB0HJQLQ4aAq5lkCp2SBonV4xbCaHztSgoK3NWxO/EWEWLqtg9UFpRGrkF4aqVrtEfg/4U0o7yApysQrwfjB9MuIg4NSc/f5ykoci86uIbjFQsjhkDAAA=
+        H4sIAORbnl8AA5WSy26DMBBFfwV5W+EHUdSCHLLrKl01lbp1jQuW/KCMG8jf1zGkolUX6Q5mzpm5iOH7yZrspAbQ3u0QwxRlyknfaNfu0MvxMX9A+5p/DgZUyCLroJpA71AXQl8RMo4jHjfYDy0pKGXk9enwLDtlRa4dBOGkQlnkK0jFg5cipEUrHXSIrR7SkJkDshQJxWX2D/b6jCdo0Bz3X7sWp9JWtOqH2XrfGoWlt7+9PMGEYXa1T7pR/lY7wWvbqRFulS/sOrf1b9rcHHymSfrps9/HL4mdWwcs+HrC1AVr/joPVpYlSV2U7qnmxsv6wkEE43TrHeB4M63CjQhCxh1J5OQCciMgWN/UBS1ozlhO2ZHeV9tttSnuKKsojdyCcNkJ16r3QX3UwoziDJysSrwftB90ONcxNyffb5ykWGQ+9voLoEnu9BsDAAA=
     headers:
       Content-Type:
       - application/x-gzip
       Accept-Encoding:
       - ''
       User-Agent:
-      - aws-sdk-ruby3/3.85.1 ruby/2.6.3 universal.x86_64-darwin19 aws-sdk-s3/1.59.0
+      - aws-sdk-ruby3/3.109.1 ruby/2.7.1 x86_64-darwin19 aws-sdk-s3/1.83.1
       X-Amz-Acl:
       - public-read
       Cache-Control:
@@ -21,17 +21,17 @@ http_interactions:
       Expect:
       - 100-continue
       Content-Md5:
-      - Rww4tbGz7fpwYZlDfVmBog==
+      - 0awRPzE0ZW44PviiDyMteg==
       X-Amz-Date:
-      - 20191212T110228Z
+      - 20201101T065532Z
       X-Amz-Content-Sha256:
-      - e89cd3eee13477ce1522b755b69474876f4132146e94620ee8294daaa1159342
+      - f1ef8b3221887bbbd02942542c7ea009442bfa5bf403971cac9a4ebe31a9d492
       Authorization:
-      - AWS4-HMAC-SHA256 Credential=AKIAJAMMCXAR3IXMNCGQ/20191212/eu-west-1/s3/aws4_request,
-        SignedHeaders=cache-control;content-md5;content-type;expect;host;user-agent;x-amz-acl;x-amz-content-sha256;x-amz-date,
-        Signature=d0f73b668444c79ae81c2ace7192fea7aee4da869d15ed4fbc8d60d9ffc48bef
+      - AWS4-HMAC-SHA256 Credential=AKIAJAMMCXAR3IXMNCGQ/20201101/eu-west-1/s3/aws4_request,
+        SignedHeaders=cache-control;content-md5;content-type;host;user-agent;x-amz-acl;x-amz-content-sha256;x-amz-date,
+        Signature=079827e91b4d515056466c631970295da037b450b07660bdef02f552880182e1
       Content-Length:
-      - '332'
+      - '335'
       Accept:
       - "*/*"
   response:
@@ -40,13 +40,13 @@ http_interactions:
       message: OK
     headers:
       X-Amz-Id-2:
-      - 3Xfm6zu8cYHpjVIClMQeElR2g7IgyzSYXHdjirVPLhThVkNZOJL3LNRtI2f+EPpCxqmAIrMbuo8=
+      - iKDaFMW4M9OtH2PObwUJTMBwFcv9zA4Fql4V+JHoKivY+jr5UKvY4I/fzhyOxACJ9vbeBd0bqQo=
       X-Amz-Request-Id:
-      - A682D1FA7C0B8E88
+      - 29656685CF20A9AD
       Date:
-      - Thu, 12 Dec 2019 11:02:30 GMT
+      - Sun, 01 Nov 2020 06:55:33 GMT
       Etag:
-      - '"470c38b5b1b3edfa706199437d5981a2"'
+      - '"d1ac113f3134656e383ef8a20f232d7a"'
       Content-Length:
       - '0'
       Server:
@@ -54,6 +54,6 @@ http_interactions:
     body:
       encoding: UTF-8
       string: ''
-    http_version: 
-  recorded_at: Thu, 12 Dec 2019 11:02:29 GMT
+    http_version:
+  recorded_at: Sun, 01 Nov 2020 06:55:32 GMT
 recorded_with: VCR 3.0.3

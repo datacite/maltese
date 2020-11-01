@@ -6,9 +6,9 @@ Gem::Specification.new do |s|
   s.email         = "mfenner@datacite.org"
   s.name          = "maltese"
   s.homepage      = "https://github.com/datacite/maltese"
-  s.summary       = "Ruby library to generate sitemap for DataCite Search"
+  s.summary       = "Ruby library to generate sitemap for DataCite Commons"
   s.date          = Date.today
-  s.description   = "Ruby library to generate sitemap for DataCite Search."
+  s.description   = "Ruby library to generate sitemap for DataCite Commons."
   s.require_paths = ["lib"]
   s.version       = Maltese::VERSION
   s.extra_rdoc_files = ["README.md"]
