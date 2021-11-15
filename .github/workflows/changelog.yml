@@ -9,6 +9,10 @@ on:
 
   issues:
     types: [closed, edited]
+    
+  push:
+    tags:
+      - '*'
 
 jobs:
   generate_changelog:
