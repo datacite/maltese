@@ -1,4 +1,5 @@
-[![Build Status](https://travis-ci.org/datacite/maltese.svg?branch=master)](https://travis-ci.org/datacite/maltese)
+[![Gem Version](https://badge.fury.io/rb/maltese.svg)](https://badge.fury.io/rb/maltese)
+[![Build Status](https://github.com/datacite/maltese/actions/workflows/build.yml/badge.svg)](https://github.com/datacite/maltese/actions/workflows/build.yml)
 [![Code Climate](https://codeclimate.com/github/datacite/maltese/badges/gpa.svg)](https://codeclimate.com/github/datacite/maltese)
 [![Test Coverage](https://codeclimate.com/github/datacite/maltese/badges/coverage.svg)](https://codeclimate.com/github/datacite/maltese/coverage)
 
