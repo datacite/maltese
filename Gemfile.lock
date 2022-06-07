@@ -58,7 +58,7 @@ GEM
     hashdiff (1.0.1)
     i18n (1.8.5)
       concurrent-ruby (~> 1.0)
-    jmespath (1.4.0)
+    jmespath (1.6.1)
     json (2.3.1)
     logstash-event (1.2.02)
     logstash-logger (0.26.1)
