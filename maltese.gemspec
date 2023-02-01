@@ -18,7 +18,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'maremma', '~> 4.1'
   s.add_dependency 'faraday', '0.17.0'
   s.add_dependency 'logstash-logger', '~> 0.26.1'
-  s.add_dependency 'activesupport', '>= 4.2.5', '< 6'
+  s.add_dependency 'activesupport', '>= 4.2.5', '< 8'
   s.add_dependency 'dotenv', '~> 2.1', '>= 2.1.1'
   s.add_dependency 'slack-notifier', '~> 2.1'
   s.add_dependency 'thor', '~> 0.19'
