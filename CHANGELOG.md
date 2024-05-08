@@ -1,8 +1,8 @@
 # Changelog
 
-## [Unreleased](https://github.com/datacite/maltese/tree/HEAD)
+## [0.10.0](https://github.com/datacite/maltese/tree/0.10.0) (2024-05-08)
 
-[Full Changelog](https://github.com/datacite/maltese/compare/0.9.12...HEAD)
+[Full Changelog](https://github.com/datacite/maltese/compare/0.9.12...0.10.0)
 
 **Merged pull requests:**
 
