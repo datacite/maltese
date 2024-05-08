@@ -6,6 +6,7 @@
 
 **Merged pull requests:**
 
+- add ruby 3 and rails 7 support [\#22](https://github.com/datacite/maltese/pull/22) ([wendelfabianchinsamy](https://github.com/wendelfabianchinsamy))
 - Remove Travis and add Github Actions replacement [\#11](https://github.com/datacite/maltese/pull/11) ([digitaldogsbody](https://github.com/digitaldogsbody))
 
 ## [0.9.12](https://github.com/datacite/maltese/tree/0.9.12) (2020-11-01)
