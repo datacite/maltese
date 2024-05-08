@@ -9,10 +9,10 @@ on:
 
   issues:
     types: [closed, edited]
-    
+
   push:
     tags:
-      - '*'
+      - "*"
 
 jobs:
   generate_changelog:
@@ -35,5 +35,5 @@ jobs:
         uses: ad-m/github-push-action@v0.6.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: 'refs/heads/master'
+          branch: "refs/heads/master"
           tags: false

@@ -3,53 +3,50 @@ name: Release Ruby Gem
 on:
   push:
     tags:
-      - '*'
-      
+      - "*"
+
 jobs:
-  ci:
-    uses: ./.github/workflows/ci.yml
   build:
-    needs: ci
     runs-on: ubuntu-latest
     env:
       SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
       AWS_REGION: ${{ secrets.AWS_REGION }}
-      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }} 
+      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
       AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
 
     steps:
-    - uses: actions/checkout@v3
-    - name: Set up Ruby 3.1.4
-      uses: ruby/setup-ruby@v1
-      with:
-        ruby-version: 3.1.4
+      - uses: actions/checkout@v3
+      - name: Set up Ruby 3.1.4
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.1.4
 
-    - name: Build and test
-      run: |
-        gem install bundler
-        bundle install
-        bundle exec rspec spec
-    - name: Code Climate Test Reporter
-      uses: aktions/codeclimate-test-reporter@v1
-      with:
-        codeclimate-test-reporter-id: ${{ secrets.CC_TEST_REPORTER_ID }}
-        command: after-build
+      - name: Build and test
+        run: |
+          gem install bundler
+          bundle install
+          bundle exec rspec spec
+      - name: Code Climate Test Reporter
+        uses: aktions/codeclimate-test-reporter@v1
+        with:
+          codeclimate-test-reporter-id: ${{ secrets.CC_TEST_REPORTER_ID }}
+          command: after-build
 
-    - name: Publish to RubyGems
-      run: |
-        mkdir -p $HOME/.gem
-        touch $HOME/.gem/credentials
-        chmod 0600 $HOME/.gem/credentials
-        printf -- "---\n:rubygems_api_key: ${GEM_HOST_API_KEY}\n" > $HOME/.gem/credentials
-        gem build *.gemspec
-        gem push *.gem
-      env:
-        GEM_HOST_API_KEY: "${{secrets.RUBYGEMS_AUTH_TOKEN}}"
+      - name: Publish to RubyGems
+        run: |
+          mkdir -p $HOME/.gem
+          touch $HOME/.gem/credentials
+          chmod 0600 $HOME/.gem/credentials
+          printf -- "---\n:rubygems_api_key: ${GEM_HOST_API_KEY}\n" > $HOME/.gem/credentials
+          gem build *.gemspec
+          gem push *.gem
+        env:
+          GEM_HOST_API_KEY: "${{secrets.RUBYGEMS_AUTH_TOKEN}}"
 
-    - name: Notify Slack
-      uses: adamkdean/simple-slack-notify@1.0.4
-      with:
-        channel: '#ops'
-        username: 'GitHub Actions'
-        color: 'good'
-        text: 'A new version of the maltese gem has been released.'
+      - name: Notify Slack
+        uses: adamkdean/simple-slack-notify@1.0.4
+        with:
+          channel: "#ops"
+          username: "GitHub Actions"
+          color: "good"
+          text: "A new version of the maltese gem has been released."
