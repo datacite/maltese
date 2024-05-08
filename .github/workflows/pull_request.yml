@@ -1,9 +1,9 @@
-name: Pull Request
+name: Pull Request - Run Tests
 
 on:
-  push:
+  pull_request:
     branches:
-      - "master"
+      - master
 jobs:
   build:
     runs-on: ubuntu-latest
