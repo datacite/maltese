@@ -103,7 +103,7 @@ module Maltese
     def get_query_url(options={})
       options[:size] = options[:size] || job_batch_size
 
-      params = { 
+      params = {
         "fields[dois]" => "doi,updated",
         "exclude-registration-agencies" => "true",
         "page[scroll]" => "7m",
@@ -135,7 +135,7 @@ module Maltese
 
           if response.status == 200
             link_count = parse_data(response)
-            logger.info "#{(link_count + sitemap.sitemap_index.total_link_count).to_s(:delimited)} DOIs parsed."
+            logger.info "#{(link_count + sitemap.sitemap_index.total_link_count).to_fs(:delimited)} DOIs parsed."
             options[:url] = response.body.dig("links", "next")
           else
             logger.error "An error occured for URL #{options[:url]}."
@@ -146,8 +146,8 @@ module Maltese
           logger.error "Error: #{exception.message}"
           fields = [
             { title: "Error", value: exception.message },
-            { title: "Number of DOIs", value: sitemap.sitemap_index.total_link_count.to_s(:delimited), short: true },
-            { title: "Number of Sitemaps", value: sitemap.sitemap_index.link_count.to_s(:delimited), short: true },
+            { title: "Number of DOIs", value: sitemap.sitemap_index.total_link_count.to_fs(:delimited), short: true },
+            { title: "Number of Sitemaps", value: sitemap.sitemap_index.link_count.to_fs(:delimited), short: true },
             { title: "Time Taken", value: "#{((Time.now - options[:start_time])/ 60.0).ceil} min", short: true }
           ]
           send_notification_to_slack(nil, title: slack_title + ": Sitemaps Not Updated", level: "danger", fields: fields) unless rack_env == "test"
@@ -155,7 +155,7 @@ module Maltese
         ensure
           # don't loop when testing
           break if rack_env == "test"
-        end  
+        end
       end
 
       push_data(options)
@@ -177,11 +177,11 @@ module Maltese
       sitemap.finalize!
       options[:start_time] ||= Time.now
       sitemap.sitemap_index.stats_summary(:time_taken => Time.now - options[:start_time])
-      
+
       fields = [
         { title: "URL", value: sitemap.sitemap_index_url },
-        { title: "Number of DOIs", value: sitemap.sitemap_index.total_link_count.to_s(:delimited), short: true },
-        { title: "Number of Sitemaps", value: sitemap.sitemap_index.link_count.to_s(:delimited), short: true },
+        { title: "Number of DOIs", value: sitemap.sitemap_index.total_link_count.to_fs(:delimited), short: true },
+        { title: "Number of Sitemaps", value: sitemap.sitemap_index.link_count.to_fs(:delimited), short: true },
         { title: "Time Taken", value: "#{((Time.now - options[:start_time])/ 60.0).ceil} min", short: true }
       ]
       send_notification_to_slack(nil, title: slack_title + ": Sitemaps Updated", level: "good", fields: fields) unless rack_env == "test"
