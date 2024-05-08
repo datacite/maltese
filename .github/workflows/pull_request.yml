@@ -1,9 +1,9 @@
-name: Build Ruby Gem
+name: Pull Request - Run Tests
 
 on:
-  push:
+  pull_request:
     branches:
-      - "master"
+      - master
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -28,11 +28,3 @@ jobs:
         uses: paambaati/codeclimate-action@v2.7.4
         env:
           CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
-
-      - name: Notify Slack
-        uses: adamkdean/simple-slack-notify@1.0.4
-        with:
-          channel: "#ops"
-          username: "GitHub Actions"
-          color: "good"
-          text: "A new version of the maltese gem has been built."

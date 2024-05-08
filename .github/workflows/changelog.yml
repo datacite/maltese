@@ -9,17 +9,17 @@ on:
 
   issues:
     types: [closed, edited]
-    
+
   push:
     tags:
-      - '*'
+      - "*"
 
 jobs:
   generate_changelog:
     runs-on: ubuntu-latest
     name: Generate changelog
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v3
 
       - name: Generate changelog
         uses: charmixer/auto-changelog-action@v1.1
@@ -35,5 +35,5 @@ jobs:
         uses: ad-m/github-push-action@v0.6.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: 'refs/heads/master'
+          branch: "refs/heads/master"
           tags: false
